@@ -1,0 +1,20 @@
+{
+  "source": "Trello_Export_MTL.csv",
+  "mappings": {
+    "Course Name": "course_name",
+    "Salutation": "salutation",
+    "First name": "first_name",
+    "Surname": "last_name",
+    "Email address": "email",
+    "Phone number": "phone",
+    "Country of origin": "country",
+    "City of Residence": "city",
+    "Language(s)": "languages",
+    "Level": "assessed_level",
+    "PT/OPT result": "placement_result",
+    "Description of completed courses and other notes": "activity_notes",
+    "LC Teacher": "local_teacher"
+  },
+  "dedupe": ["email", "phone"],
+  "notes": "Primary dedupe by email; fallback dedupe by phone. Course linking: match 'Course Name' to course_key in courses manifest by slug or COURSE_SHORT_NAME."
+}

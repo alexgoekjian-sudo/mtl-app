@@ -1,0 +1,10 @@
+/.env
+/vendor/
+/node_modules/
+.idea/
+.vscode/
+/storage/*.key
+/.plesk/deploy.sh
+/.tmp_setup_plan.json
+__pycache__/
+*.pyc

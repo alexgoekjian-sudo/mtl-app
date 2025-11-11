@@ -1,0 +1,168 @@
+openapi: 3.0.3
+info:
+  title: MTL App API (minimal)
+  version: 0.1.0
+
+paths:
+  /leads:
+    post:
+      summary: Create lead
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Lead'
+      responses:
+        '201':
+          description: Created
+    get:
+      summary: List leads
+      responses:
+        '200':
+          description: OK
+
+  /students:
+    post:
+      summary: Create student (convert lead)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Student'
+      responses:
+        '201':
+          description: Created
+
+  /courses:
+    get:
+      summary: List course offerings
+      responses:
+        '200':
+          description: OK
+
+  /enrollments:
+    post:
+      summary: Enroll student
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                student_id:
+                  type: integer
+                course_offering_id:
+                  type: integer
+      responses:
+        '201':
+          description: Created
+
+  /invoices:
+    post:
+      summary: Create invoice
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Invoice'
+      responses:
+        '201':
+          description: Created
+
+  /payments:
+    post:
+      summary: Record payment (from Mollie webhook)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Payment'
+      responses:
+        '200':
+          description: OK
+
+  /attendance:
+    post:
+      summary: Mark attendance for a session
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                session_id:
+                  type: integer
+                records:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      student_id:
+                        type: integer
+                      status:
+                        type: string
+      responses:
+        '200':
+          description: OK
+
+components:
+  schemas:
+    Lead:
+      type: object
+      properties:
+        source:
+          type: string
+        first_name:
+          type: string
+        last_name:
+          type: string
+        email:
+          type: string
+        phone:
+          type: string
+
+    Student:
+      type: object
+      properties:
+        lead_id:
+          type: integer
+        first_name:
+          type: string
+        last_name:
+          type: string
+        email:
+          type: string
+        phone:
+          type: string
+
+    Invoice:
+      type: object
+      properties:
+        billing_contact_id:
+          type: integer
+        items:
+          type: array
+          items:
+            type: object
+            properties:
+              description:
+                type: string
+              qty:
+                type: integer
+              unit_price:
+                type: number
+        total:
+          type: number
+
+    Payment:
+      type: object
+      properties:
+        invoice_id:
+          type: integer
+        amount:
+          type: number
+        method:
+          type: string
+        external_reference:
+          type: string

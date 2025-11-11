@@ -1,0 +1,19 @@
+[
+  {
+    "source_row": 1,
+    "student": {
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john.doe@example.com",
+      "phone": "+441234567890",
+      "country": "Netherlands",
+      "city": "Amsterdam",
+      "languages": ["English"],
+      "assessed_level": "A2",
+      "activity_notes": "Completed A1 course previously"
+    },
+    "course_name": "A2 ELEM MORNING - EDMONTON - 13.01.2025 - R1",
+    "linked_course_key": "A2_EL_MORN_EDMON_1",
+    "import_status": "ok"
+  }
+]

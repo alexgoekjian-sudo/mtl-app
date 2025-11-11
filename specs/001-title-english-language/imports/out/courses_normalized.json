@@ -1,0 +1,5598 @@
+[
+  {
+    "source_row": 1,
+    "course_offering": {
+      "course_full_name": "B1 EVE ONLINE - EDMONTON - 13.01.2025 - R1",
+      "course_key": "B1 EVE ONLINE",
+      "start_date": "2025-01-13",
+      "end_date": "2025-02-19",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B1 EVE ONLINE - 13.01.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 2,
+    "course_offering": {
+      "course_full_name": "B2 EVE ONLINE - EDMONTON - 13.01.2025 - R1",
+      "course_key": "B2 EVE ONLINE",
+      "start_date": "2025-01-13",
+      "end_date": "2025-02-19",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B2 EVE ONLINE - 13.01.2025 - R1"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 3,
+    "course_offering": {
+      "course_full_name": "A1 BEGINNER - DUBLIN - 13.01.2025 - R1",
+      "course_key": "A1 BEGINNER",
+      "start_date": "2025-01-13",
+      "end_date": "2025-02-19",
+      "time_range": "15:30-17:30",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 445.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A1 BEGINNER",
+      "schedule_name": "A1 BEGINNER (R1) starting 13.01.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 4,
+    "course_offering": {
+      "course_full_name": "A2 INTENSIVE - BOSTON - 13.01.2025 - R1",
+      "course_key": "A2 INTENSIVE",
+      "start_date": "2025-01-13",
+      "end_date": "2025-02-07",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 INTENSIVE",
+      "schedule_name": "A2 INTENSIVE (R1) starting 13.01.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 5,
+    "course_offering": {
+      "course_full_name": "A2 ELEM MORNING - EDMONTON - 13.01.2025 - R1",
+      "course_key": "A2 ELEM MORNING",
+      "start_date": "2025-01-13",
+      "end_date": "2025-02-19",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 ELEMENTARY",
+      "schedule_name": "A2 ELEMENTARY (R1) starting 13.01.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 6,
+    "course_offering": {
+      "course_full_name": "B1 INTENSIVE - BOSTON - 13.01.2025 - R1",
+      "course_key": "B1 INTENSIVE",
+      "start_date": "2025-01-13",
+      "end_date": "2025-02-07",
+      "time_range": "15:30-18:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 INTENSIVE",
+      "schedule_name": "B1 INTENSIVE (R1) starting 13.01.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 7,
+    "course_offering": {
+      "course_full_name": "B2 MORNING - EDMONTON - 13.01.2025 - R1",
+      "course_key": "B2 MORNING",
+      "start_date": "2025-01-13",
+      "end_date": "2025-02-20",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 MORNING",
+      "schedule_name": "B2 MORNING (R1) starting 13.01.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 8,
+    "course_offering": {
+      "course_full_name": "C1 EVE ONLINE - EDMONTON - 14.01.2025 - R1",
+      "course_key": "C1 EVE ONLINE",
+      "start_date": "2025-01-14",
+      "end_date": "2025-02-20",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "C1 EVE ONLINE - 14.01.2025 - R1"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 9,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT MORNING - EDMONTON - 14.01.2025 - R1",
+      "course_key": "A2 PRE-INT MORNING",
+      "start_date": "2025-01-14",
+      "end_date": "2025-02-20",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 PRE-INTERMEDIARY",
+      "schedule_name": "A2 PRE-INTERMEDIARY (R1) starting 14.01.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 10,
+    "course_offering": {
+      "course_full_name": "C1 MORNING - EDMONTON - 14.01.2025 - R1",
+      "course_key": "C1 MORNING",
+      "start_date": "2025-01-14",
+      "end_date": "2025-02-21",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "30 hours/6weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "C1 MORNING",
+      "schedule_name": "C1 MORNING (R1) starting 14.01.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 11,
+    "course_offering": {
+      "course_full_name": "B1 MORNING - EDMONTON - 15.01.2025 - R1",
+      "course_key": "B1 MORNING",
+      "start_date": "2025-01-15",
+      "end_date": "2025-02-21",
+      "time_range": "9:30-12:00",
+      "days": [
+        "W",
+        "F"
+      ],
+      "hours_raw": "30 hours/6weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 MORNING",
+      "schedule_name": "B1 MORNING (R1) starting 15.01.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 12,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT EVE ONLINE - EDMONTON - 28.01.2025 - R1",
+      "course_key": "A2 PRE-INT EVE ONLINE",
+      "start_date": "2025-01-28",
+      "end_date": "2025-03-06",
+      "time_range": "19:00-20:30",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "18 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "A2 PRE-INT EVE ONLINE - 28.01.2025 - R1"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 13,
+    "course_offering": {
+      "course_full_name": "BUSINESS EVE ONLINE - EDMONTON - 28.01.2025 - R1",
+      "course_key": "BUSINESS EVE ONLINE",
+      "start_date": "2025-01-28",
+      "end_date": "2025-03-06",
+      "time_range": "19.00-21.00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "BUSINESS EVE ONLINE - 28.01.2025 - R1"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 14,
+    "course_offering": {
+      "course_full_name": "A2 INTENSIVE - CAPE TOWN - 10.02.2025 - R2",
+      "course_key": "A2 INTENSIVE",
+      "start_date": "2025-02-10",
+      "end_date": "2025-03-07",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 INTENSIVE",
+      "schedule_name": "A2 INTENSIVE (R2) starting 10.02.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 15,
+    "course_offering": {
+      "course_full_name": "B1 INTENSIVE - CAPE TOWN - 10.02.2025 - R2",
+      "course_key": "B1 INTENSIVE",
+      "start_date": "2025-02-10",
+      "end_date": "2025-03-07",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 INTENSIVE",
+      "schedule_name": "B1 INTENSIVE (R2) starting 10.02.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 16,
+    "course_offering": {
+      "course_full_name": "B2 INTENSIVE - CAPE TOWN - 10.02.2025 - R2",
+      "course_key": "B2 INTENSIVE",
+      "start_date": "2025-02-10",
+      "end_date": "2025-03-07",
+      "time_range": "15:30-18:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 INTENSIVE",
+      "schedule_name": "B2 INTENSIVE (R2) starting 10.02.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 17,
+    "course_offering": {
+      "course_full_name": "B1 EVE ONLINE - FIFE - 24.02.2025 - R2",
+      "course_key": "B1 EVE ONLINE",
+      "start_date": "2025-02-24",
+      "end_date": "2025-04-02",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B1 EVE ONLINE - 24.02.2025 - R2"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 18,
+    "course_offering": {
+      "course_full_name": "B2 EVE ONLINE - FIFE - 24.02.2025 - R2",
+      "course_key": "B2 EVE ONLINE",
+      "start_date": "2025-02-24",
+      "end_date": "2025-04-02",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B2 EVE ONLINE - 24.02.2025 - R2"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 19,
+    "course_offering": {
+      "course_full_name": "A1 BEGINNER - EDMONTON - 24.02.2025 - R2",
+      "course_key": "A1 BEGINNER",
+      "start_date": "2025-02-24",
+      "end_date": "2025-04-02",
+      "time_range": "15:30-17:30",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 445.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A1 BEGINNER",
+      "schedule_name": "A1 BEGINNER (R2) starting 24.02.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 20,
+    "course_offering": {
+      "course_full_name": "A2 ELEM MORNING - FIFE - 24.02.2025 - R2",
+      "course_key": "A2 ELEM MORNING",
+      "start_date": "2025-02-24",
+      "end_date": "2025-04-02",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 ELEMENTARY",
+      "schedule_name": "A2 ELEMENTARY (R2) starting 24.02.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 21,
+    "course_offering": {
+      "course_full_name": "B2 MORNING - FIFE - 24.02.2025 - R2",
+      "course_key": "B2 MORNING",
+      "start_date": "2025-02-24",
+      "end_date": "2025-04-03",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 MORNING",
+      "schedule_name": "B2 MORNING (R2) starting 24.02.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 22,
+    "course_offering": {
+      "course_full_name": "C1 MORNING - FIFE - 25.02.2025 - R2",
+      "course_key": "C1 MORNING",
+      "start_date": "2025-02-25",
+      "end_date": "2025-04-04",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "C1 MORNING",
+      "schedule_name": "C1 MORNING (R2) starting 25.02.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 23,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT MORNING - FIFE - 25.02.2025 - R2",
+      "course_key": "A2 PRE-INT MORNING",
+      "start_date": "2025-02-25",
+      "end_date": "2025-04-03",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 PRE-INTERMEDIARY",
+      "schedule_name": "A2 PRE-INTERMEDIARY (R2) starting 25.02.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 24,
+    "course_offering": {
+      "course_full_name": "B1 MORNING - FIFE - 26.02.2025 - R2",
+      "course_key": "B1 MORNING",
+      "start_date": "2025-02-26",
+      "end_date": "2025-04-04",
+      "time_range": "9:30-12:00",
+      "days": [
+        "W",
+        "F"
+      ],
+      "hours_raw": "30 hours/6weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 MORNING",
+      "schedule_name": "B1 MORNING (R2) starting 26.02.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 25,
+    "course_offering": {
+      "course_full_name": "B2 INTENSIVE - AUCKLAND - 10.03.2025 - R3",
+      "course_key": "B2 INTENSIVE",
+      "start_date": "2025-03-10",
+      "end_date": "2025-04-04",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 INTENSIVE",
+      "schedule_name": "B2 INTENSIVE (R3) starting 10.03.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 26,
+    "course_offering": {
+      "course_full_name": "A2 INTENSIVE - AUCKLAND - 10.03.2025 - R3",
+      "course_key": "A2 INTENSIVE",
+      "start_date": "2025-03-10",
+      "end_date": "2025-04-04",
+      "time_range": "15:30-18:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 INTENSIVE",
+      "schedule_name": "A2 INTENSIVE (R3) starting 10.03.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 27,
+    "course_offering": {
+      "course_full_name": "B1 INTENSIVE - AUCKLAND - 10.03.2025 - R3",
+      "course_key": "B1 INTENSIVE",
+      "start_date": "2025-03-10",
+      "end_date": "2025-04-04",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 INTENSIVE",
+      "schedule_name": "B1 INTENSIVE (R3) starting 10.03.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 28,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT EVE ONLINE - FIFE - 11.03.2025 - R2",
+      "course_key": "A2 PRE-INT EVE ONLINE",
+      "start_date": "2025-03-11",
+      "end_date": "2025-04-17",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "A2 PRE-INT EVE ONLINE - 11.03.2025 - R2"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 29,
+    "course_offering": {
+      "course_full_name": "BUSINESS EVE ONLINE - FIFE - 11.03.2025 - R2",
+      "course_key": "BUSINESS EVE ONLINE",
+      "start_date": "2025-03-11",
+      "end_date": "2025-04-17",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "BUSINESS EVE ONLINE - 11.03.2025 - R2"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 30,
+    "course_offering": {
+      "course_full_name": "C1 EVE ONLINE - FIFE - 11.03.2025 - R2",
+      "course_key": "C1 EVE ONLINE",
+      "start_date": "2025-03-11",
+      "end_date": "2025-04-17",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "C1 EVE ONLINE - 11.03.2025 - R2"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 31,
+    "course_offering": {
+      "course_full_name": "B2 EVE ONLINE - DUBLIN - 07.04.2025 - R3",
+      "course_key": "B2 EVE ONLINE",
+      "start_date": "2025-04-07",
+      "end_date": "2025-05-14",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B2 EVE ONLINE - 07.04.2025 - R3"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 32,
+    "course_offering": {
+      "course_full_name": "A2 ELEM MORNING - DUBLIN - 07.04.2025 - R3",
+      "course_key": "A2 ELEM MORNING",
+      "start_date": "2025-04-07",
+      "end_date": "2025-05-14",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 ELEMENTARY",
+      "schedule_name": "A2 ELEMENTARY (R3) starting 07.04.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 33,
+    "course_offering": {
+      "course_full_name": "A2 INTENSIVE - BOSTON - 07.04.2025 - R4",
+      "course_key": "A2 INTENSIVE",
+      "start_date": "2025-04-07",
+      "end_date": "2025-05-02",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 INTENSIVE",
+      "schedule_name": "A2 INTENSIVE (R4) starting 07.04.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 34,
+    "course_offering": {
+      "course_full_name": "B1 INTENSIVE - BOSTON - 07.04.2025 - R4",
+      "course_key": "B1 INTENSIVE",
+      "start_date": "2025-04-07",
+      "end_date": "2025-05-02",
+      "time_range": "15:30-18:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 INTENSIVE",
+      "schedule_name": "B1 INTENSIVE (R4) starting 07.04.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 35,
+    "course_offering": {
+      "course_full_name": "B2 INTENSIVE - BOSTON - 07.04.2025 - R4",
+      "course_key": "B2 INTENSIVE",
+      "start_date": "2025-04-07",
+      "end_date": "2025-05-02",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 INTENSIVE",
+      "schedule_name": "B2 INTENSIVE (R4) starting 07.04.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 36,
+    "course_offering": {
+      "course_full_name": "C1 MORNING - DUBLIN - 08.04.2025 - R3",
+      "course_key": "C1 MORNING",
+      "start_date": "2025-04-08",
+      "end_date": "2025-05-16",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "C1 MORNING",
+      "schedule_name": "C1 MORNING (R3) starting 08.04.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 37,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT MORNING - DUBLIN - 08.04.2025 - R3",
+      "course_key": "A2 PRE-INT MORNING",
+      "start_date": "2025-04-08",
+      "end_date": "2025-05-15",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 PRE-INTERMEDIARY",
+      "schedule_name": "A2 PRE-INTERMEDIARY (R3) starting 08.04.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 38,
+    "course_offering": {
+      "course_full_name": "B1 MORNING - DUBLIN - 09.04.2025 - R3",
+      "course_key": "B1 MORNING",
+      "start_date": "2025-04-09",
+      "end_date": "2025-05-16",
+      "time_range": "9:30-12:00",
+      "days": [
+        "W",
+        "F"
+      ],
+      "hours_raw": "30 hours/6weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 MORNING",
+      "schedule_name": "B1 MORNING (R3) starting 09.04.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 39,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT EVE ONLINE - DUBLIN - 22.04.2025 - R3",
+      "course_key": "A2 PRE-INT EVE ONLINE",
+      "start_date": "2025-04-22",
+      "end_date": "2025-05-29",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "A2 PRE-INT EVE ONLINE - 22.04.2025 - R3"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 40,
+    "course_offering": {
+      "course_full_name": "BUSINESS EVE ONLINE - DUBLIN - 22.04.2025 - R3",
+      "course_key": "BUSINESS EVE ONLINE",
+      "start_date": "2025-04-22",
+      "end_date": "2025-05-29",
+      "time_range": "19:00-20:30",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "18 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "BUSINESS EVE ONLINE - 22.04.2025 - R3"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 41,
+    "course_offering": {
+      "course_full_name": "C1 EVE ONLINE - DUBLIN - 22.04.2025 - R3",
+      "course_key": "C1 EVE ONLINE",
+      "start_date": "2025-04-22",
+      "end_date": "2025-05-29",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "C1 EVE ONLINE - 22.04.2025 - R3"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 42,
+    "course_offering": {
+      "course_full_name": "B2 MORNING - DUBLIN - 22.04.2025 - R3",
+      "course_key": "B2 MORNING",
+      "start_date": "2025-04-22",
+      "end_date": "2025-05-28",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 MORNING",
+      "schedule_name": "B2 MORNING (R3) starting 22.04.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 43,
+    "course_offering": {
+      "course_full_name": "B1 EVE ONLINE - DUBLIN - 23.04.2025 - R3",
+      "course_key": "B1 EVE ONLINE",
+      "start_date": "2025-04-23",
+      "end_date": "2025-05-28",
+      "time_range": "19:30-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "18 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B1 EVE ONLINE - 23.04.2025 - R3"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 44,
+    "course_offering": {
+      "course_full_name": "A1 BEGINNER - EDMONTON - 23.04.2025 - R3",
+      "course_key": "A1 BEGINNER",
+      "start_date": "2025-04-23",
+      "end_date": "2025-05-28",
+      "time_range": "15:30-17:30",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 445.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A1 BEGINNER",
+      "schedule_name": "A1 BEGINNER (R3) starting 23.04.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 45,
+    "course_offering": {
+      "course_full_name": "A2 INTENSIVE - CAPE TOWN - 05.05.2025 - R5",
+      "course_key": "A2 INTENSIVE",
+      "start_date": "2025-05-05",
+      "end_date": "2025-05-30",
+      "time_range": "15:30-18:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 INTENSIVE",
+      "schedule_name": "A2 INTENSIVE (R5) starting 05.05.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 46,
+    "course_offering": {
+      "course_full_name": "B1 INTENSIVE - CAPE TOWN - 06.05.2025 - R5",
+      "course_key": "B1 INTENSIVE",
+      "start_date": "2025-05-06",
+      "end_date": "2025-05-30",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 INTENSIVE",
+      "schedule_name": "B1 INTENSIVE (R5) starting 06.05.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 47,
+    "course_offering": {
+      "course_full_name": "B2 INTENSIVE - CAPE TOWN - 06.05.2025 - R5",
+      "course_key": "B2 INTENSIVE",
+      "start_date": "2025-05-06",
+      "end_date": "2025-05-30",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 INTENSIVE",
+      "schedule_name": "B2 INTENSIVE (R5) starting 06.05.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 48,
+    "course_offering": {
+      "course_full_name": "B2 EVE ONLINE - EDMONTON - 19.05.2025 - R4",
+      "course_key": "B2 EVE ONLINE",
+      "start_date": "2025-05-19",
+      "end_date": "2025-06-25",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B2 EVE ONLINE - 19.05.2025 - R4"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 49,
+    "course_offering": {
+      "course_full_name": "A2 ELEM MORNING - EDMONTON - 19.05.2025 - R4",
+      "course_key": "A2 ELEM MORNING",
+      "start_date": "2025-05-19",
+      "end_date": "2025-06-25",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 ELEMENTARY",
+      "schedule_name": "A2 ELEMENTARY (R4) starting 19.05.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 50,
+    "course_offering": {
+      "course_full_name": "C1 MORNING - EDMONTON - 20.05.2025 - R4",
+      "course_key": "C1 MORNING",
+      "start_date": "2025-05-20",
+      "end_date": "2025-06-27",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "C1 MORNING",
+      "schedule_name": "C1 MORNING (R4) starting 20.05.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 51,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT MORNING - EDMONTON - 20.05.2025 - R4",
+      "course_key": "A2 PRE-INT MORNING",
+      "start_date": "2025-05-20",
+      "end_date": "2025-06-26",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 PRE-INTERMEDIARY",
+      "schedule_name": "A2 PRE-INTERMEDIARY (R4) starting 20.05.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 52,
+    "course_offering": {
+      "course_full_name": "B1 EVE ONLINE - EDMONTON - 02.06.2025 - R4",
+      "course_key": "B1 EVE ONLINE",
+      "start_date": "2025-06-02",
+      "end_date": "2025-07-09",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B1 EVE ONLINE - 02.06.2025 - R4"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 53,
+    "course_offering": {
+      "course_full_name": "A1 BEGINNER - DUBLIN - 02.06.2025 - R4",
+      "course_key": "A1 BEGINNER",
+      "start_date": "2025-06-02",
+      "end_date": "2025-07-09",
+      "time_range": "15:30-17:30",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 445.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A1 BEGINNER",
+      "schedule_name": "A1 BEGINNER (R4) starting 02.06.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 54,
+    "course_offering": {
+      "course_full_name": "B2 MORNING - EDMONTON - 02.06.2025 - R4",
+      "course_key": "B2 MORNING",
+      "start_date": "2025-06-02",
+      "end_date": "2025-07-10",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 MORNING",
+      "schedule_name": "B2 MORNING (R4) starting 02.06.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 55,
+    "course_offering": {
+      "course_full_name": "A2 INTENSIVE - AUCKLAND - 02.06.2025 - R6",
+      "course_key": "A2 INTENSIVE",
+      "start_date": "2025-06-02",
+      "end_date": "2025-06-27",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 INTENSIVE",
+      "schedule_name": "A2 INTENSIVE (R6) starting 02.06.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 56,
+    "course_offering": {
+      "course_full_name": "B1 INTENSIVE - AUCKLAND - 02.06.2025 - R6",
+      "course_key": "B1 INTENSIVE",
+      "start_date": "2025-06-02",
+      "end_date": "2025-06-27",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 INTENSIVE",
+      "schedule_name": "B1 INTENSIVE (R6) starting 02.06.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 57,
+    "course_offering": {
+      "course_full_name": "B2 INTENSIVE - AUCKLAND - 02.06.2025 - R6",
+      "course_key": "B2 INTENSIVE",
+      "start_date": "2025-06-02",
+      "end_date": "2025-06-27",
+      "time_range": "15:30-18:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 INTENSIVE",
+      "schedule_name": "B2 INTENSIVE (R6) starting 02.06.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 58,
+    "course_offering": {
+      "course_full_name": "BUSINESS EVE ONLINE - EDMONTON - 03.06.2025 - R4",
+      "course_key": "BUSINESS EVE ONLINE",
+      "start_date": "2025-06-03",
+      "end_date": "2025-07-10",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "BUSINESS EVE ONLINE - 03.06.2025 - R4"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 59,
+    "course_offering": {
+      "course_full_name": "C1 EVE ONLINE - EDMONTON - 03.06.2025 - R4",
+      "course_key": "C1 EVE ONLINE",
+      "start_date": "2025-06-03",
+      "end_date": "2025-07-10",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "C1 EVE ONLINE - 03.06.2025 - R4"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 60,
+    "course_offering": {
+      "course_full_name": "B1 MORNING - EDMONTON - 04.06.2025 - R4",
+      "course_key": "B1 MORNING",
+      "start_date": "2025-06-04",
+      "end_date": "2025-07-11",
+      "time_range": "9:30-12:00",
+      "days": [
+        "W",
+        "F"
+      ],
+      "hours_raw": "30 hours/6weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 MORNING",
+      "schedule_name": "B1 MORNING (R4) starting 04.06.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 61,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT EVE ONLINE - EDMONTON - 17.06.2025 - R4",
+      "course_key": "A2 PRE-INT EVE ONLINE",
+      "start_date": "2025-06-17",
+      "end_date": "2025-07-24",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "A2 PRE-INT EVE ONLINE - 17.06.2025 - R4"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 62,
+    "course_offering": {
+      "course_full_name": "B2 EVE ONLINE - FIFE - 30.06.2025 - R5",
+      "course_key": "B2 EVE ONLINE",
+      "start_date": "2025-06-30",
+      "end_date": "2025-08-06",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B2 EVE ONLINE - 30.06.2025 - R5"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 63,
+    "course_offering": {
+      "course_full_name": "A2 ELEM MORNING - FIFE - 30.06.2025 - R5",
+      "course_key": "A2 ELEM MORNING",
+      "start_date": "2025-06-30",
+      "end_date": "2025-08-06",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 ELEMENTARY",
+      "schedule_name": "A2 ELEMENTARY (R5) starting 30.06.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 64,
+    "course_offering": {
+      "course_full_name": "A2 INTENSIVE - BOSTON - 30.06.2025 - R7",
+      "course_key": "A2 INTENSIVE",
+      "start_date": "2025-06-30",
+      "end_date": "2025-07-25",
+      "time_range": "15:30-18:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 INTENSIVE",
+      "schedule_name": "A2 INTENSIVE (R7) starting 30.06.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 65,
+    "course_offering": {
+      "course_full_name": "B1 INTENSIVE - BOSTON - 30.06.2025 - R7",
+      "course_key": "B1 INTENSIVE",
+      "start_date": "2025-06-30",
+      "end_date": "2025-07-25",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 INTENSIVE",
+      "schedule_name": "B1 INTENSIVE (R7) starting 30.06.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 66,
+    "course_offering": {
+      "course_full_name": "B2 INTENSIVE - BOSTON - 30.06.2025 - R7",
+      "course_key": "B2 INTENSIVE",
+      "start_date": "2025-06-30",
+      "end_date": "2025-07-25",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 INTENSIVE",
+      "schedule_name": "B2 INTENSIVE (R7) starting 30.06.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 67,
+    "course_offering": {
+      "course_full_name": "C1 MORNING - FIFE - 01.07.2025 - R5",
+      "course_key": "C1 MORNING",
+      "start_date": "2025-07-01",
+      "end_date": "2025-08-08",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "C1 MORNING",
+      "schedule_name": "C1 MORNING (R5) starting 01.07.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 68,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT MORNING - FIFE - 01.07.2025 - R5",
+      "course_key": "A2 PRE-INT MORNING",
+      "start_date": "2025-07-01",
+      "end_date": "2025-08-07",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 PRE-INTERMEDIARY",
+      "schedule_name": "A2 PRE-INTERMEDIARY (R5) starting 01.07.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 69,
+    "course_offering": {
+      "course_full_name": "B1 EVE ONLINE - FIFE - 14.07.2025 - R5",
+      "course_key": "B1 EVE ONLINE",
+      "start_date": "2025-07-14",
+      "end_date": "2025-08-20",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B1 EVE ONLINE - 14.07.2025 - R5"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 70,
+    "course_offering": {
+      "course_full_name": "A1 BEGINNER - EDMONTON - 14.07.2025 - R5",
+      "course_key": "A1 BEGINNER",
+      "start_date": "2025-07-14",
+      "end_date": "2025-07-30",
+      "time_range": "15:30-17:30",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 445.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A1 BEGINNER",
+      "schedule_name": "A1 BEGINNER (R5) starting 14.07.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 71,
+    "course_offering": {
+      "course_full_name": "B2 MORNING - FIFE - 14.07.2025 - R5",
+      "course_key": "B2 MORNING",
+      "start_date": "2025-07-14",
+      "end_date": "2025-08-21",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 MORNING",
+      "schedule_name": "B2 MORNING (R5) starting 14.07.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 72,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT EVE ONLINE - FIFE - 15.07.2025 - R5",
+      "course_key": "A2 PRE-INT EVE ONLINE",
+      "start_date": "2025-07-15",
+      "end_date": "2025-08-14",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "20 hours/5 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "A2 PRE-INT EVE ONLINE - 15.07.2025 - R5"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 73,
+    "course_offering": {
+      "course_full_name": "BUSINESS EVE ONLINE - FIFE - 15.07.2025 - R5",
+      "course_key": "BUSINESS EVE ONLINE",
+      "start_date": "2025-07-15",
+      "end_date": "2025-08-21",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "20 hours/6weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "BUSINESS EVE ONLINE - 15.07.2025 - R5"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 74,
+    "course_offering": {
+      "course_full_name": "C1 EVE ONLINE - FIFE - 15.07.2025 - R5",
+      "course_key": "C1 EVE ONLINE",
+      "start_date": "2025-07-15",
+      "end_date": "2025-08-21",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "C1 EVE ONLINE - 15.07.2025 - R5"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 75,
+    "course_offering": {
+      "course_full_name": "B1 MORNING - FIFE - 16.07.2025 - R5",
+      "course_key": "B1 MORNING",
+      "start_date": "2025-07-16",
+      "end_date": "2025-08-22",
+      "time_range": "9:30-12:00",
+      "days": [
+        "W",
+        "F"
+      ],
+      "hours_raw": "30 hours/6weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 MORNING",
+      "schedule_name": "B1 MORNING (R5) starting 16.07.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 76,
+    "course_offering": {
+      "course_full_name": "A2 INTENSIVE - CAPE TOWN - 28.07.2025 - R8",
+      "course_key": "A2 INTENSIVE",
+      "start_date": "2025-07-28",
+      "end_date": "2025-08-22",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 INTENSIVE",
+      "schedule_name": "A2 INTENSIVE (R8) starting 28.07.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 77,
+    "course_offering": {
+      "course_full_name": "B1 INTENSIVE - CAPE TOWN - 28.07.2025 - R8",
+      "course_key": "B1 INTENSIVE",
+      "start_date": "2025-07-28",
+      "end_date": "2025-08-22",
+      "time_range": "15:30-18:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 INTENSIVE",
+      "schedule_name": "B1 INTENSIVE (R8) starting 28.07.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 78,
+    "course_offering": {
+      "course_full_name": "B2 INTENSIVE - CAPE TOWN - 28.07.2025 - R8",
+      "course_key": "B2 INTENSIVE",
+      "start_date": "2025-07-28",
+      "end_date": "2025-08-22",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 INTENSIVE",
+      "schedule_name": "B2 INTENSIVE (R8) starting 28.07.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 79,
+    "course_offering": {
+      "course_full_name": "B1 EVE ONLINE - DUBLIN - 18.08.2025 - R6",
+      "course_key": "B1 EVE ONLINE",
+      "start_date": "2025-08-18",
+      "end_date": "2025-09-24",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B1 EVE ONLINE - 18.08.2025 - R6"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 80,
+    "course_offering": {
+      "course_full_name": "A1 BEGINNER - DUBLIN - 18.08.2025 - R6",
+      "course_key": "A1 BEGINNER",
+      "start_date": "2025-08-18",
+      "end_date": "2025-09-24",
+      "time_range": "15:30-17:30",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 445.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A1 BEGINNER",
+      "schedule_name": "A1 BEGINNER (R6) starting 18.08.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 81,
+    "course_offering": {
+      "course_full_name": "A2 ELEM MORNING - DUBLIN - 18.08.2025 - R6",
+      "course_key": "A2 ELEM MORNING",
+      "start_date": "2025-08-18",
+      "end_date": "2025-09-24",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 ELEMENTARY",
+      "schedule_name": "A2 ELEMENTARY (R6) starting 18.08.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 82,
+    "course_offering": {
+      "course_full_name": "C1 MORNING - DUBLIN - 19.08.2025 - R6",
+      "course_key": "C1 MORNING",
+      "start_date": "2025-08-19",
+      "end_date": "2025-09-26",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "25 hours/5 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "C1 MORNING",
+      "schedule_name": "C1 MORNING (R6) starting 19.08.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 83,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT MORNING - DUBLIN - 19.08.2025 - R6",
+      "course_key": "A2 PRE-INT MORNING",
+      "start_date": "2025-08-19",
+      "end_date": "2025-09-25",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 PRE-INTERMEDIARY",
+      "schedule_name": "A2 PRE-INTERMEDIARY (R6) starting 19.08.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 84,
+    "course_offering": {
+      "course_full_name": "B2 EVE ONLINE - DUBLIN - 25.08.2025 - R6",
+      "course_key": "B2 EVE ONLINE",
+      "start_date": "2025-08-25",
+      "end_date": "2025-10-01",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B2 EVE ONLINE - 25.08.2025 - R6"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 85,
+    "course_offering": {
+      "course_full_name": "B2 MORNING - DUBLIN - 25.08.2025 - R6",
+      "course_key": "B2 MORNING",
+      "start_date": "2025-08-25",
+      "end_date": "2025-10-02",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 MORNING",
+      "schedule_name": "B2 MORNING (R6) starting 25.08.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 86,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT EVE ONLINE - DUBLIN - 26.08.2025 - R6",
+      "course_key": "A2 PRE-INT EVE ONLINE",
+      "start_date": "2025-08-26",
+      "end_date": "2025-10-14",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "A2 PRE-INT EVE ONLINE - 26.08.2025 - R6"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 87,
+    "course_offering": {
+      "course_full_name": "BUSINESS EVE ONLINE - DUBLIN - 26.08.2025 - R6",
+      "course_key": "BUSINESS EVE ONLINE",
+      "start_date": "2025-08-26",
+      "end_date": "2025-10-02",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "BUSINESS EVE ONLINE - 26.08.2025 - R6"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 88,
+    "course_offering": {
+      "course_full_name": "C1 EVE ONLINE - DUBLIN - 26.08.2025 - R6",
+      "course_key": "C1 EVE ONLINE",
+      "start_date": "2025-08-26",
+      "end_date": "2025-10-02",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "C1 EVE ONLINE - 26.08.2025 - R6"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 89,
+    "course_offering": {
+      "course_full_name": "B1 MORNING - DUBLIN - 27.08.2025 - R6",
+      "course_key": "B1 MORNING",
+      "start_date": "2025-08-27",
+      "end_date": "2025-10-03",
+      "time_range": "9:30-12:00",
+      "days": [
+        "W",
+        "F"
+      ],
+      "hours_raw": "30 hours/6weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 MORNING",
+      "schedule_name": "B1 MORNING (R6) starting 27.08.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 90,
+    "course_offering": {
+      "course_full_name": "A2 INTENSIVE - AUCKLAND - 01.09.2025 - R9",
+      "course_key": "A2 INTENSIVE",
+      "start_date": "2025-09-01",
+      "end_date": "2025-09-26",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 INTENSIVE",
+      "schedule_name": "A2 INTENSIVE (R9) starting 01.09.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 91,
+    "course_offering": {
+      "course_full_name": "B1 INTENSIVE - AUCKLAND - 01.09.2025 - R9",
+      "course_key": "B1 INTENSIVE",
+      "start_date": "2025-09-01",
+      "end_date": "2025-09-26",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 INTENSIVE",
+      "schedule_name": "B1 INTENSIVE (R9) starting 01.09.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 92,
+    "course_offering": {
+      "course_full_name": "B2 INTENSIVE - AUCKLAND - 01.09.2025 - R9",
+      "course_key": "B2 INTENSIVE",
+      "start_date": "2025-09-01",
+      "end_date": "2025-09-26",
+      "time_range": "15:30-18:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 INTENSIVE",
+      "schedule_name": "B2 INTENSIVE (R9) starting 01.09.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 93,
+    "course_offering": {
+      "course_full_name": "B1 EVE ONLINE - FIFE - 29.09.2025 - R7",
+      "course_key": "B1 EVE ONLINE",
+      "start_date": "2025-09-29",
+      "end_date": "2025-11-05",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B1 EVE ONLINE - 29.09.2025 - R7"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 94,
+    "course_offering": {
+      "course_full_name": "A1 BEGINNER - EDMONTON - 29.09.2025 - R7",
+      "course_key": "A1 BEGINNER",
+      "start_date": "2025-09-29",
+      "end_date": "2025-11-05",
+      "time_range": "15:30-17:30",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 445.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A1 BEGINNER",
+      "schedule_name": "A1 BEGINNER (R7) starting 29.09.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 95,
+    "course_offering": {
+      "course_full_name": "A2 ELEM MORNING - EDMONTON - 29.09.2025 - R7",
+      "course_key": "A2 ELEM MORNING",
+      "start_date": "2025-09-29",
+      "end_date": "2025-11-05",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 ELEMENTARY",
+      "schedule_name": "A2 ELEMENTARY (R7) starting 29.09.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 96,
+    "course_offering": {
+      "course_full_name": "A2 INTENSIVE - BOSTON - 29.09.2025 - R10",
+      "course_key": "A2 INTENSIVE",
+      "start_date": "2025-09-29",
+      "end_date": "2025-10-24",
+      "time_range": "15:30-18:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 INTENSIVE",
+      "schedule_name": "A2 INTENSIVE (R10) starting 29.09.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 97,
+    "course_offering": {
+      "course_full_name": "B1 INTENSIVE - BOSTON - 29.09.2025 - R10",
+      "course_key": "B1 INTENSIVE",
+      "start_date": "2025-09-29",
+      "end_date": "2025-10-24",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 INTENSIVE",
+      "schedule_name": "B1 INTENSIVE (R10) starting 29.09.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 98,
+    "course_offering": {
+      "course_full_name": "B2 INTENSIVE - BOSTON - 29.09.2025 - R10",
+      "course_key": "B2 INTENSIVE",
+      "start_date": "2025-09-29",
+      "end_date": "2025-10-24",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 INTENSIVE",
+      "schedule_name": "B2 INTENSIVE (R10) starting 29.09.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 99,
+    "course_offering": {
+      "course_full_name": "C1 MORNING - EDMONTON - 30.09.2025 - R7",
+      "course_key": "C1 MORNING",
+      "start_date": "2025-09-30",
+      "end_date": "2025-11-07",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "C1 MORNING",
+      "schedule_name": "C1 MORNING (R7) starting 30.09.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 100,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT MORNING - EDMONTON - 30.09.2025 - R7",
+      "course_key": "A2 PRE-INT MORNING",
+      "start_date": "2025-09-30",
+      "end_date": "2025-11-06",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 PRE-INTERMEDIARY",
+      "schedule_name": "A2 PRE-INTERMEDIARY (R7) starting 30.09.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 101,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT MORNING - EDMONTON - 30.09.2025 - R7(2)",
+      "course_key": "A2 PRE-INT MORNING",
+      "start_date": "2025-09-30",
+      "end_date": "2025-11-06",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 PRE-INTERMEDIARY",
+      "schedule_name": "A2 PRE-INTERMEDIARY (R7(2)) starting 30.09.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 102,
+    "course_offering": {
+      "course_full_name": "B2 EVE ONLINE - EDMONTON - 06.10.2025 - R7",
+      "course_key": "B2 EVE ONLINE",
+      "start_date": "2025-10-06",
+      "end_date": "2025-11-12",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B2 EVE ONLINE - 06.10.2025 - R7"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 103,
+    "course_offering": {
+      "course_full_name": "B2 MORNING - EDMONTON - 06.10.2025 - R7",
+      "course_key": "B2 MORNING",
+      "start_date": "2025-10-06",
+      "end_date": "2025-11-13",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 MORNING",
+      "schedule_name": "B2 MORNING (R7) starting 06.10.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 104,
+    "course_offering": {
+      "course_full_name": "BUSINESS EVE ONLINE - EDMONTON - 07.10.2025 - R7",
+      "course_key": "BUSINESS EVE ONLINE",
+      "start_date": "2025-10-07",
+      "end_date": "2025-11-13",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "BUSINESS EVE ONLINE - 07.10.2025 - R7"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 105,
+    "course_offering": {
+      "course_full_name": "C1 EVE ONLINE - EDMONTON - 07.10.2025 - R7",
+      "course_key": "C1 EVE ONLINE",
+      "start_date": "2025-10-07",
+      "end_date": "2025-11-13",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "C1 EVE ONLINE - 07.10.2025 - R7"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 106,
+    "course_offering": {
+      "course_full_name": "B1 MORNING - EDMONTON - 08.10.2025 - R7",
+      "course_key": "B1 MORNING",
+      "start_date": "2025-10-08",
+      "end_date": "2025-11-14",
+      "time_range": "9:30-12:00",
+      "days": [
+        "W",
+        "F"
+      ],
+      "hours_raw": "30 hours/6weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 MORNING",
+      "schedule_name": "B1 MORNING (R7) starting 08.10.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 107,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT EVE ONLINE - EDMONTON - 21.10.2025 - R7",
+      "course_key": "A2 PRE-INT EVE ONLINE",
+      "start_date": "2025-10-21",
+      "end_date": "2025-11-27",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "A2 PRE-INT EVE ONLINE - 21.10.2025 - R7"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 108,
+    "course_offering": {
+      "course_full_name": "A2 INTENSIVE - CAPE TOWN - 27.10.2025 - R11",
+      "course_key": "A2 INTENSIVE",
+      "start_date": "2025-10-27",
+      "end_date": "2025-11-21",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 INTENSIVE",
+      "schedule_name": "A2 INTENSIVE (R11) starting 27.10.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 109,
+    "course_offering": {
+      "course_full_name": "B1 INTENSIVE - CAPE TOWN - 27.10.2025 - R11",
+      "course_key": "B1 INTENSIVE",
+      "start_date": "2025-10-27",
+      "end_date": "2025-11-21",
+      "time_range": "15:30-18:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 INTENSIVE",
+      "schedule_name": "B1 INTENSIVE (R11) starting 27.10.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 110,
+    "course_offering": {
+      "course_full_name": "B2 INTENSIVE - CAPE TOWN - 27.10.2025 - R11",
+      "course_key": "B2 INTENSIVE",
+      "start_date": "2025-10-27",
+      "end_date": "2025-11-21",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 INTENSIVE",
+      "schedule_name": "B2 INTENSIVE (R11) starting 27.10.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 111,
+    "course_offering": {
+      "course_full_name": "B1 EVE ONLINE - FIFE - 10.11.2025 - R8",
+      "course_key": "B1 EVE ONLINE",
+      "start_date": "2025-11-10",
+      "end_date": "2025-12-17",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B1 EVE ONLINE - 10.11.2025 - R8"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 112,
+    "course_offering": {
+      "course_full_name": "A1 BEGINNER - DUBLIN - 10.11.2025 - R8",
+      "course_key": "A1 BEGINNER",
+      "start_date": "2025-11-10",
+      "end_date": "2025-12-17",
+      "time_range": "15:30-17:30",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 445.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A1 BEGINNER",
+      "schedule_name": "A1 BEGINNER (R8) starting 10.11.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 113,
+    "course_offering": {
+      "course_full_name": "A2 ELEM MORNING - FIFE - 10.11.2025 - R8",
+      "course_key": "A2 ELEM MORNING",
+      "start_date": "2025-11-10",
+      "end_date": "2025-12-17",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 ELEMENTARY",
+      "schedule_name": "A2 ELEMENTARY (R8) starting 10.11.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 114,
+    "course_offering": {
+      "course_full_name": "A2 ELEM MORNING - FIFE - 10.11.2025 - R8-2",
+      "course_key": "A2 ELEM MORNING",
+      "start_date": "2025-11-10",
+      "end_date": "2025-12-17",
+      "time_range": "15:30-18:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 ELEMENTARY",
+      "schedule_name": "A2 ELEMENTARY (R8) starting 10.11.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 115,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT MORNING - FIFE - 11.11.2025 - R8-2",
+      "course_key": "A2 PRE-INT MORNING",
+      "start_date": "2025-11-11",
+      "end_date": "2025-12-18",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 PRE-INTERMEDIARY",
+      "schedule_name": "A2 PRE-INTERMEDIARY (R8) starting 11.11.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 116,
+    "course_offering": {
+      "course_full_name": "C1 MORNING - FIFE - 11.11.2025 - R8",
+      "course_key": "C1 MORNING",
+      "start_date": "2025-11-11",
+      "end_date": "2025-12-19",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "C1 MORNING",
+      "schedule_name": "C1 MORNING (R8) starting 11.11.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 117,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT MORNING - FIFE - 11.11.2025 - R8",
+      "course_key": "A2 PRE-INT MORNING",
+      "start_date": "2025-11-11",
+      "end_date": "2025-12-18",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 PRE-INTERMEDIARY",
+      "schedule_name": "A2 PRE-INTERMEDIARY (R8) starting 11.11.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 118,
+    "course_offering": {
+      "course_full_name": "B2 EVE ONLINE - FIFE - 17.11.2025 - R8",
+      "course_key": "B2 EVE ONLINE",
+      "start_date": "2025-11-17",
+      "end_date": "2025-12-24",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B2 EVE ONLINE - 17.11.2025 - R8"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 119,
+    "course_offering": {
+      "course_full_name": "B2 MORNING - FIFE - 17.11.2025 - R8",
+      "course_key": "B2 MORNING",
+      "start_date": "2025-11-17",
+      "end_date": "2025-12-18",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "Th"
+      ],
+      "hours_raw": "25 hours/5 weeks",
+      "price": 450.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 MORNING",
+      "schedule_name": "B2 MORNING (R8) starting 17.11.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 120,
+    "course_offering": {
+      "course_full_name": "BUSINESS EVE ONLINE - FIFE - 18.11.2025 - R8",
+      "course_key": "BUSINESS EVE ONLINE",
+      "start_date": "2025-11-18",
+      "end_date": "2025-12-19",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "20 hours/5 weeks",
+      "price": 335.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "BUSINESS EVE ONLINE - 18.11.2025 - R8"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 121,
+    "course_offering": {
+      "course_full_name": "C1 EVE ONLINE - FIFE - 18.11.2025 - R8",
+      "course_key": "C1 EVE ONLINE",
+      "start_date": "2025-11-18",
+      "end_date": "2025-12-18",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "20 hours/5 weeks",
+      "price": 335.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "C1 EVE ONLINE - 18.11.2025 - R8"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 122,
+    "course_offering": {
+      "course_full_name": "B1 MORNING - FIFE - 19.11.2025 - R8",
+      "course_key": "B1 MORNING",
+      "start_date": "2025-11-19",
+      "end_date": "2025-12-19",
+      "time_range": "9:30-12:00",
+      "days": [
+        "W",
+        "F"
+      ],
+      "hours_raw": "25 hours/5 weeks",
+      "price": 450.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 MORNING",
+      "schedule_name": "B1 MORNING (R8) starting 19.11.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 123,
+    "course_offering": {
+      "course_full_name": "A2 INTENSIVE - AUCKLAND - 24.11.2025 - R12",
+      "course_key": "A2 INTENSIVE",
+      "start_date": "2025-11-24",
+      "end_date": "2025-12-19",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 INTENSIVE",
+      "schedule_name": "A2 INTENSIVE (R12) starting 24.11.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 124,
+    "course_offering": {
+      "course_full_name": "B1 INTENSIVE - AUCKLAND - 24.11.2025 - R12",
+      "course_key": "B1 INTENSIVE",
+      "start_date": "2025-11-24",
+      "end_date": "2025-12-19",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 INTENSIVE",
+      "schedule_name": "B1 INTENSIVE (R12) starting 24.11.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 125,
+    "course_offering": {
+      "course_full_name": "B2 INTENSIVE - AUCKLAND - 24.11.2025 - R12",
+      "course_key": "B2 INTENSIVE",
+      "start_date": "2025-11-24",
+      "end_date": "2025-12-19",
+      "time_range": "15:30-18:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 INTENSIVE",
+      "schedule_name": "B2 INTENSIVE (R12) starting 24.11.2025"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 126,
+    "course_offering": {
+      "course_full_name": "A2 INTENSIVE - BOSTON - 12.01.2026 - R1",
+      "course_key": "A2 INTENSIVE",
+      "start_date": "2026-01-12",
+      "end_date": "2026-02-06",
+      "time_range": "15:30-18:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 INTENSIVE",
+      "schedule_name": "A2 INTENSIVE (R1) starting 12.01.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 127,
+    "course_offering": {
+      "course_full_name": "B1 INTENSIVE - BOSTON - 12.01.2026 - R1",
+      "course_key": "B1 INTENSIVE",
+      "start_date": "2026-01-12",
+      "end_date": "2026-02-06",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 INTENSIVE",
+      "schedule_name": "B1 INTENSIVE (R1) starting 12.01.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 128,
+    "course_offering": {
+      "course_full_name": "B2 INTENSIVE - BOSTON - 12.01.2026 - R1",
+      "course_key": "B2 INTENSIVE",
+      "start_date": "2026-01-12",
+      "end_date": "2026-02-06",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 INTENSIVE",
+      "schedule_name": "B2 INTENSIVE (R1) starting 12.01.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 129,
+    "course_offering": {
+      "course_full_name": "B2 MORNING - DUBLIN - 12.01.2026 - R1",
+      "course_key": "B2 MORNING",
+      "start_date": "2026-01-12",
+      "end_date": "2026-02-19",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 MORNING",
+      "schedule_name": "B2 MORNING (R1) starting 12.01.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 130,
+    "course_offering": {
+      "course_full_name": "A1 BEGINNER - EDMONTON - 12.01.2026 - R1",
+      "course_key": "A1 BEGINNER",
+      "start_date": "2026-01-12",
+      "end_date": "2026-02-18",
+      "time_range": "15:30-17:30",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 445.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A1 BEGINNER",
+      "schedule_name": "A1 BEGINNER (R1) starting 12.01.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 131,
+    "course_offering": {
+      "course_full_name": "A2 ELEM MORNING - DUBLIN - 12.01.2026 - R1",
+      "course_key": "A2 ELEM MORNING",
+      "start_date": "2026-01-12",
+      "end_date": "2026-02-18",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 ELEMENTARY",
+      "schedule_name": "A2 ELEMENTARY (R1) starting 12.01.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 132,
+    "course_offering": {
+      "course_full_name": "B1 EVE ONLINE - DUBLIN - 12.01.2026 - R1",
+      "course_key": "B1 EVE ONLINE",
+      "start_date": "2026-01-12",
+      "end_date": "2026-02-18",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B1 EVE ONLINE - 12.01.2026 - R1"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 133,
+    "course_offering": {
+      "course_full_name": "B2 EVE ONLINE - DUBLIN - 12.01.2026 - R1",
+      "course_key": "B2 EVE ONLINE",
+      "start_date": "2026-01-12",
+      "end_date": "2026-02-18",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B2 EVE ONLINE - 12.01.2026 - R1"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 134,
+    "course_offering": {
+      "course_full_name": "BUSINESS EVE ONLINE - DUBLIN - 12.01.2026 - R1",
+      "course_key": "BUSINESS EVE ONLINE",
+      "start_date": "2026-01-12",
+      "end_date": "2026-02-18",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "BUSINESS EVE ONLINE - 12.01.2026 - R1"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 135,
+    "course_offering": {
+      "course_full_name": "C1 MORNING - DUBLIN - 13.01.2026 - R1",
+      "course_key": "C1 MORNING",
+      "start_date": "2026-01-13",
+      "end_date": "2026-02-20",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "C1 MORNING",
+      "schedule_name": "C1 MORNING (R1) starting 13.01.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 136,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT EVE ONLINE - DUBLIN - 13.01.2026 - R1",
+      "course_key": "A2 PRE-INT EVE ONLINE",
+      "start_date": "2026-01-13",
+      "end_date": "2026-02-19",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "A2 PRE-INT EVE ONLINE - 13.01.2026 - R1"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 137,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT MORNING - DUBLIN - 13.01.2026 - R1",
+      "course_key": "A2 PRE-INT MORNING",
+      "start_date": "2026-01-13",
+      "end_date": "2026-02-19",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 PRE-INTERMEDIARY",
+      "schedule_name": "A2 PRE-INTERMEDIARY (R1) starting 13.01.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 138,
+    "course_offering": {
+      "course_full_name": "C1 EVE ONLINE - DUBLIN - 13.01.2026 - R1",
+      "course_key": "C1 EVE ONLINE",
+      "start_date": "2026-01-13",
+      "end_date": "2026-02-19",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "C1 EVE ONLINE - 13.01.2026 - R1"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 139,
+    "course_offering": {
+      "course_full_name": "B1 MORNING - DUBLIN - 14.01.2026 - R1",
+      "course_key": "B1 MORNING",
+      "start_date": "2026-01-14",
+      "end_date": "2026-02-20",
+      "time_range": "9:30-12:00",
+      "days": [
+        "W",
+        "F"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 MORNING",
+      "schedule_name": "B1 MORNING (R1) starting 14.01.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 140,
+    "course_offering": {
+      "course_full_name": "A2 INTENSIVE - CAPE TOWN - 09.02.2026 - R2",
+      "course_key": "A2 INTENSIVE",
+      "start_date": "2026-02-09",
+      "end_date": "2026-03-06",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 INTENSIVE",
+      "schedule_name": "A2 INTENSIVE (R2) starting 09.02.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 141,
+    "course_offering": {
+      "course_full_name": "B1 INTENSIVE - CAPE TOWN - 09.02.2026 - R2",
+      "course_key": "B1 INTENSIVE",
+      "start_date": "2026-02-09",
+      "end_date": "2026-03-06",
+      "time_range": "15:30-18:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 INTENSIVE",
+      "schedule_name": "B1 INTENSIVE (R2) starting 09.02.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 142,
+    "course_offering": {
+      "course_full_name": "B2 INTENSIVE - CAPE TOWN - 09.02.2026 - R2",
+      "course_key": "B2 INTENSIVE",
+      "start_date": "2026-02-09",
+      "end_date": "2026-03-06",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 INTENSIVE",
+      "schedule_name": "B2 INTENSIVE (R2) starting 09.02.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 143,
+    "course_offering": {
+      "course_full_name": "B2 MORNING - EDMONTON - 23.02.2026 - R2",
+      "course_key": "B2 MORNING",
+      "start_date": "2026-02-23",
+      "end_date": "2026-04-02",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 MORNING",
+      "schedule_name": "B2 MORNING (R2) starting 23.02.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 144,
+    "course_offering": {
+      "course_full_name": "A1 BEGINNER - DUBLIN - 23.02.2026 - R2",
+      "course_key": "A1 BEGINNER",
+      "start_date": "2026-02-23",
+      "end_date": "2026-04-01",
+      "time_range": "15:30-17:30",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 445.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A1 BEGINNER",
+      "schedule_name": "A1 BEGINNER (R2) starting 23.02.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 145,
+    "course_offering": {
+      "course_full_name": "A2 ELEM MORNING - EDMONTON - 23.02.2026 - R2",
+      "course_key": "A2 ELEM MORNING",
+      "start_date": "2026-02-23",
+      "end_date": "2026-04-01",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 ELEMENTARY",
+      "schedule_name": "A2 ELEMENTARY (R2) starting 23.02.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 146,
+    "course_offering": {
+      "course_full_name": "B1 EVE ONLINE - EDMONTON - 23.02.2026 - R2",
+      "course_key": "B1 EVE ONLINE",
+      "start_date": "2026-02-23",
+      "end_date": "2026-04-01",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B1 EVE ONLINE - 23.02.2026 - R2"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 147,
+    "course_offering": {
+      "course_full_name": "B2 EVE ONLINE - EDMONTON - 23.02.2026 - R2",
+      "course_key": "B2 EVE ONLINE",
+      "start_date": "2026-02-23",
+      "end_date": "2026-04-01",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B2 EVE ONLINE - 23.02.2026 - R2"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 148,
+    "course_offering": {
+      "course_full_name": "BUSINESS EVE ONLINE - EDMONTON - 23.02.2026 - R2",
+      "course_key": "BUSINESS EVE ONLINE",
+      "start_date": "2026-02-23",
+      "end_date": "2026-04-01",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "BUSINESS EVE ONLINE - 23.02.2026 - R2"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 149,
+    "course_offering": {
+      "course_full_name": "C1 MORNING - EDMONTON - 24.02.2026 - R2",
+      "course_key": "C1 MORNING",
+      "start_date": "2026-02-24",
+      "end_date": "2026-04-03",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "C1 MORNING",
+      "schedule_name": "C1 MORNING (R2) starting 24.02.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 150,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT EVE ONLINE - EDMONTON - 24.02.2026 - R2",
+      "course_key": "A2 PRE-INT EVE ONLINE",
+      "start_date": "2026-02-24",
+      "end_date": "2026-04-02",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "A2 PRE-INT EVE ONLINE - 24.02.2026 - R2"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 151,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT MORNING - EDMONTON - 24.02.2026 - R2",
+      "course_key": "A2 PRE-INT MORNING",
+      "start_date": "2026-02-24",
+      "end_date": "2026-04-02",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 PRE-INTERMEDIARY",
+      "schedule_name": "A2 PRE-INTERMEDIARY (R2) starting 24.02.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 152,
+    "course_offering": {
+      "course_full_name": "C1 EVE ONLINE - EDMONTON - 24.02.2026 - R2",
+      "course_key": "C1 EVE ONLINE",
+      "start_date": "2026-02-24",
+      "end_date": "2026-04-02",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "C1 EVE ONLINE - 24.02.2026 - R2"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 153,
+    "course_offering": {
+      "course_full_name": "B1 MORNING - EDMONTON - 25.02.2026 - R2",
+      "course_key": "B1 MORNING",
+      "start_date": "2026-02-25",
+      "end_date": "2026-04-03",
+      "time_range": "9:30-12:00",
+      "days": [
+        "W",
+        "F"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 MORNING",
+      "schedule_name": "B1 MORNING (R2) starting 25.02.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 154,
+    "course_offering": {
+      "course_full_name": "A2 INTENSIVE - AUCKLAND - 09.03.2026 - R3",
+      "course_key": "A2 INTENSIVE",
+      "start_date": "2026-03-09",
+      "end_date": "2026-04-03",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 INTENSIVE",
+      "schedule_name": "A2 INTENSIVE (R3) starting 09.03.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 155,
+    "course_offering": {
+      "course_full_name": "B1 INTENSIVE - AUCKLAND - 09.03.2026 - R3",
+      "course_key": "B1 INTENSIVE",
+      "start_date": "2026-03-09",
+      "end_date": "2026-04-03",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 INTENSIVE",
+      "schedule_name": "B1 INTENSIVE (R3) starting 09.03.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 156,
+    "course_offering": {
+      "course_full_name": "B2 INTENSIVE - AUCKLAND - 09.03.2026 - R3",
+      "course_key": "B2 INTENSIVE",
+      "start_date": "2026-03-09",
+      "end_date": "2026-04-03",
+      "time_range": "15:30-18:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 INTENSIVE",
+      "schedule_name": "B2 INTENSIVE (R3) starting 09.03.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 157,
+    "course_offering": {
+      "course_full_name": "A2 INTENSIVE - BOSTON - 06.04.2026 - R4",
+      "course_key": "A2 INTENSIVE",
+      "start_date": "2026-04-06",
+      "end_date": "2026-05-01",
+      "time_range": "15:30-18:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 INTENSIVE",
+      "schedule_name": "A2 INTENSIVE (R4) starting 06.04.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 158,
+    "course_offering": {
+      "course_full_name": "B1 INTENSIVE - BOSTON - 06.04.2026 - R4",
+      "course_key": "B1 INTENSIVE",
+      "start_date": "2026-04-06",
+      "end_date": "2026-05-01",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 INTENSIVE",
+      "schedule_name": "B1 INTENSIVE (R4) starting 06.04.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 159,
+    "course_offering": {
+      "course_full_name": "B2 INTENSIVE - BOSTON - 06.04.2026 - R4",
+      "course_key": "B2 INTENSIVE",
+      "start_date": "2026-04-06",
+      "end_date": "2026-05-01",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 INTENSIVE",
+      "schedule_name": "B2 INTENSIVE (R4) starting 06.04.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 160,
+    "course_offering": {
+      "course_full_name": "B2 MORNING - FIFE - 06.04.2026 - R3",
+      "course_key": "B2 MORNING",
+      "start_date": "2026-04-06",
+      "end_date": "2026-05-14",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 MORNING",
+      "schedule_name": "B2 MORNING (R3) starting 06.04.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 161,
+    "course_offering": {
+      "course_full_name": "A1 BEGINNER - EDMONTON - 06.04.2026 - R3",
+      "course_key": "A1 BEGINNER",
+      "start_date": "2026-04-06",
+      "end_date": "2026-05-13",
+      "time_range": "15:30-17:30",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 445.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A1 BEGINNER",
+      "schedule_name": "A1 BEGINNER (R3) starting 06.04.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 162,
+    "course_offering": {
+      "course_full_name": "A2 ELEM MORNING - FIFE - 06.04.2026 - R3",
+      "course_key": "A2 ELEM MORNING",
+      "start_date": "2026-04-06",
+      "end_date": "2026-05-13",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 ELEMENTARY",
+      "schedule_name": "A2 ELEMENTARY (R3) starting 06.04.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 163,
+    "course_offering": {
+      "course_full_name": "B1 EVE ONLINE - FIFE - 06.04.2026 - R3",
+      "course_key": "B1 EVE ONLINE",
+      "start_date": "2026-04-06",
+      "end_date": "2026-05-13",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B1 EVE ONLINE - 06.04.2026 - R3"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 164,
+    "course_offering": {
+      "course_full_name": "B2 EVE ONLINE - FIFE - 06.04.2026 - R3",
+      "course_key": "B2 EVE ONLINE",
+      "start_date": "2026-04-06",
+      "end_date": "2026-05-13",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B2 EVE ONLINE - 06.04.2026 - R3"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 165,
+    "course_offering": {
+      "course_full_name": "BUSINESS EVE ONLINE - FIFE - 06.04.2026 - R3",
+      "course_key": "BUSINESS EVE ONLINE",
+      "start_date": "2026-04-06",
+      "end_date": "2026-05-13",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "BUSINESS EVE ONLINE - 06.04.2026 - R3"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 166,
+    "course_offering": {
+      "course_full_name": "C1 MORNING - FIFE - 07.04.2026 - R3",
+      "course_key": "C1 MORNING",
+      "start_date": "2026-04-07",
+      "end_date": "2026-05-15",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "C1 MORNING",
+      "schedule_name": "C1 MORNING (R3) starting 07.04.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 167,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT EVE ONLINE - FIFE - 07.04.2026 - R3",
+      "course_key": "A2 PRE-INT EVE ONLINE",
+      "start_date": "2026-04-07",
+      "end_date": "2026-05-14",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "A2 PRE-INT EVE ONLINE - 07.04.2026 - R3"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 168,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT MORNING - FIFE - 07.04.2026 - R3",
+      "course_key": "A2 PRE-INT MORNING",
+      "start_date": "2026-04-07",
+      "end_date": "2026-05-14",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 PRE-INTERMEDIARY",
+      "schedule_name": "A2 PRE-INTERMEDIARY (R3) starting 07.04.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 169,
+    "course_offering": {
+      "course_full_name": "C1 EVE ONLINE - FIFE - 07.04.2026 - R3",
+      "course_key": "C1 EVE ONLINE",
+      "start_date": "2026-04-07",
+      "end_date": "2026-05-14",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "C1 EVE ONLINE - 07.04.2026 - R3"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 170,
+    "course_offering": {
+      "course_full_name": "B1 MORNING - FIFE - 08.04.2026 - R3",
+      "course_key": "B1 MORNING",
+      "start_date": "2026-04-08",
+      "end_date": "2026-05-15",
+      "time_range": "9:30-12:00",
+      "days": [
+        "W",
+        "F"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 MORNING",
+      "schedule_name": "B1 MORNING (R3) starting 08.04.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 171,
+    "course_offering": {
+      "course_full_name": "A2 INTENSIVE - CAPE TOWN - 11.05.2026 - R5",
+      "course_key": "A2 INTENSIVE",
+      "start_date": "2026-05-11",
+      "end_date": "2026-06-05",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 INTENSIVE",
+      "schedule_name": "A2 INTENSIVE (R5) starting 11.05.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 172,
+    "course_offering": {
+      "course_full_name": "B1 INTENSIVE - CAPE TOWN - 11.05.2026 - R5",
+      "course_key": "B1 INTENSIVE",
+      "start_date": "2026-05-11",
+      "end_date": "2026-06-05",
+      "time_range": "15:30-18:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 INTENSIVE",
+      "schedule_name": "B1 INTENSIVE (R5) starting 11.05.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 173,
+    "course_offering": {
+      "course_full_name": "B2 INTENSIVE - CAPE TOWN - 11.05.2026 - R5",
+      "course_key": "B2 INTENSIVE",
+      "start_date": "2026-05-11",
+      "end_date": "2026-06-05",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 INTENSIVE",
+      "schedule_name": "B2 INTENSIVE (R5) starting 11.05.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 174,
+    "course_offering": {
+      "course_full_name": "B2 MORNING - DUBLIN - 25.05.2026 - R4",
+      "course_key": "B2 MORNING",
+      "start_date": "2026-05-25",
+      "end_date": "2026-07-02",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 MORNING",
+      "schedule_name": "B2 MORNING (R4) starting 25.05.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 175,
+    "course_offering": {
+      "course_full_name": "A1 BEGINNER - DUBLIN - 25.05.2026 - R4",
+      "course_key": "A1 BEGINNER",
+      "start_date": "2026-05-25",
+      "end_date": "2026-07-01",
+      "time_range": "15:30-17:30",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 445.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A1 BEGINNER",
+      "schedule_name": "A1 BEGINNER (R4) starting 25.05.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 176,
+    "course_offering": {
+      "course_full_name": "A2 ELEM MORNING - DUBLIN - 25.05.2026 - R4",
+      "course_key": "A2 ELEM MORNING",
+      "start_date": "2026-05-25",
+      "end_date": "2026-07-01",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 ELEMENTARY",
+      "schedule_name": "A2 ELEMENTARY (R4) starting 25.05.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 177,
+    "course_offering": {
+      "course_full_name": "B1 EVE ONLINE - DUBLIN - 25.05.2026 - R4",
+      "course_key": "B1 EVE ONLINE",
+      "start_date": "2026-05-25",
+      "end_date": "2026-07-01",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B1 EVE ONLINE - 25.05.2026 - R4"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 178,
+    "course_offering": {
+      "course_full_name": "B2 EVE ONLINE - DUBLIN - 25.05.2026 - R4",
+      "course_key": "B2 EVE ONLINE",
+      "start_date": "2026-05-25",
+      "end_date": "2026-07-01",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B2 EVE ONLINE - 25.05.2026 - R4"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 179,
+    "course_offering": {
+      "course_full_name": "BUSINESS EVE ONLINE - DUBLIN - 25.05.2026 - R4",
+      "course_key": "BUSINESS EVE ONLINE",
+      "start_date": "2026-05-25",
+      "end_date": "2026-07-01",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "BUSINESS EVE ONLINE - 25.05.2026 - R4"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 180,
+    "course_offering": {
+      "course_full_name": "C1 MORNING - DUBLIN - 26.05.2026 - R4",
+      "course_key": "C1 MORNING",
+      "start_date": "2026-05-26",
+      "end_date": "2026-07-03",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "C1 MORNING",
+      "schedule_name": "C1 MORNING (R4) starting 26.05.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 181,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT EVE ONLINE - DUBLIN - 26.05.2026 - R4",
+      "course_key": "A2 PRE-INT EVE ONLINE",
+      "start_date": "2026-05-26",
+      "end_date": "2026-07-02",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "A2 PRE-INT EVE ONLINE - 26.05.2026 - R4"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 182,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT MORNING - DUBLIN - 26.05.2026 - R4",
+      "course_key": "A2 PRE-INT MORNING",
+      "start_date": "2026-05-26",
+      "end_date": "2026-07-02",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 PRE-INTERMEDIARY",
+      "schedule_name": "A2 PRE-INTERMEDIARY (R4) starting 26.05.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 183,
+    "course_offering": {
+      "course_full_name": "C1 EVE ONLINE - DUBLIN - 26.05.2026 - R4",
+      "course_key": "C1 EVE ONLINE",
+      "start_date": "2026-05-26",
+      "end_date": "2026-07-02",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "C1 EVE ONLINE - 26.05.2026 - R4"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 184,
+    "course_offering": {
+      "course_full_name": "B1 MORNING - DUBLIN - 27.05.2026 - R4",
+      "course_key": "B1 MORNING",
+      "start_date": "2026-05-27",
+      "end_date": "2026-07-03",
+      "time_range": "9:30-12:00",
+      "days": [
+        "W",
+        "F"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 MORNING",
+      "schedule_name": "B1 MORNING (R4) starting 27.05.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 185,
+    "course_offering": {
+      "course_full_name": "A2 INTENSIVE - AUCKLAND - 08.06.2026 - R6",
+      "course_key": "A2 INTENSIVE",
+      "start_date": "2026-06-08",
+      "end_date": "2026-07-03",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 INTENSIVE",
+      "schedule_name": "A2 INTENSIVE (R6) starting 08.06.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 186,
+    "course_offering": {
+      "course_full_name": "B1 INTENSIVE - AUCKLAND - 08.06.2026 - R6",
+      "course_key": "B1 INTENSIVE",
+      "start_date": "2026-06-08",
+      "end_date": "2026-07-03",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 INTENSIVE",
+      "schedule_name": "B1 INTENSIVE (R6) starting 08.06.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 187,
+    "course_offering": {
+      "course_full_name": "B2 INTENSIVE - AUCKLAND - 08.06.2026 - R6",
+      "course_key": "B2 INTENSIVE",
+      "start_date": "2026-06-08",
+      "end_date": "2026-07-03",
+      "time_range": "15:30-18:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 INTENSIVE",
+      "schedule_name": "B2 INTENSIVE (R6) starting 08.06.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 188,
+    "course_offering": {
+      "course_full_name": "A2 INTENSIVE - BOSTON - 06.07.2026 - R7",
+      "course_key": "A2 INTENSIVE",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-31",
+      "time_range": "15:30-18:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 INTENSIVE",
+      "schedule_name": "A2 INTENSIVE (R7) starting 06.07.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 189,
+    "course_offering": {
+      "course_full_name": "B1 INTENSIVE - BOSTON - 06.07.2026 - R7",
+      "course_key": "B1 INTENSIVE",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-31",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 INTENSIVE",
+      "schedule_name": "B1 INTENSIVE (R7) starting 06.07.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 190,
+    "course_offering": {
+      "course_full_name": "B2 INTENSIVE - BOSTON - 06.07.2026 - R7",
+      "course_key": "B2 INTENSIVE",
+      "start_date": "2026-07-06",
+      "end_date": "2026-07-31",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 INTENSIVE",
+      "schedule_name": "B2 INTENSIVE (R7) starting 06.07.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 191,
+    "course_offering": {
+      "course_full_name": "B2 MORNING - EDMONTON - 06.07.2026 - R5",
+      "course_key": "B2 MORNING",
+      "start_date": "2026-07-06",
+      "end_date": "2026-08-13",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 MORNING",
+      "schedule_name": "B2 MORNING (R5) starting 06.07.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 192,
+    "course_offering": {
+      "course_full_name": "A1 BEGINNER - EDMONTON - 06.07.2026 - R5",
+      "course_key": "A1 BEGINNER",
+      "start_date": "2026-07-06",
+      "end_date": "2026-08-12",
+      "time_range": "15:30-17:30",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 445.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A1 BEGINNER",
+      "schedule_name": "A1 BEGINNER (R5) starting 06.07.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 193,
+    "course_offering": {
+      "course_full_name": "A2 ELEM MORNING - EDMONTON - 06.07.2026 - R5",
+      "course_key": "A2 ELEM MORNING",
+      "start_date": "2026-07-06",
+      "end_date": "2026-08-12",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 ELEMENTARY",
+      "schedule_name": "A2 ELEMENTARY (R5) starting 06.07.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 194,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT EVE ONLINE - EDMONTON - 06.07.2026 - R5",
+      "course_key": "A2 PRE-INT EVE ONLINE",
+      "start_date": "2026-07-06",
+      "end_date": "2026-08-12",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "A2 PRE-INT EVE ONLINE - 06.07.2026 - R5"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 195,
+    "course_offering": {
+      "course_full_name": "B1 EVE ONLINE - EDMONTON - 06.07.2026 - R5",
+      "course_key": "B1 EVE ONLINE",
+      "start_date": "2026-07-06",
+      "end_date": "2026-08-12",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B1 EVE ONLINE - 06.07.2026 - R5"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 196,
+    "course_offering": {
+      "course_full_name": "B2 EVE ONLINE - EDMONTON - 06.07.2026 - R5",
+      "course_key": "B2 EVE ONLINE",
+      "start_date": "2026-07-06",
+      "end_date": "2026-08-12",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B2 EVE ONLINE - 06.07.2026 - R5"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 197,
+    "course_offering": {
+      "course_full_name": "BUSINESS EVE ONLINE - EDMONTON - 06.07.2026 - R5",
+      "course_key": "BUSINESS EVE ONLINE",
+      "start_date": "2026-07-06",
+      "end_date": "2026-08-12",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "BUSINESS EVE ONLINE - 06.07.2026 - R5"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 198,
+    "course_offering": {
+      "course_full_name": "C1 MORNING - EDMONTON - 07.07.2026 - R5",
+      "course_key": "C1 MORNING",
+      "start_date": "2026-07-07",
+      "end_date": "2026-08-14",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "C1 MORNING",
+      "schedule_name": "C1 MORNING (R5) starting 07.07.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 199,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT MORNING - EDMONTON - 07.07.2026 - R5",
+      "course_key": "A2 PRE-INT MORNING",
+      "start_date": "2026-07-07",
+      "end_date": "2026-08-13",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 PRE-INTERMEDIARY",
+      "schedule_name": "A2 PRE-INTERMEDIARY (R5) starting 07.07.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 200,
+    "course_offering": {
+      "course_full_name": "C1 EVE ONLINE - EDMONTON - 07.07.2026 - R5",
+      "course_key": "C1 EVE ONLINE",
+      "start_date": "2026-07-07",
+      "end_date": "2026-08-13",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "C1 EVE ONLINE - 07.07.2026 - R5"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 201,
+    "course_offering": {
+      "course_full_name": "B1 MORNING - EDMONTON - 08.07.2026 - R5",
+      "course_key": "B1 MORNING",
+      "start_date": "2026-07-08",
+      "end_date": "2026-08-14",
+      "time_range": "9:30-12:00",
+      "days": [
+        "W",
+        "F"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 MORNING",
+      "schedule_name": "B1 MORNING (R5) starting 08.07.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 202,
+    "course_offering": {
+      "course_full_name": "A2 INTENSIVE - CAPE TOWN - 03.08.2026 - R8",
+      "course_key": "A2 INTENSIVE",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-28",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 INTENSIVE",
+      "schedule_name": "A2 INTENSIVE (R8) starting 03.08.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 203,
+    "course_offering": {
+      "course_full_name": "B1 INTENSIVE - CAPE TOWN - 03.08.2026 - R8",
+      "course_key": "B1 INTENSIVE",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-28",
+      "time_range": "15:30-18:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 INTENSIVE",
+      "schedule_name": "B1 INTENSIVE (R8) starting 03.08.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 204,
+    "course_offering": {
+      "course_full_name": "B2 INTENSIVE - CAPE TOWN - 03.08.2026 - R8",
+      "course_key": "B2 INTENSIVE",
+      "start_date": "2026-08-03",
+      "end_date": "2026-08-28",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 INTENSIVE",
+      "schedule_name": "B2 INTENSIVE (R8) starting 03.08.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 205,
+    "course_offering": {
+      "course_full_name": "B2 MORNING - FIFE - 17.08.2026 - R6",
+      "course_key": "B2 MORNING",
+      "start_date": "2026-08-17",
+      "end_date": "2026-09-24",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 MORNING",
+      "schedule_name": "B2 MORNING (R6) starting 17.08.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 206,
+    "course_offering": {
+      "course_full_name": "A1 BEGINNER - DUBLIN - 17.08.2026 - R6",
+      "course_key": "A1 BEGINNER",
+      "start_date": "2026-08-17",
+      "end_date": "2026-09-23",
+      "time_range": "15:30-17:30",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 445.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A1 BEGINNER",
+      "schedule_name": "A1 BEGINNER (R6) starting 17.08.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 207,
+    "course_offering": {
+      "course_full_name": "A2 ELEM MORNING - FIFE - 17.08.2026 - R6",
+      "course_key": "A2 ELEM MORNING",
+      "start_date": "2026-08-17",
+      "end_date": "2026-09-23",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 ELEMENTARY",
+      "schedule_name": "A2 ELEMENTARY (R6) starting 17.08.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 208,
+    "course_offering": {
+      "course_full_name": "B1 EVE ONLINE - FIFE - 17.08.2026 - R6",
+      "course_key": "B1 EVE ONLINE",
+      "start_date": "2026-08-17",
+      "end_date": "2026-09-23",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B1 EVE ONLINE - 17.08.2026 - R6"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 209,
+    "course_offering": {
+      "course_full_name": "B2 EVE ONLINE - FIFE - 17.08.2026 - R6",
+      "course_key": "B2 EVE ONLINE",
+      "start_date": "2026-08-17",
+      "end_date": "2026-09-23",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B2 EVE ONLINE - 17.08.2026 - R6"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 210,
+    "course_offering": {
+      "course_full_name": "BUSINESS EVE ONLINE - FIFE - 17.08.2026 - R6",
+      "course_key": "BUSINESS EVE ONLINE",
+      "start_date": "2026-08-17",
+      "end_date": "2026-09-23",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "BUSINESS EVE ONLINE - 17.08.2026 - R6"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 211,
+    "course_offering": {
+      "course_full_name": "C1 MORNING - FIFE - 18.08.2026 - R6",
+      "course_key": "C1 MORNING",
+      "start_date": "2026-08-18",
+      "end_date": "2026-09-25",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "C1 MORNING",
+      "schedule_name": "C1 MORNING (R6) starting 18.08.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 212,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT EVE ONLINE - FIFE - 18.08.2026 - R6",
+      "course_key": "A2 PRE-INT EVE ONLINE",
+      "start_date": "2026-08-18",
+      "end_date": "2026-09-24",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "A2 PRE-INT EVE ONLINE - 18.08.2026 - R6"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 213,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT MORNING - FIFE - 18.08.2026 - R6",
+      "course_key": "A2 PRE-INT MORNING",
+      "start_date": "2026-08-18",
+      "end_date": "2026-09-24",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 PRE-INTERMEDIARY",
+      "schedule_name": "A2 PRE-INTERMEDIARY (R6) starting 18.08.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 214,
+    "course_offering": {
+      "course_full_name": "C1 EVE ONLINE - FIFE - 18.08.2026 - R6",
+      "course_key": "C1 EVE ONLINE",
+      "start_date": "2026-08-18",
+      "end_date": "2026-09-24",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "C1 EVE ONLINE - 18.08.2026 - R6"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 215,
+    "course_offering": {
+      "course_full_name": "B1 MORNING - FIFE - 19.08.2026 - R6",
+      "course_key": "B1 MORNING",
+      "start_date": "2026-08-19",
+      "end_date": "2026-09-25",
+      "time_range": "9:30-12:00",
+      "days": [
+        "W",
+        "F"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 MORNING",
+      "schedule_name": "B1 MORNING (R6) starting 19.08.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 216,
+    "course_offering": {
+      "course_full_name": "A2 INTENSIVE - AUCKLAND - 31.08.2026 - R9",
+      "course_key": "A2 INTENSIVE",
+      "start_date": "2026-08-31",
+      "end_date": "2026-09-25",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 INTENSIVE",
+      "schedule_name": "A2 INTENSIVE (R9) starting 31.08.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 217,
+    "course_offering": {
+      "course_full_name": "B1 INTENSIVE - AUCKLAND - 31.08.2026 - R9",
+      "course_key": "B1 INTENSIVE",
+      "start_date": "2026-08-31",
+      "end_date": "2026-09-25",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 INTENSIVE",
+      "schedule_name": "B1 INTENSIVE (R9) starting 31.08.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 218,
+    "course_offering": {
+      "course_full_name": "B2 INTENSIVE - AUCKLAND - 31.08.2026 - R9",
+      "course_key": "B2 INTENSIVE",
+      "start_date": "2026-08-31",
+      "end_date": "2026-09-25",
+      "time_range": "15:30-18:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 INTENSIVE",
+      "schedule_name": "B2 INTENSIVE (R9) starting 31.08.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 219,
+    "course_offering": {
+      "course_full_name": "A2 INTENSIVE - BOSTON - 28.09.2026 - R10",
+      "course_key": "A2 INTENSIVE",
+      "start_date": "2026-09-28",
+      "end_date": "2026-10-23",
+      "time_range": "15:30-18:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 INTENSIVE",
+      "schedule_name": "A2 INTENSIVE (R10) starting 28.09.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 220,
+    "course_offering": {
+      "course_full_name": "B1 INTENSIVE - BOSTON - 28.09.2026 - R10",
+      "course_key": "B1 INTENSIVE",
+      "start_date": "2026-09-28",
+      "end_date": "2026-10-23",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 INTENSIVE",
+      "schedule_name": "B1 INTENSIVE (R10) starting 28.09.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 221,
+    "course_offering": {
+      "course_full_name": "B2 INTENSIVE - BOSTON - 28.09.2026 - R10",
+      "course_key": "B2 INTENSIVE",
+      "start_date": "2026-09-28",
+      "end_date": "2026-10-23",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 INTENSIVE",
+      "schedule_name": "B2 INTENSIVE (R10) starting 28.09.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 222,
+    "course_offering": {
+      "course_full_name": "B2 MORNING - DUBLIN - 28.09.2026 - R7",
+      "course_key": "B2 MORNING",
+      "start_date": "2026-09-28",
+      "end_date": "2026-11-05",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 MORNING",
+      "schedule_name": "B2 MORNING (R7) starting 28.09.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 223,
+    "course_offering": {
+      "course_full_name": "A1 BEGINNER - EDMONTON - 28.09.2026 - R7",
+      "course_key": "A1 BEGINNER",
+      "start_date": "2026-09-28",
+      "end_date": "2026-11-04",
+      "time_range": "15:30-17:30",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 445.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A1 BEGINNER",
+      "schedule_name": "A1 BEGINNER (R7) starting 28.09.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 224,
+    "course_offering": {
+      "course_full_name": "A2 ELEM MORNING - DUBLIN - 28.09.2026 - R7",
+      "course_key": "A2 ELEM MORNING",
+      "start_date": "2026-09-28",
+      "end_date": "2026-11-04",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 ELEMENTARY",
+      "schedule_name": "A2 ELEMENTARY (R7) starting 28.09.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 225,
+    "course_offering": {
+      "course_full_name": "B1 EVE ONLINE - DUBLIN - 28.09.2026 - R7",
+      "course_key": "B1 EVE ONLINE",
+      "start_date": "2026-09-28",
+      "end_date": "2026-11-04",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 360.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B1 EVE ONLINE - 28.09.2026 - R7"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 226,
+    "course_offering": {
+      "course_full_name": "B2 EVE ONLINE - DUBLIN - 28.09.2026 - R7",
+      "course_key": "B2 EVE ONLINE",
+      "start_date": "2026-09-28",
+      "end_date": "2026-11-04",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B2 EVE ONLINE - 28.09.2026 - R7"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 227,
+    "course_offering": {
+      "course_full_name": "BUSINESS EVE ONLINE - DUBLIN - 28.09.2026 - R7",
+      "course_key": "BUSINESS EVE ONLINE",
+      "start_date": "2026-09-28",
+      "end_date": "2026-11-04",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "BUSINESS EVE ONLINE - 28.09.2026 - R7"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 228,
+    "course_offering": {
+      "course_full_name": "C1 MORNING - DUBLIN - 29.09.2026 - R7",
+      "course_key": "C1 MORNING",
+      "start_date": "2026-09-29",
+      "end_date": "2026-11-06",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "C1 MORNING",
+      "schedule_name": "C1 MORNING (R7) starting 29.09.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 229,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT EVE ONLINE - DUBLIN - 29.09.2026 - R7",
+      "course_key": "A2 PRE-INT EVE ONLINE",
+      "start_date": "2026-09-29",
+      "end_date": "2026-11-05",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "A2 PRE-INT EVE ONLINE - 29.09.2026 - R7"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 230,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT MORNING - DUBLIN - 29.09.2026 - R7",
+      "course_key": "A2 PRE-INT MORNING",
+      "start_date": "2026-09-29",
+      "end_date": "2026-11-05",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 PRE-INTERMEDIARY",
+      "schedule_name": "A2 PRE-INTERMEDIARY (R7) starting 29.09.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 231,
+    "course_offering": {
+      "course_full_name": "C1 EVE ONLINE - DUBLIN - 29.09.2026 - R7",
+      "course_key": "C1 EVE ONLINE",
+      "start_date": "2026-09-29",
+      "end_date": "2026-11-05",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "C1 EVE ONLINE - 29.09.2026 - R7"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 232,
+    "course_offering": {
+      "course_full_name": "B1 MORNING - DUBLIN - 30.09.2026 - R7",
+      "course_key": "B1 MORNING",
+      "start_date": "2026-09-30",
+      "end_date": "2026-11-06",
+      "time_range": "9:30-12:00",
+      "days": [
+        "W",
+        "F"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 MORNING",
+      "schedule_name": "B1 MORNING (R7) starting 30.09.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 233,
+    "course_offering": {
+      "course_full_name": "A2 INTENSIVE - CAPE TOWN - 26.10.2026 - R11",
+      "course_key": "A2 INTENSIVE",
+      "start_date": "2026-10-26",
+      "end_date": "2026-11-20",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 INTENSIVE",
+      "schedule_name": "A2 INTENSIVE (R11) starting 26.10.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 234,
+    "course_offering": {
+      "course_full_name": "B1 INTENSIVE - CAPE TOWN - 26.10.2026 - R11",
+      "course_key": "B1 INTENSIVE",
+      "start_date": "2026-10-26",
+      "end_date": "2026-11-20",
+      "time_range": "15:30-18:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 INTENSIVE",
+      "schedule_name": "B1 INTENSIVE (R11) starting 26.10.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 235,
+    "course_offering": {
+      "course_full_name": "B2 INTENSIVE - CAPE TOWN - 26.10.2026 - R11",
+      "course_key": "B2 INTENSIVE",
+      "start_date": "2026-10-26",
+      "end_date": "2026-11-20",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 INTENSIVE",
+      "schedule_name": "B2 INTENSIVE (R11) starting 26.10.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 236,
+    "course_offering": {
+      "course_full_name": "B1 MORNING - EDMONTON - 04.11.2026 - R8",
+      "course_key": "B1 MORNING",
+      "start_date": "2026-11-04",
+      "end_date": "2026-12-11",
+      "time_range": "9:30-12:00",
+      "days": [
+        "W",
+        "F"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 MORNING",
+      "schedule_name": "B1 MORNING (R8) starting 04.11.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 237,
+    "course_offering": {
+      "course_full_name": "B2 MORNING - EDMONTON - 09.11.2026 - R8",
+      "course_key": "B2 MORNING",
+      "start_date": "2026-11-09",
+      "end_date": "2026-12-17",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B2 MORNING",
+      "schedule_name": "B2 MORNING (R8) starting 09.11.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 238,
+    "course_offering": {
+      "course_full_name": "A1 BEGINNER - DUBLIN - 09.11.2026 - R8",
+      "course_key": "A1 BEGINNER",
+      "start_date": "2026-11-09",
+      "end_date": "2026-12-16",
+      "time_range": "15:30-17:30",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 445.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A1 BEGINNER",
+      "schedule_name": "A1 BEGINNER (R8) starting 09.11.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 239,
+    "course_offering": {
+      "course_full_name": "A2 ELEM MORNING - EDMONTON - 09.11.2026 - R8",
+      "course_key": "A2 ELEM MORNING",
+      "start_date": "2026-11-09",
+      "end_date": "2026-12-16",
+      "time_range": "9:30-12:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 ELEMENTARY",
+      "schedule_name": "A2 ELEMENTARY (R8) starting 09.11.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 240,
+    "course_offering": {
+      "course_full_name": "B1 EVE ONLINE - EDMONTON - 09.11.2026 - R8",
+      "course_key": "B1 EVE ONLINE",
+      "start_date": "2026-11-09",
+      "end_date": "2026-12-16",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B1 EVE ONLINE - 09.11.2026 - R8"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 241,
+    "course_offering": {
+      "course_full_name": "B2 EVE ONLINE - EDMONTON - 09.11.2026 - R8",
+      "course_key": "B2 EVE ONLINE",
+      "start_date": "2026-11-09",
+      "end_date": "2026-12-16",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "B2 EVE ONLINE - 09.11.2026 - R8"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 242,
+    "course_offering": {
+      "course_full_name": "BUSINESS EVE ONLINE - EDMONTON - 09.11.2026 - R8",
+      "course_key": "BUSINESS EVE ONLINE",
+      "start_date": "2026-11-09",
+      "end_date": "2026-12-16",
+      "time_range": "19:00-21:00",
+      "days": [
+        "M",
+        "W"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "BUSINESS EVE ONLINE - 09.11.2026 - R8"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 243,
+    "course_offering": {
+      "course_full_name": "C1 MORNING - EDMONTON - 10.11.2026 - R8",
+      "course_key": "C1 MORNING",
+      "start_date": "2026-11-10",
+      "end_date": "2026-12-18",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "F"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "C1 MORNING",
+      "schedule_name": "C1 MORNING (R8) starting 10.11.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 244,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT EVE ONLINE - EDMONTON - 10.11.2026 - R8",
+      "course_key": "A2 PRE-INT EVE ONLINE",
+      "start_date": "2026-11-10",
+      "end_date": "2026-12-17",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "A2 PRE-INT EVE ONLINE - 10.11.2026 - R8"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 245,
+    "course_offering": {
+      "course_full_name": "A2 PRE-INT MORNING - EDMONTON - 10.11.2026 - R8",
+      "course_key": "A2 PRE-INT MORNING",
+      "start_date": "2026-11-10",
+      "end_date": "2026-12-17",
+      "time_range": "9:30-12:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "30 hours/6 weeks",
+      "price": 525.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 PRE-INTERMEDIARY",
+      "schedule_name": "A2 PRE-INTERMEDIARY (R8) starting 10.11.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 246,
+    "course_offering": {
+      "course_full_name": "C1 EVE ONLINE - EDMONTON - 10.11.2026 - R8",
+      "course_key": "C1 EVE ONLINE",
+      "start_date": "2026-11-10",
+      "end_date": "2026-12-17",
+      "time_range": "19:00-21:00",
+      "days": [
+        "T",
+        "Th"
+      ],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "EVENING ONLINE",
+      "schedule_name": "C1 EVE ONLINE - 10.11.2026 - R8"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 247,
+    "course_offering": {
+      "course_full_name": "A2 INTENSIVE - AUCKLAND - 23.11.2026 - R12",
+      "course_key": "A2 INTENSIVE",
+      "start_date": "2026-11-23",
+      "end_date": "2026-12-18",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "A2 INTENSIVE",
+      "schedule_name": "A2 INTENSIVE (R12) starting 23.11.2026"
+    },
+    "import_status": "ok"
+  },
+  {
+    "source_row": 248,
+    "course_offering": {
+      "course_full_name": "B1 INTENSIVE - AUCKLAND - 23.11.2026 - R12",
+      "course_key": "B1 INTENSIVE",
+      "start_date": "2026-11-23",
+      "end_date": "2026-12-18",
+      "time_range": "12:30-15:00",
+      "days": [
+        "M",
+        "T",
+        "Th",
+        "F"
+      ],
+      "hours_raw": "40 hours/4 weeks",
+      "price": 640.0,
+      "location": "MixTree Languages - Eerste Weteringplantsoen 2c - 1017 SJ Amsterdam",
+      "delivery_mode": "onsite",
+      "registration_link": "https://mixtreelang.nl/free-english-level-check-enrolment/",
+      "schedule_type": "B1 INTENSIVE",
+      "schedule_name": "B1 INTENSIVE (R12) starting 23.11.2026"
+    },
+    "import_status": "ok"
+  }
+]

@@ -1,0 +1,4 @@
+# No external dependencies required for the minimal adapter
+# If you want better date parsing and phone validation, add:
+# python-dateutil
+# phonenumbers

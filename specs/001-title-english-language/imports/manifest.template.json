@@ -1,0 +1,8 @@
+{
+  "description": "Manifest template describing import files and suggested mappings for the English language school feature",
+  "files": {
+    "trello-sample.csv": "maps: card_id -> external_id, card_name -> name, desc -> activity_notes, customfield:email -> email, customfield:phone -> phone, list -> status, created_at -> created_at",
+    "courses-sample.csv": "maps: course_full_name -> course_full_name, hrs -> total_hours, price -> price, start_date -> start_date, times -> schedule_time, prog -> program, type -> type, level -> level, end_date -> end_date"
+  },
+  "notes": "Replace with actual filenames and mapping rules from your exports. Provide Trello JSON if you prefer richer export fields. Do not commit production PII unless sanitized."
+}

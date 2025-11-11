@@ -1,0 +1,18 @@
+[
+  {
+    "source_row": 1,
+    "course_offering": {
+      "course_key": "B1_EVE _EDMON_1",
+      "course_full_name": "B1 EVE ONLINE - EDMONTON - 13.01.2025 - R1",
+      "start_date": "2025-01-13",
+      "end_date": "2025-02-19",
+      "time_range": "19:00-21:00",
+      "days": ["M","W"],
+      "hours_raw": "24 hours/6 weeks",
+      "price": 385.0,
+      "location": "ONLINE",
+      "delivery_mode": "online"
+    },
+    "import_status": "ok"
+  }
+]
