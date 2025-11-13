@@ -76,10 +76,14 @@ fi
 if [ -d storage ] && [ -d bootstrap/cache ]; then
   # Attempt to chown to the current user only if that user/group exists on the system.
   DEPLOY_USER=$(whoami 2>/dev/null || true)
-  if [ -n "$DEPLOY_USER" ] && grep -qE "^${DEPLOY_USER}:" /etc/group 2>/dev/null; then
-    chown -R "$DEPLOY_USER":"$DEPLOY_USER" storage bootstrap/cache || echo "chown returned non-zero"
+  if [ -n "$DEPLOY_USER" ]; then
+    # Try chown but silence its stderr (some chrooted environments report
+    # "invalid group" to stderr). If it fails, log a short message instead
+    # of printing the chown error text which is noisy in deploy logs.
+    chown -R "$DEPLOY_USER":"$DEPLOY_USER" storage bootstrap/cache 2>/dev/null || \
+      echo "Skipping chown: user/group '$DEPLOY_USER' not found or chown failed"
   else
-    echo "Skipping chown: user/group '$DEPLOY_USER' not found on system"
+    echo "Skipping chown: could not determine deploy user"
   fi
   chmod -R 775 storage bootstrap/cache || true
 fi
