@@ -74,7 +74,13 @@ fi
 
 # Permissions
 if [ -d storage ] && [ -d bootstrap/cache ]; then
-  chown -R $(whoami):$(whoami) storage bootstrap/cache || true
+  # Attempt to chown to the current user only if that user/group exists on the system.
+  DEPLOY_USER=$(whoami 2>/dev/null || true)
+  if [ -n "$DEPLOY_USER" ] && grep -qE "^${DEPLOY_USER}:" /etc/group 2>/dev/null; then
+    chown -R "$DEPLOY_USER":"$DEPLOY_USER" storage bootstrap/cache || echo "chown returned non-zero"
+  else
+    echo "Skipping chown: user/group '$DEPLOY_USER' not found on system"
+  fi
   chmod -R 775 storage bootstrap/cache || true
 fi
 
