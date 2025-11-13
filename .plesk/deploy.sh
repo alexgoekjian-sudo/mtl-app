@@ -15,6 +15,10 @@ echo "Repository root: $REPO_ROOT"
 
 # Persistent deploy log: capture all output to a repo-local log for later inspection
 LOGFILE="$REPO_ROOT/.plesk/deploy.log"
+# Ensure the .plesk directory exists before writing the logfile. In some Plesk
+# invocations the computed REPO_ROOT may point to a parent directory that
+# doesn't contain a .plesk subdir yet.
+mkdir -p "$(dirname "$LOGFILE")" || true
 echo "=== Deploy started: $(date) ===" >> "$LOGFILE"
 # Save stdout/stderr and redirect remaining output to logfile (keeps earlier messages visible in Plesk UI)
 exec 3>&1 4>&2
