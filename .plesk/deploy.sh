@@ -13,6 +13,18 @@ cd "$REPO_ROOT"
 
 echo "Repository root: $REPO_ROOT"
 
+# Persistent deploy log: capture all output to a repo-local log for later inspection
+LOGFILE="$REPO_ROOT/.plesk/deploy.log"
+echo "=== Deploy started: $(date) ===" >> "$LOGFILE"
+# Save stdout/stderr and redirect remaining output to logfile (keeps earlier messages visible in Plesk UI)
+exec 3>&1 4>&2
+exec 1>>"$LOGFILE" 2>&1
+
+# Ensure Laravel runtime directories exist (storage, logs, bootstrap cache)
+mkdir -p storage/framework/{sessions,views,cache,data} storage/logs bootstrap/cache || true
+touch storage/logs/laravel.log || true
+chmod -R 775 storage bootstrap/cache || true
+
 # Composer install: try multiple strategies (composer, local composer.phar)
 if command -v composer >/dev/null 2>&1; then
   composer install --no-dev --optimize-autoloader --no-interaction || echo "composer install returned non-zero";
