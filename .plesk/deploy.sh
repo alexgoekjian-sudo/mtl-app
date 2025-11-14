@@ -70,6 +70,19 @@ if [ -f artisan ]; then
   if [ ! -f vendor/autoload.php ]; then
     echo "vendor/autoload.php not found — skipping artisan, migrations and caches"
   else
+    # Load simple env vars from .env so we can optionally skip artisan by setting
+    # SKIP_ARTISAN=1 in the .env on the server. This is a defensive measure for
+    # hosts where running artisan in the Git hook causes compatibility errors.
+    if [ -f .env ]; then
+      set -a
+      # shellcheck disable=SC1090
+      . ./.env || true
+      set +a
+    fi
+
+    if [ "${SKIP_ARTISAN:-0}" = "1" ]; then
+      echo "SKIP_ARTISAN=1 present in .env — skipping artisan, migrations and caches"
+    else
     # Only generate APP_KEY if it's missing or empty in .env. This avoids
     # rotating a manually-set production APP_KEY during deploy.
     APP_KEY_VAL=""
