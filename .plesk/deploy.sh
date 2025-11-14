@@ -101,6 +101,7 @@ if [ -f artisan ]; then
     php artisan migrate --force || true
     php artisan config:cache || true
     php artisan route:cache || true
+    fi
   fi
 fi
 
