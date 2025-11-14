@@ -1,48 +1,64 @@
-# Quickstart — MVP (Retool hybrid)
+# Quickstart — Retool-only (Admin UI)
 
-Purpose: give a minimal set of steps to get the MVP running locally and connect Retool for admin operations.
+Purpose: minimal steps to connect Retool to the existing MySQL database and build admin pages quickly.
 
-Prerequisites:
-- MySQL server (or use the existing hosted MySQL)
-- PHP 8.1+ (Laravel/Lumen) OR Python 3.11+ (FastAPI) depending on chosen backend
-- Retool account (or self-hosted Retool)
+Prerequisites
+- Retool account (or self-hosted Retool installation)
+- MySQL server reachable from Retool (publicly accessible IP or via SSH tunnel / private network)
+- DB credentials (create a dedicated Retool DB user; see `.env.example` for naming conventions)
 
-1) Prepare the database
-- Create database: `mtl_app` and a service user with limited privileges for app migrations and an admin DB user for Retool if you plan to connect Retool directly.
+1) Provision a Retool MySQL resource
+- In Retool, go to Resources → Create new → MySQL.
+- Use these values (example, replace with real secrets stored in Retool):
+  - Host: the DB host (ex: 127.0.0.1 or host provided by your provider)
+  - Port: 3306
+  - Database: mtl_app_staging (or the production DB name)
+  - Username: mtl_app_user_retool (create this user with restricted permissions)
+  - Password: (secret)
+  - SSL: enable if your DB supports it
+- Save the resource and test connection.
 
-2) Start the backend (example choices):
-- Option A (shared host / PHP):
-  - Install Lumen/Laravel, configure `.env` with DB and Mollie/Cal.com/Gmail keys
-  - Run migrations: `php artisan migrate`
-  - Seed admin user: `php artisan db:seed --class=AdminUserSeeder`
+2) Recommended DB user privileges for Retool
+- For read-only dashboards: GRANT SELECT on specific tables and views.
+- For admin workflows that must write: GRANT INSERT, UPDATE, DELETE on specific tables only.
+- Example SQL to create a restricted user (run as a DBA):
 
-- Option B (dev-friendly, VPS):
-  - Use FastAPI (Python) with Alembic migrations. Configure `DATABASE_URL` pointing to MySQL.
-  - Run: `uvicorn app.main:app --reload`
-
-3) Connect Retool (admin UI)
-- Option 1: Direct MySQL connector (fast)
-  - Create a read/write DB user restricted by schema and IP.
-  - In Retool, add a MySQL resource pointing to the DB; build pages for Leads, Students, Enrollments, Invoices.
-
-- Option 2: REST API resource (recommended for production)
-  - Expose the REST API endpoints with JWT auth.
-  - In Retool, add a REST resource and reference endpoints for CRUD + custom actions (e.g., trigger refund endpoint).
-
-4) Imports & data migration
-- Put CSVs into `specs/001-title-english-language/imports/` and run the existing Python adapter in dry-run to preview normalized JSON output. After review, run apply mode to write to staging DB or call the REST API.
-
-5) Webhooks
-- Configure Mollie and Cal.com to send webhooks to `/webhooks/mollie` and `/webhooks/calcom`. Implement idempotent handlers that persist events and update invoices/bookings.
-
-6) Admin tasks to run initially
-- Confirm Admin user exists, configure Retool resources, import historical data in dry-run mode then apply to staging, verify payments and bookings are reconciled.
-
-Try it (local):
-```powershell
-# Example: health-check
-Invoke-RestMethod -Uri http://localhost:8000/health -Method GET
+```sql
+CREATE USER 'mtl_retool'@'%' IDENTIFIED BY 'strong_password';
+GRANT SELECT ON mtl_app.* TO 'mtl_retool'@'%';
+-- Narrow grants later as needed:
+GRANT INSERT, UPDATE ON mtl_app.enrollments TO 'mtl_retool'@'%';
+FLUSH PRIVILEGES;
 ```
 
-Notes:
-- For early testing, Retool direct DB connection is the fastest path to a usable admin app. Move to API-based Retool connection when security and multi-environment deployments are required.
+3) Quick Retool queries to create
+- List students:
+  SELECT id, first_name, last_name, email FROM students ORDER BY last_name LIMIT 100;
+- Create student (use parameterized insert):
+  INSERT INTO students (first_name, last_name, email, phone, created_at, updated_at) VALUES ({{first_name}}, {{last_name}}, {{email}}, {{phone}}, NOW(), NOW());
+- Enrollment create (use a prepared query with bind params):
+  INSERT INTO enrollments (student_id, course_offering_id, status, enrolled_at) VALUES ({{student_id}}, {{course_offering_id}}, 'registered', NOW());
+
+4) Recommended Retool UI pages
+- Leads dashboard: table + quick-create modal + convert-to-student action.
+- Students: table, edit modal, and enrollment quick-action.
+- Courses & Offerings: manage course offerings and capacity.
+- Enrollments & Attendance: list and mark attendance.
+- Finance: invoices list, record payment action (prefer via small Lumen endpoint to keep idempotency rules in backend).
+
+5) Imports & data validation
+- Use the existing Python import adapter to normalize CSVs locally first (`specs/001-title-english-language/imports/`), then import into DB with safe INSERTs or call a backend endpoint that schedules import jobs.
+
+6) Webhooks & side-effects
+- For payments (Mollie) and bookings (Cal.com), keep webhook handlers in the Lumen app and persist events in the DB. Retool can show webhook event lists and trigger retries via an admin endpoint.
+
+7) Testing
+- In Retool, test each saved query with parameter values. Use audit columns (created_by, updated_by) where possible to trace admin actions.
+
+8) Rollout
+- Start in staging DB. After verifying workflows, create a Retool workspace for production and set production DB resource with a carefully scoped user.
+
+Example curl health-check (local dev):
+```powershell
+Invoke-RestMethod -Uri http://localhost:8000/health -Method GET
+```
