@@ -13,6 +13,19 @@ cd "$REPO_ROOT"
 
 echo "Repository root: $REPO_ROOT"
 
+# --- Diagnostic info (helps debug missing .env or unexpected repo layout) ---
+echo "DEBUG: pwd=$(pwd)" 
+echo "DEBUG: whoami=$(whoami 2>/dev/null || true)" 
+echo "DEBUG: ls -la REPO_ROOT:" 
+ls -la "$REPO_ROOT" || true
+echo "DEBUG: ls -la REPO_ROOT/.plesk:" 
+ls -la "$REPO_ROOT/.plesk" || true
+echo "DEBUG: checking for .env and .env.example at REPO_ROOT"
+[ -f "$REPO_ROOT/.env" ] && echo ".env exists at REPO_ROOT" || echo ".env NOT at REPO_ROOT"
+[ -f "$REPO_ROOT/.env.example" ] && echo ".env.example exists at REPO_ROOT" || echo ".env.example NOT at REPO_ROOT"
+echo "DEBUG: end diagnostics"
+
+
 # Persistent deploy log: capture all output to a repo-local log for later inspection
 LOGFILE="$REPO_ROOT/.plesk/deploy.log"
 # Ensure the .plesk directory exists before writing the logfile. In some Plesk
