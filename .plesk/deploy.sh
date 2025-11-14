@@ -65,24 +65,30 @@ fi
 
 # Laravel specific steps (guard if artisan present)
 if [ -f artisan ]; then
-  # Only generate APP_KEY if it's missing or empty in .env. This avoids
-  # rotating a manually-set production APP_KEY during deploy.
-  APP_KEY_VAL=""
-  if [ -f .env ]; then
-    APP_KEY_VAL=$(grep -m1 '^APP_KEY=' .env | cut -d'=' -f2- | tr -d '\r\n' || true)
-  fi
-
-  if [ -z "$APP_KEY_VAL" ]; then
-    echo "APP_KEY not found in .env — generating a new key"
-    php artisan key:generate --force || true
+  # If vendor/autoload.php is missing, running artisan will fatal; skip artisan
+  # steps and log a concise message so deploy continues without error.
+  if [ ! -f vendor/autoload.php ]; then
+    echo "vendor/autoload.php not found — skipping artisan, migrations and caches"
   else
-    echo "APP_KEY present in .env — skipping key:generate"
-  fi
+    # Only generate APP_KEY if it's missing or empty in .env. This avoids
+    # rotating a manually-set production APP_KEY during deploy.
+    APP_KEY_VAL=""
+    if [ -f .env ]; then
+      APP_KEY_VAL=$(grep -m1 '^APP_KEY=' .env | cut -d'=' -f2- | tr -d '\r\n' || true)
+    fi
 
-  # Run migrations and cache steps (safe to keep as best-effort)
-  php artisan migrate --force || true
-  php artisan config:cache || true
-  php artisan route:cache || true
+    if [ -z "$APP_KEY_VAL" ]; then
+      echo "APP_KEY not found in .env — generating a new key"
+      php artisan key:generate --force || true
+    else
+      echo "APP_KEY present in .env — skipping key:generate"
+    fi
+
+    # Run migrations and cache steps (safe to keep as best-effort)
+    php artisan migrate --force || true
+    php artisan config:cache || true
+    php artisan route:cache || true
+  fi
 fi
 
 # Permissions
