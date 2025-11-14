@@ -70,6 +70,10 @@ if [ -f artisan ]; then
   if [ ! -f vendor/autoload.php ]; then
     echo "vendor/autoload.php not found — skipping artisan, migrations and caches"
   else
+    # Apply temporary runtime patch to Lumen Handler to avoid console OutputInterface type errors
+    if [ -f .plesk/patch_lumen_handler.php ]; then
+      php .plesk/patch_lumen_handler.php || true
+    fi
     # Load simple env vars from .env so we can optionally skip artisan by setting
     # SKIP_ARTISAN=1 in the .env on the server. This is a defensive measure for
     # hosts where running artisan in the Git hook causes compatibility errors.
