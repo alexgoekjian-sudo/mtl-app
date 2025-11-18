@@ -69,11 +69,11 @@ function importCourses($pdo, $filePath) {
         
         $data = $row['course_offering'];
         
-        // Check if course already exists
-        $stmt = $pdo->prepare("SELECT id FROM course_offerings WHERE course_key = ?");
-        $stmt->execute([$data['course_key']]);
+        // Check if course already exists (by unique attendance_id)
+        $stmt = $pdo->prepare("SELECT id FROM course_offerings WHERE attendance_id = ?");
+        $stmt->execute([$data['attendance_id']]);
         if ($stmt->fetch()) {
-            echo "  - Skipping duplicate: {$data['course_key']}\n";
+            echo "  - Skipping duplicate: {$data['attendance_id']}\n";
             $skipped++;
             continue;
         }
@@ -118,14 +118,23 @@ function importCourses($pdo, $filePath) {
         
         $online = ($data['delivery_mode'] ?? '') === 'online' ? 1 : 0;
         
+        // Get round number (convert float to int)
+        $round = isset($data['round']) ? (int)$data['round'] : 1;
+        
+        // Get course book
+        $courseBook = $data['course_book'] ?? null;
+        
         // Insert course
         $sql = "INSERT INTO course_offerings (
-            course_key, course_full_name, level, program, type, start_date, end_date, 
-            hours_total, schedule, price, location, online, created_at, updated_at
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, NOW(), NOW())";
+            attendance_id, round, course_key, course_full_name, level, program, type, 
+            start_date, end_date, hours_total, schedule, price, location, online, 
+            course_book, created_at, updated_at
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, NOW(), NOW())";
         
         $stmt = $pdo->prepare($sql);
         $stmt->execute([
+            $data['attendance_id'],
+            $round,
             $data['course_key'],
             $data['course_full_name'],
             $level,
@@ -137,7 +146,8 @@ function importCourses($pdo, $filePath) {
             $schedule,
             $data['price'],
             $data['location'],
-            $online
+            $online,
+            $courseBook
         ]);
         
         $imported++;
@@ -164,11 +174,11 @@ function importTrelloData($pdo, $filePath) {
     $enrollmentsCreated = 0;
     $skipped = 0;
     
-    // Build course index
+    // Build course index (using attendance_id which is unique)
     $courseIndex = [];
-    $stmt = $pdo->query("SELECT id, course_key FROM course_offerings");
+    $stmt = $pdo->query("SELECT id, attendance_id FROM course_offerings");
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-        $courseIndex[$row['course_key']] = $row['id'];
+        $courseIndex[$row['attendance_id']] = $row['id'];
     }
     
     foreach ($json as $row) {

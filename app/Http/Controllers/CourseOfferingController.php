@@ -26,10 +26,11 @@ class CourseOfferingController extends BaseController
     public function store(Request $request)
     {
         $this->validate($request, [
-            'course_key' => 'required',
-            'course_full_name' => 'required'
+            'attendance_id' => 'required|unique:course_offerings,attendance_id',
+            'course_full_name' => 'required',
+            'round' => 'integer|min:1'
         ]);
-        $data = $request->only(['course_key','course_full_name','level','program','start_date','end_date','hours_total','schedule','price','capacity','location','online']);
+        $data = $request->only(['attendance_id','round','course_key','course_full_name','level','program','type','start_date','end_date','hours_total','schedule','price','teacher_hourly_rate','classroom_cost','admin_overhead','capacity','location','online','book_included','course_book']);
         $c = CourseOffering::create($data);
         return response()->json($c, 201);
     }
@@ -38,7 +39,13 @@ class CourseOfferingController extends BaseController
     {
         $c = CourseOffering::find($id);
         if (!$c) return response()->json(['error' => 'Not found'], 404);
-        $data = $request->only(['course_key','course_full_name','level','program','start_date','end_date','hours_total','schedule','price','capacity','location','online']);
+        
+        $this->validate($request, [
+            'attendance_id' => 'unique:course_offerings,attendance_id,'.$id,
+            'round' => 'integer|min:1'
+        ]);
+        
+        $data = $request->only(['attendance_id','round','course_key','course_full_name','level','program','type','start_date','end_date','hours_total','schedule','price','teacher_hourly_rate','classroom_cost','admin_overhead','capacity','location','online','book_included','course_book']);
         $c->fill($data);
         $c->save();
         return response()->json($c);

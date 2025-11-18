@@ -3,6 +3,9 @@
   "mappings": {
     "COURSE_FULL_NAME": "course_full_name",
     "COURSE_SHORT_NAME": "course_key",
+    "ATTENDANCE_COURSE_NAME": "attendance_id",
+    "ROUND": {"to": "round", "type": "number"},
+    "COURSE_BOOK": "course_book",
     "START_DATE": {"to": "start_date", "type": "date", "format": "M/D/YYYY"},
     "END_DATE": {"to": "end_date", "type": "date", "format": "M/D/YYYY"},
     "TIMES": "time_range",
@@ -15,5 +18,5 @@
     "SCHEDULE_TYPE": "schedule_type",
     "SCHEDULE_NAME": "schedule_name"
   },
-  "notes": "Parse START_DATE/END_DATE to ISO 8601. TIMES is a start-end string. DAYS is a comma-separated short-day list. COURSE_SHORT_NAME is used as canonical course_key when available."
+  "notes": "Parse START_DATE/END_DATE to ISO 8601. TIMES is a start-end string. DAYS is a comma-separated short-day list. COURSE_SHORT_NAME is used as course_key (non-unique). ATTENDANCE_COURSE_NAME is the unique attendance_id. ROUND is the course round number. COURSE_BOOK contains textbook ISBN and title."
 }

@@ -56,16 +56,18 @@ class ImportDataSeeder extends Seeder
             
             $data = $row['course_offering'];
             
-            // Check if course already exists (by course_key)
-            $existing = CourseOffering::where('course_key', $data['course_key'])->first();
+            // Check if course already exists (by unique attendance_id)
+            $existing = CourseOffering::where('attendance_id', $data['attendance_id'])->first();
             if ($existing) {
-                $this->command->warn('Skipping duplicate course: ' . $data['course_key']);
+                $this->command->warn('Skipping duplicate course: ' . $data['attendance_id']);
                 $skipped++;
                 continue;
             }
             
             // Map normalized data to database schema
             $courseData = [
+                'attendance_id' => $data['attendance_id'] ?? null,
+                'round' => isset($data['round']) ? (int)$data['round'] : 1,
                 'course_key' => $data['course_key'] ?? null,
                 'course_full_name' => $data['course_full_name'] ?? null,
                 'start_date' => $data['start_date'] ?? null,
@@ -73,6 +75,7 @@ class ImportDataSeeder extends Seeder
                 'price' => $data['price'] ?? null,
                 'location' => $data['location'] ?? null,
                 'online' => ($data['delivery_mode'] ?? '') === 'online',
+                'course_book' => $data['course_book'] ?? null,
             ];
             
             // Parse schedule data
@@ -140,10 +143,10 @@ class ImportDataSeeder extends Seeder
         $enrollmentsCreated = 0;
         $skipped = 0;
         
-        // Build course index for linking
+        // Build course index for linking (using attendance_id which is unique)
         $courseIndex = [];
         foreach (CourseOffering::all() as $course) {
-            $courseIndex[$course->course_key] = $course->id;
+            $courseIndex[$course->attendance_id] = $course->id;
         }
         
         foreach ($json as $row) {

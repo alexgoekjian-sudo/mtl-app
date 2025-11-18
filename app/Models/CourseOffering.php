@@ -9,8 +9,8 @@ class CourseOffering extends Model
     protected $table = 'course_offerings';
 
     protected $fillable = [
-        'course_key','course_full_name','level','program','type','start_date','end_date','hours_total',
-        'schedule','price','teacher_hourly_rate','classroom_cost','admin_overhead','capacity','location','online','book_included'
+        'attendance_id','round','course_key','course_full_name','level','program','type','start_date','end_date','hours_total',
+        'schedule','price','teacher_hourly_rate','classroom_cost','admin_overhead','capacity','location','online','book_included','course_book'
     ];
 
     protected $casts = [

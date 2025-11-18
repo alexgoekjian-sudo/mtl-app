@@ -50,7 +50,29 @@ Importing students/leads from: /path/to/trello_normalized.json
 =====================================
 ```
 
-### Method 2: Laravel Seeder (For Local Development)
+### Method 2: SQL Import Script (Backup Method)
+
+If the PHP script doesn't work, use the generated SQL files:
+
+```bash
+# First, run the migration to add new columns
+php artisan migrate
+
+# Then import data via SQL
+mysql -u u5021d9810_mtldb -p u5021d9810_mtldb < import_courses.sql
+mysql -u u5021d9810_mtldb -p u5021d9810_mtldb < import_students_leads.sql
+```
+
+To regenerate the SQL files:
+```bash
+python generate_sql_import.py
+```
+
+This creates:
+- **import_courses.sql** - 248 course INSERT statements
+- **import_students_leads.sql** - 87 student INSERT statements with enrollments
+
+### Method 3: Laravel Seeder (For Local Development)
 
 If you have `vendor/` installed locally:
 
@@ -61,8 +83,11 @@ php artisan db:seed --class=ImportDataSeeder
 ## What Gets Imported
 
 ### Courses (course_offerings table)
-- **course_key**: Short name (e.g., "A1 BEGINNER", "B2 EVE ONLINE")
-- **course_full_name**: Full descriptive name with date
+- **attendance_id**: Unique identifier for attendance tracking (e.g., "B1_EVE _EDMON_1") - **PRIMARY KEY FOR COURSE**
+- **round**: Course round number (1, 2, 3, etc.) from ROUND column in CSV
+- **course_key**: Course type identifier (e.g., "A1 BEGINNER", "B2 EVE ONLINE") - **NOT UNIQUE**, same for all rounds
+- **course_full_name**: Full descriptive name with date and round
+- **course_book**: Textbook information with ISBN (e.g., "English File Intermediate 4th Edition (ISBN-13978-0194035910)")
 - **level**: Extracted from course_key (A1, A2, B1, B2, C1, C2)
 - **program**: Inferred (general, intensive, conversation, business, private)
 - **type**: Parsed from schedule_type (morning, evening, afternoon, online, intensive)
@@ -72,6 +97,12 @@ php artisan db:seed --class=ImportDataSeeder
 - **price**: Numeric price in EUR
 - **location**: Physical location or "ONLINE"
 - **online**: Boolean flag
+
+**Important Changes:**
+- `attendance_id` is now the unique identifier (from CSV column ATTENDANCE_COURSE_NAME)
+- `course_key` is now non-unique and represents the course type
+- Multiple rounds of the same course type will have the same `course_key` but different `attendance_id` and `round` numbers
+- `course_book` contains the textbook ISBN and title from CSV
 
 ### Students (students table)
 Created when record has `assessed_level` or `placement_result`:
@@ -93,9 +124,9 @@ Created when record lacks level check data:
 - **activity_notes**: Additional notes
 
 ### Enrollments (enrollments table)
-Created when student has `linked_course_key`:
+Created when student has `linked_course_key` (which maps to `attendance_id`):
 - **student_id**: Links to created student
-- **course_offering_id**: Links to course via course_key matching
+- **course_offering_id**: Links to course via attendance_id matching (unique identifier)
 - **status**: Set to "registered"
 - **enrolled_at**: Current timestamp
 
@@ -103,9 +134,11 @@ Created when student has `linked_course_key`:
 
 The import script **skips duplicates** automatically:
 
-- **Courses**: Checked by `course_key`
+- **Courses**: Checked by `attendance_id` (unique identifier, e.g., "B1_EVE _EDMON_1")
 - **Students**: Checked by `email` (primary) or `phone` (fallback)
 - **Enrollments**: Checked by `student_id` + `course_offering_id` pair
+
+**Note**: Since `course_key` is now non-unique (same for all rounds), duplicate detection uses `attendance_id` to ensure each specific course offering is only imported once.
 
 You can safely run the import multiple times.
 

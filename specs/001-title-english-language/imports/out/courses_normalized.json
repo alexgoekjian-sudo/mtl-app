@@ -4,6 +4,9 @@
     "course_offering": {
       "course_full_name": "B1 EVE ONLINE - EDMONTON - 13.01.2025 - R1",
       "course_key": "B1 EVE ONLINE",
+      "attendance_id": "B1_EVE _EDMON_1",
+      "round": 1.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-01-13",
       "end_date": "2025-02-19",
       "time_range": "19:00-21:00",
@@ -26,6 +29,9 @@
     "course_offering": {
       "course_full_name": "B2 EVE ONLINE - EDMONTON - 13.01.2025 - R1",
       "course_key": "B2 EVE ONLINE",
+      "attendance_id": "B2_EVE _EDMON_1",
+      "round": 1.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-01-13",
       "end_date": "2025-02-19",
       "time_range": "19:00-21:00",
@@ -48,6 +54,9 @@
     "course_offering": {
       "course_full_name": "A1 BEGINNER - DUBLIN - 13.01.2025 - R1",
       "course_key": "A1 BEGINNER",
+      "attendance_id": "A1_BEGI_DUBLI_1",
+      "round": 1.0,
+      "course_book": "English File Beginner Student’s Book - 4th Edition (ISBN-13978-0194029803)",
       "start_date": "2025-01-13",
       "end_date": "2025-02-19",
       "time_range": "15:30-17:30",
@@ -70,6 +79,9 @@
     "course_offering": {
       "course_full_name": "A2 INTENSIVE - BOSTON - 13.01.2025 - R1",
       "course_key": "A2 INTENSIVE",
+      "attendance_id": "A2_INTE_BOSTO_1",
+      "round": 1.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-01-13",
       "end_date": "2025-02-07",
       "time_range": "12:30-15:00",
@@ -94,6 +106,9 @@
     "course_offering": {
       "course_full_name": "A2 ELEM MORNING - EDMONTON - 13.01.2025 - R1",
       "course_key": "A2 ELEM MORNING",
+      "attendance_id": "A2 EL_MORN_EDMON_1",
+      "round": 1.0,
+      "course_book": "English File Elementary 4th Edition (ISBN-13978-0194031592)",
       "start_date": "2025-01-13",
       "end_date": "2025-02-19",
       "time_range": "9:30-12:00",
@@ -116,6 +131,9 @@
     "course_offering": {
       "course_full_name": "B1 INTENSIVE - BOSTON - 13.01.2025 - R1",
       "course_key": "B1 INTENSIVE",
+      "attendance_id": "B1_INTE_BOSTO_1",
+      "round": 1.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-01-13",
       "end_date": "2025-02-07",
       "time_range": "15:30-18:00",
@@ -140,6 +158,9 @@
     "course_offering": {
       "course_full_name": "B2 MORNING - EDMONTON - 13.01.2025 - R1",
       "course_key": "B2 MORNING",
+      "attendance_id": "B2_MORN_EDMON_1",
+      "round": 1.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-01-13",
       "end_date": "2025-02-20",
       "time_range": "9:30-12:00",
@@ -162,6 +183,9 @@
     "course_offering": {
       "course_full_name": "C1 EVE ONLINE - EDMONTON - 14.01.2025 - R1",
       "course_key": "C1 EVE ONLINE",
+      "attendance_id": "C1_EVE _EDMON_1",
+      "round": 1.0,
+      "course_book": "English File 4th: Advanced (ISBN-13978-0194038355)",
       "start_date": "2025-01-14",
       "end_date": "2025-02-20",
       "time_range": "19:00-21:00",
@@ -184,6 +208,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT MORNING - EDMONTON - 14.01.2025 - R1",
       "course_key": "A2 PRE-INT MORNING",
+      "attendance_id": "A2 PR_MORN_EDMON_1",
+      "round": 1.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-01-14",
       "end_date": "2025-02-20",
       "time_range": "9:30-12:00",
@@ -206,6 +233,9 @@
     "course_offering": {
       "course_full_name": "C1 MORNING - EDMONTON - 14.01.2025 - R1",
       "course_key": "C1 MORNING",
+      "attendance_id": "C1_MORN_EDMON_1",
+      "round": 1.0,
+      "course_book": "English File 4th: Advanced (ISBN-13978-0194038355)",
       "start_date": "2025-01-14",
       "end_date": "2025-02-21",
       "time_range": "9:30-12:00",
@@ -228,6 +258,9 @@
     "course_offering": {
       "course_full_name": "B1 MORNING - EDMONTON - 15.01.2025 - R1",
       "course_key": "B1 MORNING",
+      "attendance_id": "B1_MORN_EDMON_1",
+      "round": 1.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-01-15",
       "end_date": "2025-02-21",
       "time_range": "9:30-12:00",
@@ -250,6 +283,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT EVE ONLINE - EDMONTON - 28.01.2025 - R1",
       "course_key": "A2 PRE-INT EVE ONLINE",
+      "attendance_id": "A2 PR_EVE _EDMON_1",
+      "round": 1.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-01-28",
       "end_date": "2025-03-06",
       "time_range": "19:00-20:30",
@@ -272,6 +308,9 @@
     "course_offering": {
       "course_full_name": "BUSINESS EVE ONLINE - EDMONTON - 28.01.2025 - R1",
       "course_key": "BUSINESS EVE ONLINE",
+      "attendance_id": "BUSIN_EVE _EDMON_1",
+      "round": 1.0,
+      "course_book": "Business Partner B2+ – Pearson Benelux",
       "start_date": "2025-01-28",
       "end_date": "2025-03-06",
       "time_range": "19.00-21.00",
@@ -294,6 +333,9 @@
     "course_offering": {
       "course_full_name": "A2 INTENSIVE - CAPE TOWN - 10.02.2025 - R2",
       "course_key": "A2 INTENSIVE",
+      "attendance_id": "A2_INTE_CAPE _2",
+      "round": 2.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-02-10",
       "end_date": "2025-03-07",
       "time_range": "9:30-12:00",
@@ -318,6 +360,9 @@
     "course_offering": {
       "course_full_name": "B1 INTENSIVE - CAPE TOWN - 10.02.2025 - R2",
       "course_key": "B1 INTENSIVE",
+      "attendance_id": "B1_INTE_CAPE _2",
+      "round": 2.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-02-10",
       "end_date": "2025-03-07",
       "time_range": "12:30-15:00",
@@ -342,6 +387,9 @@
     "course_offering": {
       "course_full_name": "B2 INTENSIVE - CAPE TOWN - 10.02.2025 - R2",
       "course_key": "B2 INTENSIVE",
+      "attendance_id": "B2_INTE_CAPE _2",
+      "round": 2.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-02-10",
       "end_date": "2025-03-07",
       "time_range": "15:30-18:00",
@@ -366,6 +414,9 @@
     "course_offering": {
       "course_full_name": "B1 EVE ONLINE - FIFE - 24.02.2025 - R2",
       "course_key": "B1 EVE ONLINE",
+      "attendance_id": "B1_EVE _FIFE_2",
+      "round": 2.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-02-24",
       "end_date": "2025-04-02",
       "time_range": "19:00-21:00",
@@ -388,6 +439,9 @@
     "course_offering": {
       "course_full_name": "B2 EVE ONLINE - FIFE - 24.02.2025 - R2",
       "course_key": "B2 EVE ONLINE",
+      "attendance_id": "B2_EVE _FIFE_2",
+      "round": 2.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-02-24",
       "end_date": "2025-04-02",
       "time_range": "19:00-21:00",
@@ -410,6 +464,9 @@
     "course_offering": {
       "course_full_name": "A1 BEGINNER - EDMONTON - 24.02.2025 - R2",
       "course_key": "A1 BEGINNER",
+      "attendance_id": "A1_BEGI_EDMON_2",
+      "round": 2.0,
+      "course_book": "English File Beginner Student’s Book - 4th Edition (ISBN-13978-0194029803)",
       "start_date": "2025-02-24",
       "end_date": "2025-04-02",
       "time_range": "15:30-17:30",
@@ -432,6 +489,9 @@
     "course_offering": {
       "course_full_name": "A2 ELEM MORNING - FIFE - 24.02.2025 - R2",
       "course_key": "A2 ELEM MORNING",
+      "attendance_id": "A2 EL_MORN_FIFE_2",
+      "round": 2.0,
+      "course_book": "English File Elementary 4th Edition (ISBN-13978-0194031592)",
       "start_date": "2025-02-24",
       "end_date": "2025-04-02",
       "time_range": "9:30-12:00",
@@ -454,6 +514,9 @@
     "course_offering": {
       "course_full_name": "B2 MORNING - FIFE - 24.02.2025 - R2",
       "course_key": "B2 MORNING",
+      "attendance_id": "B2_MORN_FIFE_2",
+      "round": 2.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-02-24",
       "end_date": "2025-04-03",
       "time_range": "9:30-12:00",
@@ -476,6 +539,9 @@
     "course_offering": {
       "course_full_name": "C1 MORNING - FIFE - 25.02.2025 - R2",
       "course_key": "C1 MORNING",
+      "attendance_id": "C1_MORN_FIFE_2",
+      "round": 2.0,
+      "course_book": "English File 4th: Advanced (ISBN-13978-0194038355)",
       "start_date": "2025-02-25",
       "end_date": "2025-04-04",
       "time_range": "9:30-12:00",
@@ -498,6 +564,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT MORNING - FIFE - 25.02.2025 - R2",
       "course_key": "A2 PRE-INT MORNING",
+      "attendance_id": "A2 PR_MORN_FIFE_2",
+      "round": 2.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-02-25",
       "end_date": "2025-04-03",
       "time_range": "9:30-12:00",
@@ -520,6 +589,9 @@
     "course_offering": {
       "course_full_name": "B1 MORNING - FIFE - 26.02.2025 - R2",
       "course_key": "B1 MORNING",
+      "attendance_id": "B1_MORN_FIFE_2",
+      "round": 2.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-02-26",
       "end_date": "2025-04-04",
       "time_range": "9:30-12:00",
@@ -542,6 +614,9 @@
     "course_offering": {
       "course_full_name": "B2 INTENSIVE - AUCKLAND - 10.03.2025 - R3",
       "course_key": "B2 INTENSIVE",
+      "attendance_id": "B2_INTE_AUCKL_3",
+      "round": 3.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-03-10",
       "end_date": "2025-04-04",
       "time_range": "12:30-15:00",
@@ -566,6 +641,9 @@
     "course_offering": {
       "course_full_name": "A2 INTENSIVE - AUCKLAND - 10.03.2025 - R3",
       "course_key": "A2 INTENSIVE",
+      "attendance_id": "A2_INTE_AUCKL_3",
+      "round": 3.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-03-10",
       "end_date": "2025-04-04",
       "time_range": "15:30-18:00",
@@ -590,6 +668,9 @@
     "course_offering": {
       "course_full_name": "B1 INTENSIVE - AUCKLAND - 10.03.2025 - R3",
       "course_key": "B1 INTENSIVE",
+      "attendance_id": "B1_INTE_AUCKL_3",
+      "round": 3.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-03-10",
       "end_date": "2025-04-04",
       "time_range": "9:30-12:00",
@@ -614,6 +695,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT EVE ONLINE - FIFE - 11.03.2025 - R2",
       "course_key": "A2 PRE-INT EVE ONLINE",
+      "attendance_id": "A2 PR_EVE _FIFE_2",
+      "round": 2.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-03-11",
       "end_date": "2025-04-17",
       "time_range": "19:00-21:00",
@@ -636,6 +720,9 @@
     "course_offering": {
       "course_full_name": "BUSINESS EVE ONLINE - FIFE - 11.03.2025 - R2",
       "course_key": "BUSINESS EVE ONLINE",
+      "attendance_id": "BUSIN_EVE _FIFE_2",
+      "round": 2.0,
+      "course_book": "Business Partner B2+ – Pearson Benelux",
       "start_date": "2025-03-11",
       "end_date": "2025-04-17",
       "time_range": "19:00-21:00",
@@ -658,6 +745,9 @@
     "course_offering": {
       "course_full_name": "C1 EVE ONLINE - FIFE - 11.03.2025 - R2",
       "course_key": "C1 EVE ONLINE",
+      "attendance_id": "C1_EVE _FIFE_2",
+      "round": 2.0,
+      "course_book": "English File 4th: Advanced (ISBN-13978-0194038355)",
       "start_date": "2025-03-11",
       "end_date": "2025-04-17",
       "time_range": "19:00-21:00",
@@ -680,6 +770,9 @@
     "course_offering": {
       "course_full_name": "B2 EVE ONLINE - DUBLIN - 07.04.2025 - R3",
       "course_key": "B2 EVE ONLINE",
+      "attendance_id": "B2_EVE _DUBLI_3",
+      "round": 3.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-04-07",
       "end_date": "2025-05-14",
       "time_range": "19:00-21:00",
@@ -702,6 +795,9 @@
     "course_offering": {
       "course_full_name": "A2 ELEM MORNING - DUBLIN - 07.04.2025 - R3",
       "course_key": "A2 ELEM MORNING",
+      "attendance_id": "A2 EL_MORN_DUBLI_3",
+      "round": 3.0,
+      "course_book": "English File Elementary 4th Edition (ISBN-13978-0194031592)",
       "start_date": "2025-04-07",
       "end_date": "2025-05-14",
       "time_range": "9:30-12:00",
@@ -724,6 +820,9 @@
     "course_offering": {
       "course_full_name": "A2 INTENSIVE - BOSTON - 07.04.2025 - R4",
       "course_key": "A2 INTENSIVE",
+      "attendance_id": "A2_INTE_BOSTO_4",
+      "round": 4.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-04-07",
       "end_date": "2025-05-02",
       "time_range": "12:30-15:00",
@@ -748,6 +847,9 @@
     "course_offering": {
       "course_full_name": "B1 INTENSIVE - BOSTON - 07.04.2025 - R4",
       "course_key": "B1 INTENSIVE",
+      "attendance_id": "B1_INTE_BOSTO_4",
+      "round": 4.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-04-07",
       "end_date": "2025-05-02",
       "time_range": "15:30-18:00",
@@ -772,6 +874,9 @@
     "course_offering": {
       "course_full_name": "B2 INTENSIVE - BOSTON - 07.04.2025 - R4",
       "course_key": "B2 INTENSIVE",
+      "attendance_id": "B2_INTE_BOSTO_4",
+      "round": 4.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-04-07",
       "end_date": "2025-05-02",
       "time_range": "12:30-15:00",
@@ -796,6 +901,9 @@
     "course_offering": {
       "course_full_name": "C1 MORNING - DUBLIN - 08.04.2025 - R3",
       "course_key": "C1 MORNING",
+      "attendance_id": "C1_MORN_DUBLI_3",
+      "round": 3.0,
+      "course_book": "English File 4th: Advanced (ISBN-13978-0194038355)",
       "start_date": "2025-04-08",
       "end_date": "2025-05-16",
       "time_range": "9:30-12:00",
@@ -818,6 +926,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT MORNING - DUBLIN - 08.04.2025 - R3",
       "course_key": "A2 PRE-INT MORNING",
+      "attendance_id": "A2 PR_MORN_DUBLI_3",
+      "round": 3.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-04-08",
       "end_date": "2025-05-15",
       "time_range": "9:30-12:00",
@@ -840,6 +951,9 @@
     "course_offering": {
       "course_full_name": "B1 MORNING - DUBLIN - 09.04.2025 - R3",
       "course_key": "B1 MORNING",
+      "attendance_id": "B1_MORN_DUBLI_3",
+      "round": 3.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-04-09",
       "end_date": "2025-05-16",
       "time_range": "9:30-12:00",
@@ -862,6 +976,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT EVE ONLINE - DUBLIN - 22.04.2025 - R3",
       "course_key": "A2 PRE-INT EVE ONLINE",
+      "attendance_id": "A2 PR_EVE _DUBLI_3",
+      "round": 3.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-04-22",
       "end_date": "2025-05-29",
       "time_range": "19:00-21:00",
@@ -884,6 +1001,9 @@
     "course_offering": {
       "course_full_name": "BUSINESS EVE ONLINE - DUBLIN - 22.04.2025 - R3",
       "course_key": "BUSINESS EVE ONLINE",
+      "attendance_id": "BUSIN_EVE _DUBLI_3",
+      "round": 3.0,
+      "course_book": "Business Partner B2+ – Pearson Benelux",
       "start_date": "2025-04-22",
       "end_date": "2025-05-29",
       "time_range": "19:00-20:30",
@@ -906,6 +1026,9 @@
     "course_offering": {
       "course_full_name": "C1 EVE ONLINE - DUBLIN - 22.04.2025 - R3",
       "course_key": "C1 EVE ONLINE",
+      "attendance_id": "C1_EVE _DUBLI_3",
+      "round": 3.0,
+      "course_book": "English File 4th: Advanced (ISBN-13978-0194038355)",
       "start_date": "2025-04-22",
       "end_date": "2025-05-29",
       "time_range": "19:00-21:00",
@@ -928,6 +1051,9 @@
     "course_offering": {
       "course_full_name": "B2 MORNING - DUBLIN - 22.04.2025 - R3",
       "course_key": "B2 MORNING",
+      "attendance_id": "B2_MORN_DUBLI_3",
+      "round": 3.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-04-22",
       "end_date": "2025-05-28",
       "time_range": "9:30-12:00",
@@ -950,6 +1076,9 @@
     "course_offering": {
       "course_full_name": "B1 EVE ONLINE - DUBLIN - 23.04.2025 - R3",
       "course_key": "B1 EVE ONLINE",
+      "attendance_id": "B1_EVE _DUBLI_3",
+      "round": 3.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-04-23",
       "end_date": "2025-05-28",
       "time_range": "19:30-21:00",
@@ -972,6 +1101,9 @@
     "course_offering": {
       "course_full_name": "A1 BEGINNER - EDMONTON - 23.04.2025 - R3",
       "course_key": "A1 BEGINNER",
+      "attendance_id": "A1_BEGI_EDMON_3",
+      "round": 3.0,
+      "course_book": "English File Beginner Student’s Book - 4th Edition (ISBN-13978-0194029803)",
       "start_date": "2025-04-23",
       "end_date": "2025-05-28",
       "time_range": "15:30-17:30",
@@ -994,6 +1126,9 @@
     "course_offering": {
       "course_full_name": "A2 INTENSIVE - CAPE TOWN - 05.05.2025 - R5",
       "course_key": "A2 INTENSIVE",
+      "attendance_id": "A2_INTE_CAPE _5",
+      "round": 5.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-05-05",
       "end_date": "2025-05-30",
       "time_range": "15:30-18:00",
@@ -1018,6 +1153,9 @@
     "course_offering": {
       "course_full_name": "B1 INTENSIVE - CAPE TOWN - 06.05.2025 - R5",
       "course_key": "B1 INTENSIVE",
+      "attendance_id": "B1_INTE_CAPE _5",
+      "round": 5.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-05-06",
       "end_date": "2025-05-30",
       "time_range": "12:30-15:00",
@@ -1042,6 +1180,9 @@
     "course_offering": {
       "course_full_name": "B2 INTENSIVE - CAPE TOWN - 06.05.2025 - R5",
       "course_key": "B2 INTENSIVE",
+      "attendance_id": "B2_INTE_CAPE _5",
+      "round": 5.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-05-06",
       "end_date": "2025-05-30",
       "time_range": "12:30-15:00",
@@ -1066,6 +1207,9 @@
     "course_offering": {
       "course_full_name": "B2 EVE ONLINE - EDMONTON - 19.05.2025 - R4",
       "course_key": "B2 EVE ONLINE",
+      "attendance_id": "B2_EVE _EDMON_4",
+      "round": 4.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-05-19",
       "end_date": "2025-06-25",
       "time_range": "19:00-21:00",
@@ -1088,6 +1232,9 @@
     "course_offering": {
       "course_full_name": "A2 ELEM MORNING - EDMONTON - 19.05.2025 - R4",
       "course_key": "A2 ELEM MORNING",
+      "attendance_id": "A2 EL_MORN_EDMON_4",
+      "round": 4.0,
+      "course_book": "English File Elementary 4th Edition (ISBN-13978-0194031592)",
       "start_date": "2025-05-19",
       "end_date": "2025-06-25",
       "time_range": "9:30-12:00",
@@ -1110,6 +1257,9 @@
     "course_offering": {
       "course_full_name": "C1 MORNING - EDMONTON - 20.05.2025 - R4",
       "course_key": "C1 MORNING",
+      "attendance_id": "C1_MORN_EDMON_4",
+      "round": 4.0,
+      "course_book": "English File 4th: Advanced (ISBN-13978-0194038355)",
       "start_date": "2025-05-20",
       "end_date": "2025-06-27",
       "time_range": "9:30-12:00",
@@ -1132,6 +1282,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT MORNING - EDMONTON - 20.05.2025 - R4",
       "course_key": "A2 PRE-INT MORNING",
+      "attendance_id": "A2 PR_MORN_EDMON_4",
+      "round": 4.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-05-20",
       "end_date": "2025-06-26",
       "time_range": "9:30-12:00",
@@ -1154,6 +1307,9 @@
     "course_offering": {
       "course_full_name": "B1 EVE ONLINE - EDMONTON - 02.06.2025 - R4",
       "course_key": "B1 EVE ONLINE",
+      "attendance_id": "B1_EVE _EDMON_4",
+      "round": 4.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-06-02",
       "end_date": "2025-07-09",
       "time_range": "19:00-21:00",
@@ -1176,6 +1332,9 @@
     "course_offering": {
       "course_full_name": "A1 BEGINNER - DUBLIN - 02.06.2025 - R4",
       "course_key": "A1 BEGINNER",
+      "attendance_id": "A1_BEGI_DUBLI_4",
+      "round": 4.0,
+      "course_book": "English File Beginner Student’s Book - 4th Edition (ISBN-13978-0194029803)",
       "start_date": "2025-06-02",
       "end_date": "2025-07-09",
       "time_range": "15:30-17:30",
@@ -1198,6 +1357,9 @@
     "course_offering": {
       "course_full_name": "B2 MORNING - EDMONTON - 02.06.2025 - R4",
       "course_key": "B2 MORNING",
+      "attendance_id": "B2_MORN_EDMON_4",
+      "round": 4.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-06-02",
       "end_date": "2025-07-10",
       "time_range": "9:30-12:00",
@@ -1220,6 +1382,9 @@
     "course_offering": {
       "course_full_name": "A2 INTENSIVE - AUCKLAND - 02.06.2025 - R6",
       "course_key": "A2 INTENSIVE",
+      "attendance_id": "A2_INTE_AUCKL_6",
+      "round": 6.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-06-02",
       "end_date": "2025-06-27",
       "time_range": "12:30-15:00",
@@ -1244,6 +1409,9 @@
     "course_offering": {
       "course_full_name": "B1 INTENSIVE - AUCKLAND - 02.06.2025 - R6",
       "course_key": "B1 INTENSIVE",
+      "attendance_id": "B1_INTE_AUCKL_6",
+      "round": 6.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-06-02",
       "end_date": "2025-06-27",
       "time_range": "12:30-15:00",
@@ -1268,6 +1436,9 @@
     "course_offering": {
       "course_full_name": "B2 INTENSIVE - AUCKLAND - 02.06.2025 - R6",
       "course_key": "B2 INTENSIVE",
+      "attendance_id": "B2_INTE_AUCKL_6",
+      "round": 6.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-06-02",
       "end_date": "2025-06-27",
       "time_range": "15:30-18:00",
@@ -1292,6 +1463,9 @@
     "course_offering": {
       "course_full_name": "BUSINESS EVE ONLINE - EDMONTON - 03.06.2025 - R4",
       "course_key": "BUSINESS EVE ONLINE",
+      "attendance_id": "BUSIN_EVE _EDMON_4",
+      "round": 4.0,
+      "course_book": "Business Partner B2+ – Pearson Benelux",
       "start_date": "2025-06-03",
       "end_date": "2025-07-10",
       "time_range": "19:00-21:00",
@@ -1314,6 +1488,9 @@
     "course_offering": {
       "course_full_name": "C1 EVE ONLINE - EDMONTON - 03.06.2025 - R4",
       "course_key": "C1 EVE ONLINE",
+      "attendance_id": "C1_EVE _EDMON_4",
+      "round": 4.0,
+      "course_book": "English File 4th: Advanced (ISBN-13978-0194038355)",
       "start_date": "2025-06-03",
       "end_date": "2025-07-10",
       "time_range": "19:00-21:00",
@@ -1336,6 +1513,9 @@
     "course_offering": {
       "course_full_name": "B1 MORNING - EDMONTON - 04.06.2025 - R4",
       "course_key": "B1 MORNING",
+      "attendance_id": "B1_MORN_EDMON_4",
+      "round": 4.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-06-04",
       "end_date": "2025-07-11",
       "time_range": "9:30-12:00",
@@ -1358,6 +1538,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT EVE ONLINE - EDMONTON - 17.06.2025 - R4",
       "course_key": "A2 PRE-INT EVE ONLINE",
+      "attendance_id": "A2 PR_EVE _EDMON_4",
+      "round": 4.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-06-17",
       "end_date": "2025-07-24",
       "time_range": "19:00-21:00",
@@ -1380,6 +1563,9 @@
     "course_offering": {
       "course_full_name": "B2 EVE ONLINE - FIFE - 30.06.2025 - R5",
       "course_key": "B2 EVE ONLINE",
+      "attendance_id": "B2_EVE _FIFE_5",
+      "round": 5.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-06-30",
       "end_date": "2025-08-06",
       "time_range": "19:00-21:00",
@@ -1402,6 +1588,9 @@
     "course_offering": {
       "course_full_name": "A2 ELEM MORNING - FIFE - 30.06.2025 - R5",
       "course_key": "A2 ELEM MORNING",
+      "attendance_id": "A2 EL_MORN_FIFE_5",
+      "round": 5.0,
+      "course_book": "English File Elementary 4th Edition (ISBN-13978-0194031592)",
       "start_date": "2025-06-30",
       "end_date": "2025-08-06",
       "time_range": "9:30-12:00",
@@ -1424,6 +1613,9 @@
     "course_offering": {
       "course_full_name": "A2 INTENSIVE - BOSTON - 30.06.2025 - R7",
       "course_key": "A2 INTENSIVE",
+      "attendance_id": "A2_INTE_BOSTO_7",
+      "round": 7.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-06-30",
       "end_date": "2025-07-25",
       "time_range": "15:30-18:00",
@@ -1448,6 +1640,9 @@
     "course_offering": {
       "course_full_name": "B1 INTENSIVE - BOSTON - 30.06.2025 - R7",
       "course_key": "B1 INTENSIVE",
+      "attendance_id": "B1_INTE_BOSTO_7",
+      "round": 7.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-06-30",
       "end_date": "2025-07-25",
       "time_range": "12:30-15:00",
@@ -1472,6 +1667,9 @@
     "course_offering": {
       "course_full_name": "B2 INTENSIVE - BOSTON - 30.06.2025 - R7",
       "course_key": "B2 INTENSIVE",
+      "attendance_id": "B2_INTE_BOSTO_7",
+      "round": 7.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-06-30",
       "end_date": "2025-07-25",
       "time_range": "12:30-15:00",
@@ -1496,6 +1694,9 @@
     "course_offering": {
       "course_full_name": "C1 MORNING - FIFE - 01.07.2025 - R5",
       "course_key": "C1 MORNING",
+      "attendance_id": "C1_MORN_FIFE_5",
+      "round": 5.0,
+      "course_book": "English File 4th: Advanced (ISBN-13978-0194038355)",
       "start_date": "2025-07-01",
       "end_date": "2025-08-08",
       "time_range": "9:30-12:00",
@@ -1518,6 +1719,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT MORNING - FIFE - 01.07.2025 - R5",
       "course_key": "A2 PRE-INT MORNING",
+      "attendance_id": "A2 PR_MORN_FIFE_5",
+      "round": 5.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-07-01",
       "end_date": "2025-08-07",
       "time_range": "9:30-12:00",
@@ -1540,6 +1744,9 @@
     "course_offering": {
       "course_full_name": "B1 EVE ONLINE - FIFE - 14.07.2025 - R5",
       "course_key": "B1 EVE ONLINE",
+      "attendance_id": "B1_EVE _FIFE_5",
+      "round": 5.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-07-14",
       "end_date": "2025-08-20",
       "time_range": "19:00-21:00",
@@ -1562,6 +1769,9 @@
     "course_offering": {
       "course_full_name": "A1 BEGINNER - EDMONTON - 14.07.2025 - R5",
       "course_key": "A1 BEGINNER",
+      "attendance_id": "A1_BEGI_EDMON_5",
+      "round": 5.0,
+      "course_book": "English File Beginner Student’s Book - 4th Edition (ISBN-13978-0194029803)",
       "start_date": "2025-07-14",
       "end_date": "2025-07-30",
       "time_range": "15:30-17:30",
@@ -1584,6 +1794,9 @@
     "course_offering": {
       "course_full_name": "B2 MORNING - FIFE - 14.07.2025 - R5",
       "course_key": "B2 MORNING",
+      "attendance_id": "B2_MORN_FIFE_5",
+      "round": 5.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-07-14",
       "end_date": "2025-08-21",
       "time_range": "9:30-12:00",
@@ -1606,6 +1819,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT EVE ONLINE - FIFE - 15.07.2025 - R5",
       "course_key": "A2 PRE-INT EVE ONLINE",
+      "attendance_id": "A2 PR_EVE _FIFE_5",
+      "round": 5.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-07-15",
       "end_date": "2025-08-14",
       "time_range": "19:00-21:00",
@@ -1628,6 +1844,9 @@
     "course_offering": {
       "course_full_name": "BUSINESS EVE ONLINE - FIFE - 15.07.2025 - R5",
       "course_key": "BUSINESS EVE ONLINE",
+      "attendance_id": "BUSIN_EVE _FIFE_5",
+      "round": 5.0,
+      "course_book": "Business Partner B2+ – Pearson Benelux",
       "start_date": "2025-07-15",
       "end_date": "2025-08-21",
       "time_range": "19:00-21:00",
@@ -1650,6 +1869,9 @@
     "course_offering": {
       "course_full_name": "C1 EVE ONLINE - FIFE - 15.07.2025 - R5",
       "course_key": "C1 EVE ONLINE",
+      "attendance_id": "C1_EVE _FIFE_5",
+      "round": 5.0,
+      "course_book": "English File 4th: Advanced (ISBN-13978-0194038355)",
       "start_date": "2025-07-15",
       "end_date": "2025-08-21",
       "time_range": "19:00-21:00",
@@ -1672,6 +1894,9 @@
     "course_offering": {
       "course_full_name": "B1 MORNING - FIFE - 16.07.2025 - R5",
       "course_key": "B1 MORNING",
+      "attendance_id": "B1_MORN_FIFE_5",
+      "round": 5.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-07-16",
       "end_date": "2025-08-22",
       "time_range": "9:30-12:00",
@@ -1694,6 +1919,9 @@
     "course_offering": {
       "course_full_name": "A2 INTENSIVE - CAPE TOWN - 28.07.2025 - R8",
       "course_key": "A2 INTENSIVE",
+      "attendance_id": "A2_INTE_CAPE _8",
+      "round": 8.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-07-28",
       "end_date": "2025-08-22",
       "time_range": "12:30-15:00",
@@ -1718,6 +1946,9 @@
     "course_offering": {
       "course_full_name": "B1 INTENSIVE - CAPE TOWN - 28.07.2025 - R8",
       "course_key": "B1 INTENSIVE",
+      "attendance_id": "B1_INTE_CAPE _8",
+      "round": 8.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-07-28",
       "end_date": "2025-08-22",
       "time_range": "15:30-18:00",
@@ -1742,6 +1973,9 @@
     "course_offering": {
       "course_full_name": "B2 INTENSIVE - CAPE TOWN - 28.07.2025 - R8",
       "course_key": "B2 INTENSIVE",
+      "attendance_id": "B2_INTE_CAPE _8",
+      "round": 8.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-07-28",
       "end_date": "2025-08-22",
       "time_range": "12:30-15:00",
@@ -1766,6 +2000,9 @@
     "course_offering": {
       "course_full_name": "B1 EVE ONLINE - DUBLIN - 18.08.2025 - R6",
       "course_key": "B1 EVE ONLINE",
+      "attendance_id": "B1_EVE _DUBLI_6",
+      "round": 6.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-08-18",
       "end_date": "2025-09-24",
       "time_range": "19:00-21:00",
@@ -1788,6 +2025,9 @@
     "course_offering": {
       "course_full_name": "A1 BEGINNER - DUBLIN - 18.08.2025 - R6",
       "course_key": "A1 BEGINNER",
+      "attendance_id": "A1_BEGI_DUBLI_6",
+      "round": 6.0,
+      "course_book": "English File Beginner Student’s Book - 4th Edition (ISBN-13978-0194029803)",
       "start_date": "2025-08-18",
       "end_date": "2025-09-24",
       "time_range": "15:30-17:30",
@@ -1810,6 +2050,9 @@
     "course_offering": {
       "course_full_name": "A2 ELEM MORNING - DUBLIN - 18.08.2025 - R6",
       "course_key": "A2 ELEM MORNING",
+      "attendance_id": "A2 EL_MORN_DUBLI_6",
+      "round": 6.0,
+      "course_book": "English File Elementary 4th Edition (ISBN-13978-0194031592)",
       "start_date": "2025-08-18",
       "end_date": "2025-09-24",
       "time_range": "9:30-12:00",
@@ -1832,6 +2075,9 @@
     "course_offering": {
       "course_full_name": "C1 MORNING - DUBLIN - 19.08.2025 - R6",
       "course_key": "C1 MORNING",
+      "attendance_id": "C1_MORN_DUBLI_6",
+      "round": 6.0,
+      "course_book": "English File 4th: Advanced (ISBN-13978-0194038355)",
       "start_date": "2025-08-19",
       "end_date": "2025-09-26",
       "time_range": "9:30-12:00",
@@ -1854,6 +2100,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT MORNING - DUBLIN - 19.08.2025 - R6",
       "course_key": "A2 PRE-INT MORNING",
+      "attendance_id": "A2 PR_MORN_DUBLI_6",
+      "round": 6.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-08-19",
       "end_date": "2025-09-25",
       "time_range": "9:30-12:00",
@@ -1876,6 +2125,9 @@
     "course_offering": {
       "course_full_name": "B2 EVE ONLINE - DUBLIN - 25.08.2025 - R6",
       "course_key": "B2 EVE ONLINE",
+      "attendance_id": "B2_EVE _DUBLI_6",
+      "round": 6.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-08-25",
       "end_date": "2025-10-01",
       "time_range": "19:00-21:00",
@@ -1898,6 +2150,9 @@
     "course_offering": {
       "course_full_name": "B2 MORNING - DUBLIN - 25.08.2025 - R6",
       "course_key": "B2 MORNING",
+      "attendance_id": "B2_MORN_DUBLI_6",
+      "round": 6.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-08-25",
       "end_date": "2025-10-02",
       "time_range": "9:30-12:00",
@@ -1920,6 +2175,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT EVE ONLINE - DUBLIN - 26.08.2025 - R6",
       "course_key": "A2 PRE-INT EVE ONLINE",
+      "attendance_id": "A2 PR_EVE _DUBLI_6",
+      "round": 6.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-08-26",
       "end_date": "2025-10-14",
       "time_range": "19:00-21:00",
@@ -1942,6 +2200,9 @@
     "course_offering": {
       "course_full_name": "BUSINESS EVE ONLINE - DUBLIN - 26.08.2025 - R6",
       "course_key": "BUSINESS EVE ONLINE",
+      "attendance_id": "BUSIN_EVE _DUBLI_6",
+      "round": 6.0,
+      "course_book": "Business Partner B2+ – Pearson Benelux",
       "start_date": "2025-08-26",
       "end_date": "2025-10-02",
       "time_range": "19:00-21:00",
@@ -1964,6 +2225,9 @@
     "course_offering": {
       "course_full_name": "C1 EVE ONLINE - DUBLIN - 26.08.2025 - R6",
       "course_key": "C1 EVE ONLINE",
+      "attendance_id": "C1_EVE _DUBLI_6",
+      "round": 6.0,
+      "course_book": "English File 4th: Advanced (ISBN-13978-0194038355)",
       "start_date": "2025-08-26",
       "end_date": "2025-10-02",
       "time_range": "19:00-21:00",
@@ -1986,6 +2250,9 @@
     "course_offering": {
       "course_full_name": "B1 MORNING - DUBLIN - 27.08.2025 - R6",
       "course_key": "B1 MORNING",
+      "attendance_id": "B1_MORN_DUBLI_6",
+      "round": 6.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-08-27",
       "end_date": "2025-10-03",
       "time_range": "9:30-12:00",
@@ -2008,6 +2275,9 @@
     "course_offering": {
       "course_full_name": "A2 INTENSIVE - AUCKLAND - 01.09.2025 - R9",
       "course_key": "A2 INTENSIVE",
+      "attendance_id": "A2_INTE_AUCKL_9",
+      "round": 9.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-09-01",
       "end_date": "2025-09-26",
       "time_range": "12:30-15:00",
@@ -2032,6 +2302,9 @@
     "course_offering": {
       "course_full_name": "B1 INTENSIVE - AUCKLAND - 01.09.2025 - R9",
       "course_key": "B1 INTENSIVE",
+      "attendance_id": "B1_INTE_AUCKL_9",
+      "round": 9.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-09-01",
       "end_date": "2025-09-26",
       "time_range": "12:30-15:00",
@@ -2056,6 +2329,9 @@
     "course_offering": {
       "course_full_name": "B2 INTENSIVE - AUCKLAND - 01.09.2025 - R9",
       "course_key": "B2 INTENSIVE",
+      "attendance_id": "B2_INTE_AUCKL_9",
+      "round": 9.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-09-01",
       "end_date": "2025-09-26",
       "time_range": "15:30-18:00",
@@ -2080,6 +2356,9 @@
     "course_offering": {
       "course_full_name": "B1 EVE ONLINE - FIFE - 29.09.2025 - R7",
       "course_key": "B1 EVE ONLINE",
+      "attendance_id": "B1_EVE _FIFE_7",
+      "round": 7.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-09-29",
       "end_date": "2025-11-05",
       "time_range": "19:00-21:00",
@@ -2102,6 +2381,9 @@
     "course_offering": {
       "course_full_name": "A1 BEGINNER - EDMONTON - 29.09.2025 - R7",
       "course_key": "A1 BEGINNER",
+      "attendance_id": "A1_BEGI_EDMON_7",
+      "round": 7.0,
+      "course_book": "English File Beginner Student’s Book - 4th Edition (ISBN-13978-0194029803)",
       "start_date": "2025-09-29",
       "end_date": "2025-11-05",
       "time_range": "15:30-17:30",
@@ -2124,6 +2406,9 @@
     "course_offering": {
       "course_full_name": "A2 ELEM MORNING - EDMONTON - 29.09.2025 - R7",
       "course_key": "A2 ELEM MORNING",
+      "attendance_id": "A2 EL_MORN_EDMON_7",
+      "round": 7.0,
+      "course_book": "English File Elementary 4th Edition (ISBN-13978-0194031592)",
       "start_date": "2025-09-29",
       "end_date": "2025-11-05",
       "time_range": "9:30-12:00",
@@ -2146,6 +2431,9 @@
     "course_offering": {
       "course_full_name": "A2 INTENSIVE - BOSTON - 29.09.2025 - R10",
       "course_key": "A2 INTENSIVE",
+      "attendance_id": "A2_INTE_BOSTO_10",
+      "round": 10.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-09-29",
       "end_date": "2025-10-24",
       "time_range": "15:30-18:00",
@@ -2170,6 +2458,9 @@
     "course_offering": {
       "course_full_name": "B1 INTENSIVE - BOSTON - 29.09.2025 - R10",
       "course_key": "B1 INTENSIVE",
+      "attendance_id": "B1_INTE_BOSTO_10",
+      "round": 10.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-09-29",
       "end_date": "2025-10-24",
       "time_range": "12:30-15:00",
@@ -2194,6 +2485,9 @@
     "course_offering": {
       "course_full_name": "B2 INTENSIVE - BOSTON - 29.09.2025 - R10",
       "course_key": "B2 INTENSIVE",
+      "attendance_id": "B2_INTE_BOSTO_10",
+      "round": 10.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-09-29",
       "end_date": "2025-10-24",
       "time_range": "12:30-15:00",
@@ -2218,6 +2512,9 @@
     "course_offering": {
       "course_full_name": "C1 MORNING - EDMONTON - 30.09.2025 - R7",
       "course_key": "C1 MORNING",
+      "attendance_id": "C1_MORN_EDMON_7",
+      "round": 7.0,
+      "course_book": "English File 4th: Advanced (ISBN-13978-0194038355)",
       "start_date": "2025-09-30",
       "end_date": "2025-11-07",
       "time_range": "9:30-12:00",
@@ -2240,6 +2537,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT MORNING - EDMONTON - 30.09.2025 - R7",
       "course_key": "A2 PRE-INT MORNING",
+      "attendance_id": "A2 PR_MORN_EDMON_7",
+      "round": 7.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-09-30",
       "end_date": "2025-11-06",
       "time_range": "9:30-12:00",
@@ -2262,6 +2562,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT MORNING - EDMONTON - 30.09.2025 - R7(2)",
       "course_key": "A2 PRE-INT MORNING",
+      "attendance_id": "A2 PR_MORN_EDMON_7(2)",
+      "round": null,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-09-30",
       "end_date": "2025-11-06",
       "time_range": "9:30-12:00",
@@ -2284,6 +2587,9 @@
     "course_offering": {
       "course_full_name": "B2 EVE ONLINE - EDMONTON - 06.10.2025 - R7",
       "course_key": "B2 EVE ONLINE",
+      "attendance_id": "B2_EVE _EDMON_7",
+      "round": 7.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-10-06",
       "end_date": "2025-11-12",
       "time_range": "19:00-21:00",
@@ -2306,6 +2612,9 @@
     "course_offering": {
       "course_full_name": "B2 MORNING - EDMONTON - 06.10.2025 - R7",
       "course_key": "B2 MORNING",
+      "attendance_id": "B2_MORN_EDMON_7",
+      "round": 7.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-10-06",
       "end_date": "2025-11-13",
       "time_range": "9:30-12:00",
@@ -2328,6 +2637,9 @@
     "course_offering": {
       "course_full_name": "BUSINESS EVE ONLINE - EDMONTON - 07.10.2025 - R7",
       "course_key": "BUSINESS EVE ONLINE",
+      "attendance_id": "BUSIN_EVE _EDMON_7",
+      "round": 7.0,
+      "course_book": "Business Partner B2+ – Pearson Benelux",
       "start_date": "2025-10-07",
       "end_date": "2025-11-13",
       "time_range": "19:00-21:00",
@@ -2350,6 +2662,9 @@
     "course_offering": {
       "course_full_name": "C1 EVE ONLINE - EDMONTON - 07.10.2025 - R7",
       "course_key": "C1 EVE ONLINE",
+      "attendance_id": "C1_EVE _EDMON_7",
+      "round": 7.0,
+      "course_book": "English File 4th: Advanced (ISBN-13978-0194038355)",
       "start_date": "2025-10-07",
       "end_date": "2025-11-13",
       "time_range": "19:00-21:00",
@@ -2372,6 +2687,9 @@
     "course_offering": {
       "course_full_name": "B1 MORNING - EDMONTON - 08.10.2025 - R7",
       "course_key": "B1 MORNING",
+      "attendance_id": "B1_MORN_EDMON_7",
+      "round": 7.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-10-08",
       "end_date": "2025-11-14",
       "time_range": "9:30-12:00",
@@ -2394,6 +2712,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT EVE ONLINE - EDMONTON - 21.10.2025 - R7",
       "course_key": "A2 PRE-INT EVE ONLINE",
+      "attendance_id": "A2 PR_EVE _EDMON_7",
+      "round": 7.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-10-21",
       "end_date": "2025-11-27",
       "time_range": "19:00-21:00",
@@ -2416,6 +2737,9 @@
     "course_offering": {
       "course_full_name": "A2 INTENSIVE - CAPE TOWN - 27.10.2025 - R11",
       "course_key": "A2 INTENSIVE",
+      "attendance_id": "A2_INTE_CAPE _11",
+      "round": 11.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-10-27",
       "end_date": "2025-11-21",
       "time_range": "12:30-15:00",
@@ -2440,6 +2764,9 @@
     "course_offering": {
       "course_full_name": "B1 INTENSIVE - CAPE TOWN - 27.10.2025 - R11",
       "course_key": "B1 INTENSIVE",
+      "attendance_id": "B1_INTE_CAPE _11",
+      "round": 11.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-10-27",
       "end_date": "2025-11-21",
       "time_range": "15:30-18:00",
@@ -2464,6 +2791,9 @@
     "course_offering": {
       "course_full_name": "B2 INTENSIVE - CAPE TOWN - 27.10.2025 - R11",
       "course_key": "B2 INTENSIVE",
+      "attendance_id": "B2_INTE_CAPE _11",
+      "round": 11.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-10-27",
       "end_date": "2025-11-21",
       "time_range": "12:30-15:00",
@@ -2488,6 +2818,9 @@
     "course_offering": {
       "course_full_name": "B1 EVE ONLINE - FIFE - 10.11.2025 - R8",
       "course_key": "B1 EVE ONLINE",
+      "attendance_id": "B1_EVE _FIFE_8",
+      "round": 8.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-11-10",
       "end_date": "2025-12-17",
       "time_range": "19:00-21:00",
@@ -2510,6 +2843,9 @@
     "course_offering": {
       "course_full_name": "A1 BEGINNER - DUBLIN - 10.11.2025 - R8",
       "course_key": "A1 BEGINNER",
+      "attendance_id": "A1_BEGI_DUBLI_8",
+      "round": 8.0,
+      "course_book": "English File Beginner Student’s Book - 4th Edition (ISBN-13978-0194029803)",
       "start_date": "2025-11-10",
       "end_date": "2025-12-17",
       "time_range": "15:30-17:30",
@@ -2532,6 +2868,9 @@
     "course_offering": {
       "course_full_name": "A2 ELEM MORNING - FIFE - 10.11.2025 - R8",
       "course_key": "A2 ELEM MORNING",
+      "attendance_id": "A2 EL_MORN_FIFE_8",
+      "round": 8.0,
+      "course_book": "English File Elementary 4th Edition (ISBN-13978-0194031592)",
       "start_date": "2025-11-10",
       "end_date": "2025-12-17",
       "time_range": "9:30-12:00",
@@ -2554,6 +2893,9 @@
     "course_offering": {
       "course_full_name": "A2 ELEM MORNING - FIFE - 10.11.2025 - R8-2",
       "course_key": "A2 ELEM MORNING",
+      "attendance_id": "A2 EL_MORN_FIFE_8-2",
+      "round": 8.0,
+      "course_book": "English File Elementary 4th Edition (ISBN-13978-0194031592)",
       "start_date": "2025-11-10",
       "end_date": "2025-12-17",
       "time_range": "15:30-18:00",
@@ -2576,6 +2918,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT MORNING - FIFE - 11.11.2025 - R8-2",
       "course_key": "A2 PRE-INT MORNING",
+      "attendance_id": "A2 PR_MORN_FIFE_8-2",
+      "round": 8.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-11-11",
       "end_date": "2025-12-18",
       "time_range": "9:30-12:00",
@@ -2598,6 +2943,9 @@
     "course_offering": {
       "course_full_name": "C1 MORNING - FIFE - 11.11.2025 - R8",
       "course_key": "C1 MORNING",
+      "attendance_id": "C1_MORN_FIFE_8",
+      "round": 8.0,
+      "course_book": "English File 4th: Advanced (ISBN-13978-0194038355)",
       "start_date": "2025-11-11",
       "end_date": "2025-12-19",
       "time_range": "9:30-12:00",
@@ -2620,6 +2968,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT MORNING - FIFE - 11.11.2025 - R8",
       "course_key": "A2 PRE-INT MORNING",
+      "attendance_id": "A2 PR_MORN_FIFE_8",
+      "round": 8.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-11-11",
       "end_date": "2025-12-18",
       "time_range": "9:30-12:00",
@@ -2642,6 +2993,9 @@
     "course_offering": {
       "course_full_name": "B2 EVE ONLINE - FIFE - 17.11.2025 - R8",
       "course_key": "B2 EVE ONLINE",
+      "attendance_id": "B2_EVE _FIFE_8",
+      "round": 8.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-11-17",
       "end_date": "2025-12-24",
       "time_range": "19:00-21:00",
@@ -2664,6 +3018,9 @@
     "course_offering": {
       "course_full_name": "B2 MORNING - FIFE - 17.11.2025 - R8",
       "course_key": "B2 MORNING",
+      "attendance_id": "B2_MORN_FIFE_8",
+      "round": 8.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-11-17",
       "end_date": "2025-12-18",
       "time_range": "9:30-12:00",
@@ -2686,6 +3043,9 @@
     "course_offering": {
       "course_full_name": "BUSINESS EVE ONLINE - FIFE - 18.11.2025 - R8",
       "course_key": "BUSINESS EVE ONLINE",
+      "attendance_id": "BUSIN_EVE _FIFE_8",
+      "round": 8.0,
+      "course_book": "Business Partner B2+ – Pearson Benelux",
       "start_date": "2025-11-18",
       "end_date": "2025-12-19",
       "time_range": "19:00-21:00",
@@ -2708,6 +3068,9 @@
     "course_offering": {
       "course_full_name": "C1 EVE ONLINE - FIFE - 18.11.2025 - R8",
       "course_key": "C1 EVE ONLINE",
+      "attendance_id": "C1_EVE _FIFE_8",
+      "round": 8.0,
+      "course_book": "English File 4th: Advanced (ISBN-13978-0194038355)",
       "start_date": "2025-11-18",
       "end_date": "2025-12-18",
       "time_range": "19:00-21:00",
@@ -2730,6 +3093,9 @@
     "course_offering": {
       "course_full_name": "B1 MORNING - FIFE - 19.11.2025 - R8",
       "course_key": "B1 MORNING",
+      "attendance_id": "B1_MORN_FIFE_8",
+      "round": 8.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-11-19",
       "end_date": "2025-12-19",
       "time_range": "9:30-12:00",
@@ -2752,6 +3118,9 @@
     "course_offering": {
       "course_full_name": "A2 INTENSIVE - AUCKLAND - 24.11.2025 - R12",
       "course_key": "A2 INTENSIVE",
+      "attendance_id": "A2_INTE_AUCKL_12",
+      "round": 12.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2025-11-24",
       "end_date": "2025-12-19",
       "time_range": "12:30-15:00",
@@ -2776,6 +3145,9 @@
     "course_offering": {
       "course_full_name": "B1 INTENSIVE - AUCKLAND - 24.11.2025 - R12",
       "course_key": "B1 INTENSIVE",
+      "attendance_id": "B1_INTE_AUCKL_12",
+      "round": 12.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2025-11-24",
       "end_date": "2025-12-19",
       "time_range": "12:30-15:00",
@@ -2800,6 +3172,9 @@
     "course_offering": {
       "course_full_name": "B2 INTENSIVE - AUCKLAND - 24.11.2025 - R12",
       "course_key": "B2 INTENSIVE",
+      "attendance_id": "B2_INTE_AUCKL_12",
+      "round": 12.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2025-11-24",
       "end_date": "2025-12-19",
       "time_range": "15:30-18:00",
@@ -2824,6 +3199,9 @@
     "course_offering": {
       "course_full_name": "A2 INTENSIVE - BOSTON - 12.01.2026 - R1",
       "course_key": "A2 INTENSIVE",
+      "attendance_id": "A2_INTE_BOSTO_1",
+      "round": 1.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-01-12",
       "end_date": "2026-02-06",
       "time_range": "15:30-18:00",
@@ -2848,6 +3226,9 @@
     "course_offering": {
       "course_full_name": "B1 INTENSIVE - BOSTON - 12.01.2026 - R1",
       "course_key": "B1 INTENSIVE",
+      "attendance_id": "B1_INTE_BOSTO_1",
+      "round": 1.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-01-12",
       "end_date": "2026-02-06",
       "time_range": "12:30-15:00",
@@ -2872,6 +3253,9 @@
     "course_offering": {
       "course_full_name": "B2 INTENSIVE - BOSTON - 12.01.2026 - R1",
       "course_key": "B2 INTENSIVE",
+      "attendance_id": "B2_INTE_BOSTO_1",
+      "round": 1.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-01-12",
       "end_date": "2026-02-06",
       "time_range": "12:30-15:00",
@@ -2896,6 +3280,9 @@
     "course_offering": {
       "course_full_name": "B2 MORNING - DUBLIN - 12.01.2026 - R1",
       "course_key": "B2 MORNING",
+      "attendance_id": "B2_MORN_DUBLI_1",
+      "round": 1.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-01-12",
       "end_date": "2026-02-19",
       "time_range": "9:30-12:00",
@@ -2918,6 +3305,9 @@
     "course_offering": {
       "course_full_name": "A1 BEGINNER - EDMONTON - 12.01.2026 - R1",
       "course_key": "A1 BEGINNER",
+      "attendance_id": "A1_BEGI_EDMON_1",
+      "round": 1.0,
+      "course_book": "English File Beginner 4th Edition (ISBN-13 978-0194031608)",
       "start_date": "2026-01-12",
       "end_date": "2026-02-18",
       "time_range": "15:30-17:30",
@@ -2940,6 +3330,9 @@
     "course_offering": {
       "course_full_name": "A2 ELEM MORNING - DUBLIN - 12.01.2026 - R1",
       "course_key": "A2 ELEM MORNING",
+      "attendance_id": "A2 EL_MORN_DUBLI_1",
+      "round": 1.0,
+      "course_book": "English File Elementary Plus 4th Edition (ISBN-13 978-0194032414)",
       "start_date": "2026-01-12",
       "end_date": "2026-02-18",
       "time_range": "9:30-12:00",
@@ -2962,6 +3355,9 @@
     "course_offering": {
       "course_full_name": "B1 EVE ONLINE - DUBLIN - 12.01.2026 - R1",
       "course_key": "B1 EVE ONLINE",
+      "attendance_id": "B1_EVE _DUBLI_1",
+      "round": 1.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-01-12",
       "end_date": "2026-02-18",
       "time_range": "19:00-21:00",
@@ -2984,6 +3380,9 @@
     "course_offering": {
       "course_full_name": "B2 EVE ONLINE - DUBLIN - 12.01.2026 - R1",
       "course_key": "B2 EVE ONLINE",
+      "attendance_id": "B2_EVE _DUBLI_1",
+      "round": 1.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-01-12",
       "end_date": "2026-02-18",
       "time_range": "19:00-21:00",
@@ -3006,6 +3405,9 @@
     "course_offering": {
       "course_full_name": "BUSINESS EVE ONLINE - DUBLIN - 12.01.2026 - R1",
       "course_key": "BUSINESS EVE ONLINE",
+      "attendance_id": "BUSIN_EVE _DUBLI_1",
+      "round": 1.0,
+      "course_book": "Business Result Pre-Intermediate 2nd Edition (ISBN-13 978-0194739542)",
       "start_date": "2026-01-12",
       "end_date": "2026-02-18",
       "time_range": "19:00-21:00",
@@ -3028,6 +3430,9 @@
     "course_offering": {
       "course_full_name": "C1 MORNING - DUBLIN - 13.01.2026 - R1",
       "course_key": "C1 MORNING",
+      "attendance_id": "C1_MORN_DUBLI_1",
+      "round": 1.0,
+      "course_book": "English File Advanced 4th Edition (ISBN-13 978-0194031691)",
       "start_date": "2026-01-13",
       "end_date": "2026-02-20",
       "time_range": "9:30-12:00",
@@ -3050,6 +3455,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT EVE ONLINE - DUBLIN - 13.01.2026 - R1",
       "course_key": "A2 PRE-INT EVE ONLINE",
+      "attendance_id": "A2 PR_EVE _DUBLI_1",
+      "round": 1.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-01-13",
       "end_date": "2026-02-19",
       "time_range": "19:00-21:00",
@@ -3072,6 +3480,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT MORNING - DUBLIN - 13.01.2026 - R1",
       "course_key": "A2 PRE-INT MORNING",
+      "attendance_id": "A2 PR_MORN_DUBLI_1",
+      "round": 1.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-01-13",
       "end_date": "2026-02-19",
       "time_range": "9:30-12:00",
@@ -3094,6 +3505,9 @@
     "course_offering": {
       "course_full_name": "C1 EVE ONLINE - DUBLIN - 13.01.2026 - R1",
       "course_key": "C1 EVE ONLINE",
+      "attendance_id": "C1_EVE _DUBLI_1",
+      "round": 1.0,
+      "course_book": "English File Advanced 4th Edition (ISBN-13 978-0194031691)",
       "start_date": "2026-01-13",
       "end_date": "2026-02-19",
       "time_range": "19:00-21:00",
@@ -3116,6 +3530,9 @@
     "course_offering": {
       "course_full_name": "B1 MORNING - DUBLIN - 14.01.2026 - R1",
       "course_key": "B1 MORNING",
+      "attendance_id": "B1_MORN_DUBLI_1",
+      "round": 1.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-01-14",
       "end_date": "2026-02-20",
       "time_range": "9:30-12:00",
@@ -3138,6 +3555,9 @@
     "course_offering": {
       "course_full_name": "A2 INTENSIVE - CAPE TOWN - 09.02.2026 - R2",
       "course_key": "A2 INTENSIVE",
+      "attendance_id": "A2_INTE_CAPE _2",
+      "round": 2.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-02-09",
       "end_date": "2026-03-06",
       "time_range": "12:30-15:00",
@@ -3162,6 +3582,9 @@
     "course_offering": {
       "course_full_name": "B1 INTENSIVE - CAPE TOWN - 09.02.2026 - R2",
       "course_key": "B1 INTENSIVE",
+      "attendance_id": "B1_INTE_CAPE _2",
+      "round": 2.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-02-09",
       "end_date": "2026-03-06",
       "time_range": "15:30-18:00",
@@ -3186,6 +3609,9 @@
     "course_offering": {
       "course_full_name": "B2 INTENSIVE - CAPE TOWN - 09.02.2026 - R2",
       "course_key": "B2 INTENSIVE",
+      "attendance_id": "B2_INTE_CAPE _2",
+      "round": 2.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-02-09",
       "end_date": "2026-03-06",
       "time_range": "12:30-15:00",
@@ -3210,6 +3636,9 @@
     "course_offering": {
       "course_full_name": "B2 MORNING - EDMONTON - 23.02.2026 - R2",
       "course_key": "B2 MORNING",
+      "attendance_id": "B2_MORN_EDMON_2",
+      "round": 2.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-02-23",
       "end_date": "2026-04-02",
       "time_range": "9:30-12:00",
@@ -3232,6 +3661,9 @@
     "course_offering": {
       "course_full_name": "A1 BEGINNER - DUBLIN - 23.02.2026 - R2",
       "course_key": "A1 BEGINNER",
+      "attendance_id": "A1_BEGI_DUBLI_2",
+      "round": 2.0,
+      "course_book": "English File Beginner 4th Edition (ISBN-13 978-0194031608)",
       "start_date": "2026-02-23",
       "end_date": "2026-04-01",
       "time_range": "15:30-17:30",
@@ -3254,6 +3686,9 @@
     "course_offering": {
       "course_full_name": "A2 ELEM MORNING - EDMONTON - 23.02.2026 - R2",
       "course_key": "A2 ELEM MORNING",
+      "attendance_id": "A2 EL_MORN_EDMON_2",
+      "round": 2.0,
+      "course_book": "English File Elementary Plus 4th Edition (ISBN-13 978-0194032414)",
       "start_date": "2026-02-23",
       "end_date": "2026-04-01",
       "time_range": "9:30-12:00",
@@ -3276,6 +3711,9 @@
     "course_offering": {
       "course_full_name": "B1 EVE ONLINE - EDMONTON - 23.02.2026 - R2",
       "course_key": "B1 EVE ONLINE",
+      "attendance_id": "B1_EVE _EDMON_2",
+      "round": 2.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-02-23",
       "end_date": "2026-04-01",
       "time_range": "19:00-21:00",
@@ -3298,6 +3736,9 @@
     "course_offering": {
       "course_full_name": "B2 EVE ONLINE - EDMONTON - 23.02.2026 - R2",
       "course_key": "B2 EVE ONLINE",
+      "attendance_id": "B2_EVE _EDMON_2",
+      "round": 2.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-02-23",
       "end_date": "2026-04-01",
       "time_range": "19:00-21:00",
@@ -3320,6 +3761,9 @@
     "course_offering": {
       "course_full_name": "BUSINESS EVE ONLINE - EDMONTON - 23.02.2026 - R2",
       "course_key": "BUSINESS EVE ONLINE",
+      "attendance_id": "BUSIN_EVE _EDMON_2",
+      "round": 2.0,
+      "course_book": "Business Result Pre-Intermediate 2nd Edition (ISBN-13 978-0194739542)",
       "start_date": "2026-02-23",
       "end_date": "2026-04-01",
       "time_range": "19:00-21:00",
@@ -3342,6 +3786,9 @@
     "course_offering": {
       "course_full_name": "C1 MORNING - EDMONTON - 24.02.2026 - R2",
       "course_key": "C1 MORNING",
+      "attendance_id": "C1_MORN_EDMON_2",
+      "round": 2.0,
+      "course_book": "English File Advanced 4th Edition (ISBN-13 978-0194031691)",
       "start_date": "2026-02-24",
       "end_date": "2026-04-03",
       "time_range": "9:30-12:00",
@@ -3364,6 +3811,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT EVE ONLINE - EDMONTON - 24.02.2026 - R2",
       "course_key": "A2 PRE-INT EVE ONLINE",
+      "attendance_id": "A2 PR_EVE _EDMON_2",
+      "round": 2.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-02-24",
       "end_date": "2026-04-02",
       "time_range": "19:00-21:00",
@@ -3386,6 +3836,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT MORNING - EDMONTON - 24.02.2026 - R2",
       "course_key": "A2 PRE-INT MORNING",
+      "attendance_id": "A2 PR_MORN_EDMON_2",
+      "round": 2.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-02-24",
       "end_date": "2026-04-02",
       "time_range": "9:30-12:00",
@@ -3408,6 +3861,9 @@
     "course_offering": {
       "course_full_name": "C1 EVE ONLINE - EDMONTON - 24.02.2026 - R2",
       "course_key": "C1 EVE ONLINE",
+      "attendance_id": "C1_EVE _EDMON_2",
+      "round": 2.0,
+      "course_book": "English File Advanced 4th Edition (ISBN-13 978-0194031691)",
       "start_date": "2026-02-24",
       "end_date": "2026-04-02",
       "time_range": "19:00-21:00",
@@ -3430,6 +3886,9 @@
     "course_offering": {
       "course_full_name": "B1 MORNING - EDMONTON - 25.02.2026 - R2",
       "course_key": "B1 MORNING",
+      "attendance_id": "B1_MORN_EDMON_2",
+      "round": 2.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-02-25",
       "end_date": "2026-04-03",
       "time_range": "9:30-12:00",
@@ -3452,6 +3911,9 @@
     "course_offering": {
       "course_full_name": "A2 INTENSIVE - AUCKLAND - 09.03.2026 - R3",
       "course_key": "A2 INTENSIVE",
+      "attendance_id": "A2_INTE_AUCKL_3",
+      "round": 3.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-03-09",
       "end_date": "2026-04-03",
       "time_range": "12:30-15:00",
@@ -3476,6 +3938,9 @@
     "course_offering": {
       "course_full_name": "B1 INTENSIVE - AUCKLAND - 09.03.2026 - R3",
       "course_key": "B1 INTENSIVE",
+      "attendance_id": "B1_INTE_AUCKL_3",
+      "round": 3.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-03-09",
       "end_date": "2026-04-03",
       "time_range": "12:30-15:00",
@@ -3500,6 +3965,9 @@
     "course_offering": {
       "course_full_name": "B2 INTENSIVE - AUCKLAND - 09.03.2026 - R3",
       "course_key": "B2 INTENSIVE",
+      "attendance_id": "B2_INTE_AUCKL_3",
+      "round": 3.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-03-09",
       "end_date": "2026-04-03",
       "time_range": "15:30-18:00",
@@ -3524,6 +3992,9 @@
     "course_offering": {
       "course_full_name": "A2 INTENSIVE - BOSTON - 06.04.2026 - R4",
       "course_key": "A2 INTENSIVE",
+      "attendance_id": "A2_INTE_BOSTO_4",
+      "round": 4.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-04-06",
       "end_date": "2026-05-01",
       "time_range": "15:30-18:00",
@@ -3548,6 +4019,9 @@
     "course_offering": {
       "course_full_name": "B1 INTENSIVE - BOSTON - 06.04.2026 - R4",
       "course_key": "B1 INTENSIVE",
+      "attendance_id": "B1_INTE_BOSTO_4",
+      "round": 4.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-04-06",
       "end_date": "2026-05-01",
       "time_range": "12:30-15:00",
@@ -3572,6 +4046,9 @@
     "course_offering": {
       "course_full_name": "B2 INTENSIVE - BOSTON - 06.04.2026 - R4",
       "course_key": "B2 INTENSIVE",
+      "attendance_id": "B2_INTE_BOSTO_4",
+      "round": 4.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-04-06",
       "end_date": "2026-05-01",
       "time_range": "12:30-15:00",
@@ -3596,6 +4073,9 @@
     "course_offering": {
       "course_full_name": "B2 MORNING - FIFE - 06.04.2026 - R3",
       "course_key": "B2 MORNING",
+      "attendance_id": "B2_MORN_FIFE_3",
+      "round": 3.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-04-06",
       "end_date": "2026-05-14",
       "time_range": "9:30-12:00",
@@ -3618,6 +4098,9 @@
     "course_offering": {
       "course_full_name": "A1 BEGINNER - EDMONTON - 06.04.2026 - R3",
       "course_key": "A1 BEGINNER",
+      "attendance_id": "A1_BEGI_EDMON_3",
+      "round": 3.0,
+      "course_book": "English File Beginner 4th Edition (ISBN-13 978-0194031608)",
       "start_date": "2026-04-06",
       "end_date": "2026-05-13",
       "time_range": "15:30-17:30",
@@ -3640,6 +4123,9 @@
     "course_offering": {
       "course_full_name": "A2 ELEM MORNING - FIFE - 06.04.2026 - R3",
       "course_key": "A2 ELEM MORNING",
+      "attendance_id": "A2 EL_MORN_FIFE_3",
+      "round": 3.0,
+      "course_book": "English File Elementary Plus 4th Edition (ISBN-13 978-0194032414)",
       "start_date": "2026-04-06",
       "end_date": "2026-05-13",
       "time_range": "9:30-12:00",
@@ -3662,6 +4148,9 @@
     "course_offering": {
       "course_full_name": "B1 EVE ONLINE - FIFE - 06.04.2026 - R3",
       "course_key": "B1 EVE ONLINE",
+      "attendance_id": "B1_EVE _FIFE_3",
+      "round": 3.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-04-06",
       "end_date": "2026-05-13",
       "time_range": "19:00-21:00",
@@ -3684,6 +4173,9 @@
     "course_offering": {
       "course_full_name": "B2 EVE ONLINE - FIFE - 06.04.2026 - R3",
       "course_key": "B2 EVE ONLINE",
+      "attendance_id": "B2_EVE _FIFE_3",
+      "round": 3.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-04-06",
       "end_date": "2026-05-13",
       "time_range": "19:00-21:00",
@@ -3706,6 +4198,9 @@
     "course_offering": {
       "course_full_name": "BUSINESS EVE ONLINE - FIFE - 06.04.2026 - R3",
       "course_key": "BUSINESS EVE ONLINE",
+      "attendance_id": "BUSIN_EVE _FIFE_3",
+      "round": 3.0,
+      "course_book": "Business Result Pre-Intermediate 2nd Edition (ISBN-13 978-0194739542)",
       "start_date": "2026-04-06",
       "end_date": "2026-05-13",
       "time_range": "19:00-21:00",
@@ -3728,6 +4223,9 @@
     "course_offering": {
       "course_full_name": "C1 MORNING - FIFE - 07.04.2026 - R3",
       "course_key": "C1 MORNING",
+      "attendance_id": "C1_MORN_FIFE_3",
+      "round": 3.0,
+      "course_book": "English File Advanced 4th Edition (ISBN-13 978-0194031691)",
       "start_date": "2026-04-07",
       "end_date": "2026-05-15",
       "time_range": "9:30-12:00",
@@ -3750,6 +4248,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT EVE ONLINE - FIFE - 07.04.2026 - R3",
       "course_key": "A2 PRE-INT EVE ONLINE",
+      "attendance_id": "A2 PR_EVE _FIFE_3",
+      "round": 3.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-04-07",
       "end_date": "2026-05-14",
       "time_range": "19:00-21:00",
@@ -3772,6 +4273,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT MORNING - FIFE - 07.04.2026 - R3",
       "course_key": "A2 PRE-INT MORNING",
+      "attendance_id": "A2 PR_MORN_FIFE_3",
+      "round": 3.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-04-07",
       "end_date": "2026-05-14",
       "time_range": "9:30-12:00",
@@ -3794,6 +4298,9 @@
     "course_offering": {
       "course_full_name": "C1 EVE ONLINE - FIFE - 07.04.2026 - R3",
       "course_key": "C1 EVE ONLINE",
+      "attendance_id": "C1_EVE _FIFE_3",
+      "round": 3.0,
+      "course_book": "English File Advanced 4th Edition (ISBN-13 978-0194031691)",
       "start_date": "2026-04-07",
       "end_date": "2026-05-14",
       "time_range": "19:00-21:00",
@@ -3816,6 +4323,9 @@
     "course_offering": {
       "course_full_name": "B1 MORNING - FIFE - 08.04.2026 - R3",
       "course_key": "B1 MORNING",
+      "attendance_id": "B1_MORN_FIFE_3",
+      "round": 3.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-04-08",
       "end_date": "2026-05-15",
       "time_range": "9:30-12:00",
@@ -3838,6 +4348,9 @@
     "course_offering": {
       "course_full_name": "A2 INTENSIVE - CAPE TOWN - 11.05.2026 - R5",
       "course_key": "A2 INTENSIVE",
+      "attendance_id": "A2_INTE_CAPE _5",
+      "round": 5.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-05-11",
       "end_date": "2026-06-05",
       "time_range": "12:30-15:00",
@@ -3862,6 +4375,9 @@
     "course_offering": {
       "course_full_name": "B1 INTENSIVE - CAPE TOWN - 11.05.2026 - R5",
       "course_key": "B1 INTENSIVE",
+      "attendance_id": "B1_INTE_CAPE _5",
+      "round": 5.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-05-11",
       "end_date": "2026-06-05",
       "time_range": "15:30-18:00",
@@ -3886,6 +4402,9 @@
     "course_offering": {
       "course_full_name": "B2 INTENSIVE - CAPE TOWN - 11.05.2026 - R5",
       "course_key": "B2 INTENSIVE",
+      "attendance_id": "B2_INTE_CAPE _5",
+      "round": 5.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-05-11",
       "end_date": "2026-06-05",
       "time_range": "12:30-15:00",
@@ -3910,6 +4429,9 @@
     "course_offering": {
       "course_full_name": "B2 MORNING - DUBLIN - 25.05.2026 - R4",
       "course_key": "B2 MORNING",
+      "attendance_id": "B2_MORN_DUBLI_4",
+      "round": 4.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-05-25",
       "end_date": "2026-07-02",
       "time_range": "9:30-12:00",
@@ -3932,6 +4454,9 @@
     "course_offering": {
       "course_full_name": "A1 BEGINNER - DUBLIN - 25.05.2026 - R4",
       "course_key": "A1 BEGINNER",
+      "attendance_id": "A1_BEGI_DUBLI_4",
+      "round": 4.0,
+      "course_book": "English File Beginner 4th Edition (ISBN-13 978-0194031608)",
       "start_date": "2026-05-25",
       "end_date": "2026-07-01",
       "time_range": "15:30-17:30",
@@ -3954,6 +4479,9 @@
     "course_offering": {
       "course_full_name": "A2 ELEM MORNING - DUBLIN - 25.05.2026 - R4",
       "course_key": "A2 ELEM MORNING",
+      "attendance_id": "A2 EL_MORN_DUBLI_4",
+      "round": 4.0,
+      "course_book": "English File Elementary Plus 4th Edition (ISBN-13 978-0194032414)",
       "start_date": "2026-05-25",
       "end_date": "2026-07-01",
       "time_range": "9:30-12:00",
@@ -3976,6 +4504,9 @@
     "course_offering": {
       "course_full_name": "B1 EVE ONLINE - DUBLIN - 25.05.2026 - R4",
       "course_key": "B1 EVE ONLINE",
+      "attendance_id": "B1_EVE _DUBLI_4",
+      "round": 4.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-05-25",
       "end_date": "2026-07-01",
       "time_range": "19:00-21:00",
@@ -3998,6 +4529,9 @@
     "course_offering": {
       "course_full_name": "B2 EVE ONLINE - DUBLIN - 25.05.2026 - R4",
       "course_key": "B2 EVE ONLINE",
+      "attendance_id": "B2_EVE _DUBLI_4",
+      "round": 4.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-05-25",
       "end_date": "2026-07-01",
       "time_range": "19:00-21:00",
@@ -4020,6 +4554,9 @@
     "course_offering": {
       "course_full_name": "BUSINESS EVE ONLINE - DUBLIN - 25.05.2026 - R4",
       "course_key": "BUSINESS EVE ONLINE",
+      "attendance_id": "BUSIN_EVE _DUBLI_4",
+      "round": 4.0,
+      "course_book": "Business Result Pre-Intermediate 2nd Edition (ISBN-13 978-0194739542)",
       "start_date": "2026-05-25",
       "end_date": "2026-07-01",
       "time_range": "19:00-21:00",
@@ -4042,6 +4579,9 @@
     "course_offering": {
       "course_full_name": "C1 MORNING - DUBLIN - 26.05.2026 - R4",
       "course_key": "C1 MORNING",
+      "attendance_id": "C1_MORN_DUBLI_4",
+      "round": 4.0,
+      "course_book": "English File Advanced 4th Edition (ISBN-13 978-0194031691)",
       "start_date": "2026-05-26",
       "end_date": "2026-07-03",
       "time_range": "9:30-12:00",
@@ -4064,6 +4604,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT EVE ONLINE - DUBLIN - 26.05.2026 - R4",
       "course_key": "A2 PRE-INT EVE ONLINE",
+      "attendance_id": "A2 PR_EVE _DUBLI_4",
+      "round": 4.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-05-26",
       "end_date": "2026-07-02",
       "time_range": "19:00-21:00",
@@ -4086,6 +4629,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT MORNING - DUBLIN - 26.05.2026 - R4",
       "course_key": "A2 PRE-INT MORNING",
+      "attendance_id": "A2 PR_MORN_DUBLI_4",
+      "round": 4.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-05-26",
       "end_date": "2026-07-02",
       "time_range": "9:30-12:00",
@@ -4108,6 +4654,9 @@
     "course_offering": {
       "course_full_name": "C1 EVE ONLINE - DUBLIN - 26.05.2026 - R4",
       "course_key": "C1 EVE ONLINE",
+      "attendance_id": "C1_EVE _DUBLI_4",
+      "round": 4.0,
+      "course_book": "English File Advanced 4th Edition (ISBN-13 978-0194031691)",
       "start_date": "2026-05-26",
       "end_date": "2026-07-02",
       "time_range": "19:00-21:00",
@@ -4130,6 +4679,9 @@
     "course_offering": {
       "course_full_name": "B1 MORNING - DUBLIN - 27.05.2026 - R4",
       "course_key": "B1 MORNING",
+      "attendance_id": "B1_MORN_DUBLI_4",
+      "round": 4.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-05-27",
       "end_date": "2026-07-03",
       "time_range": "9:30-12:00",
@@ -4152,6 +4704,9 @@
     "course_offering": {
       "course_full_name": "A2 INTENSIVE - AUCKLAND - 08.06.2026 - R6",
       "course_key": "A2 INTENSIVE",
+      "attendance_id": "A2_INTE_AUCKL_6",
+      "round": 6.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-06-08",
       "end_date": "2026-07-03",
       "time_range": "12:30-15:00",
@@ -4176,6 +4731,9 @@
     "course_offering": {
       "course_full_name": "B1 INTENSIVE - AUCKLAND - 08.06.2026 - R6",
       "course_key": "B1 INTENSIVE",
+      "attendance_id": "B1_INTE_AUCKL_6",
+      "round": 6.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-06-08",
       "end_date": "2026-07-03",
       "time_range": "12:30-15:00",
@@ -4200,6 +4758,9 @@
     "course_offering": {
       "course_full_name": "B2 INTENSIVE - AUCKLAND - 08.06.2026 - R6",
       "course_key": "B2 INTENSIVE",
+      "attendance_id": "B2_INTE_AUCKL_6",
+      "round": 6.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-06-08",
       "end_date": "2026-07-03",
       "time_range": "15:30-18:00",
@@ -4224,6 +4785,9 @@
     "course_offering": {
       "course_full_name": "A2 INTENSIVE - BOSTON - 06.07.2026 - R7",
       "course_key": "A2 INTENSIVE",
+      "attendance_id": "A2_INTE_BOSTO_7",
+      "round": 7.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-07-06",
       "end_date": "2026-07-31",
       "time_range": "15:30-18:00",
@@ -4248,6 +4812,9 @@
     "course_offering": {
       "course_full_name": "B1 INTENSIVE - BOSTON - 06.07.2026 - R7",
       "course_key": "B1 INTENSIVE",
+      "attendance_id": "B1_INTE_BOSTO_7",
+      "round": 7.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-07-06",
       "end_date": "2026-07-31",
       "time_range": "12:30-15:00",
@@ -4272,6 +4839,9 @@
     "course_offering": {
       "course_full_name": "B2 INTENSIVE - BOSTON - 06.07.2026 - R7",
       "course_key": "B2 INTENSIVE",
+      "attendance_id": "B2_INTE_BOSTO_7",
+      "round": 7.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-07-06",
       "end_date": "2026-07-31",
       "time_range": "12:30-15:00",
@@ -4296,6 +4866,9 @@
     "course_offering": {
       "course_full_name": "B2 MORNING - EDMONTON - 06.07.2026 - R5",
       "course_key": "B2 MORNING",
+      "attendance_id": "B2_MORN_EDMON_5",
+      "round": 5.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-07-06",
       "end_date": "2026-08-13",
       "time_range": "9:30-12:00",
@@ -4318,6 +4891,9 @@
     "course_offering": {
       "course_full_name": "A1 BEGINNER - EDMONTON - 06.07.2026 - R5",
       "course_key": "A1 BEGINNER",
+      "attendance_id": "A1_BEGI_EDMON_5",
+      "round": 5.0,
+      "course_book": "English File Beginner 4th Edition (ISBN-13 978-0194031608)",
       "start_date": "2026-07-06",
       "end_date": "2026-08-12",
       "time_range": "15:30-17:30",
@@ -4340,6 +4916,9 @@
     "course_offering": {
       "course_full_name": "A2 ELEM MORNING - EDMONTON - 06.07.2026 - R5",
       "course_key": "A2 ELEM MORNING",
+      "attendance_id": "A2 EL_MORN_EDMON_5",
+      "round": 5.0,
+      "course_book": "English File Elementary Plus 4th Edition (ISBN-13 978-0194032414)",
       "start_date": "2026-07-06",
       "end_date": "2026-08-12",
       "time_range": "9:30-12:00",
@@ -4362,6 +4941,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT EVE ONLINE - EDMONTON - 06.07.2026 - R5",
       "course_key": "A2 PRE-INT EVE ONLINE",
+      "attendance_id": "A2 PR_EVE _EDMON_5",
+      "round": 5.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-07-06",
       "end_date": "2026-08-12",
       "time_range": "19:00-21:00",
@@ -4384,6 +4966,9 @@
     "course_offering": {
       "course_full_name": "B1 EVE ONLINE - EDMONTON - 06.07.2026 - R5",
       "course_key": "B1 EVE ONLINE",
+      "attendance_id": "B1_EVE _EDMON_5",
+      "round": 5.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-07-06",
       "end_date": "2026-08-12",
       "time_range": "19:00-21:00",
@@ -4406,6 +4991,9 @@
     "course_offering": {
       "course_full_name": "B2 EVE ONLINE - EDMONTON - 06.07.2026 - R5",
       "course_key": "B2 EVE ONLINE",
+      "attendance_id": "B2_EVE _EDMON_5",
+      "round": 5.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-07-06",
       "end_date": "2026-08-12",
       "time_range": "19:00-21:00",
@@ -4428,6 +5016,9 @@
     "course_offering": {
       "course_full_name": "BUSINESS EVE ONLINE - EDMONTON - 06.07.2026 - R5",
       "course_key": "BUSINESS EVE ONLINE",
+      "attendance_id": "BUSIN_EVE _EDMON_5",
+      "round": 5.0,
+      "course_book": "Business Result Pre-Intermediate 2nd Edition (ISBN-13 978-0194739542)",
       "start_date": "2026-07-06",
       "end_date": "2026-08-12",
       "time_range": "19:00-21:00",
@@ -4450,6 +5041,9 @@
     "course_offering": {
       "course_full_name": "C1 MORNING - EDMONTON - 07.07.2026 - R5",
       "course_key": "C1 MORNING",
+      "attendance_id": "C1_MORN_EDMON_5",
+      "round": 5.0,
+      "course_book": "English File Advanced 4th Edition (ISBN-13 978-0194031691)",
       "start_date": "2026-07-07",
       "end_date": "2026-08-14",
       "time_range": "9:30-12:00",
@@ -4472,6 +5066,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT MORNING - EDMONTON - 07.07.2026 - R5",
       "course_key": "A2 PRE-INT MORNING",
+      "attendance_id": "A2 PR_MORN_EDMON_5",
+      "round": 5.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-07-07",
       "end_date": "2026-08-13",
       "time_range": "9:30-12:00",
@@ -4494,6 +5091,9 @@
     "course_offering": {
       "course_full_name": "C1 EVE ONLINE - EDMONTON - 07.07.2026 - R5",
       "course_key": "C1 EVE ONLINE",
+      "attendance_id": "C1_EVE _EDMON_5",
+      "round": 5.0,
+      "course_book": "English File Advanced 4th Edition (ISBN-13 978-0194031691)",
       "start_date": "2026-07-07",
       "end_date": "2026-08-13",
       "time_range": "19:00-21:00",
@@ -4516,6 +5116,9 @@
     "course_offering": {
       "course_full_name": "B1 MORNING - EDMONTON - 08.07.2026 - R5",
       "course_key": "B1 MORNING",
+      "attendance_id": "B1_MORN_EDMON_5",
+      "round": 5.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-07-08",
       "end_date": "2026-08-14",
       "time_range": "9:30-12:00",
@@ -4538,6 +5141,9 @@
     "course_offering": {
       "course_full_name": "A2 INTENSIVE - CAPE TOWN - 03.08.2026 - R8",
       "course_key": "A2 INTENSIVE",
+      "attendance_id": "A2_INTE_CAPE _8",
+      "round": 8.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-08-03",
       "end_date": "2026-08-28",
       "time_range": "12:30-15:00",
@@ -4562,6 +5168,9 @@
     "course_offering": {
       "course_full_name": "B1 INTENSIVE - CAPE TOWN - 03.08.2026 - R8",
       "course_key": "B1 INTENSIVE",
+      "attendance_id": "B1_INTE_CAPE _8",
+      "round": 8.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-08-03",
       "end_date": "2026-08-28",
       "time_range": "15:30-18:00",
@@ -4586,6 +5195,9 @@
     "course_offering": {
       "course_full_name": "B2 INTENSIVE - CAPE TOWN - 03.08.2026 - R8",
       "course_key": "B2 INTENSIVE",
+      "attendance_id": "B2_INTE_CAPE _8",
+      "round": 8.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-08-03",
       "end_date": "2026-08-28",
       "time_range": "12:30-15:00",
@@ -4610,6 +5222,9 @@
     "course_offering": {
       "course_full_name": "B2 MORNING - FIFE - 17.08.2026 - R6",
       "course_key": "B2 MORNING",
+      "attendance_id": "B2_MORN_FIFE_6",
+      "round": 6.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-08-17",
       "end_date": "2026-09-24",
       "time_range": "9:30-12:00",
@@ -4632,6 +5247,9 @@
     "course_offering": {
       "course_full_name": "A1 BEGINNER - DUBLIN - 17.08.2026 - R6",
       "course_key": "A1 BEGINNER",
+      "attendance_id": "A1_BEGI_DUBLI_6",
+      "round": 6.0,
+      "course_book": "English File Beginner 4th Edition (ISBN-13 978-0194031608)",
       "start_date": "2026-08-17",
       "end_date": "2026-09-23",
       "time_range": "15:30-17:30",
@@ -4654,6 +5272,9 @@
     "course_offering": {
       "course_full_name": "A2 ELEM MORNING - FIFE - 17.08.2026 - R6",
       "course_key": "A2 ELEM MORNING",
+      "attendance_id": "A2 EL_MORN_FIFE_6",
+      "round": 6.0,
+      "course_book": "English File Elementary Plus 4th Edition (ISBN-13 978-0194032414)",
       "start_date": "2026-08-17",
       "end_date": "2026-09-23",
       "time_range": "9:30-12:00",
@@ -4676,6 +5297,9 @@
     "course_offering": {
       "course_full_name": "B1 EVE ONLINE - FIFE - 17.08.2026 - R6",
       "course_key": "B1 EVE ONLINE",
+      "attendance_id": "B1_EVE _FIFE_6",
+      "round": 6.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-08-17",
       "end_date": "2026-09-23",
       "time_range": "19:00-21:00",
@@ -4698,6 +5322,9 @@
     "course_offering": {
       "course_full_name": "B2 EVE ONLINE - FIFE - 17.08.2026 - R6",
       "course_key": "B2 EVE ONLINE",
+      "attendance_id": "B2_EVE _FIFE_6",
+      "round": 6.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-08-17",
       "end_date": "2026-09-23",
       "time_range": "19:00-21:00",
@@ -4720,6 +5347,9 @@
     "course_offering": {
       "course_full_name": "BUSINESS EVE ONLINE - FIFE - 17.08.2026 - R6",
       "course_key": "BUSINESS EVE ONLINE",
+      "attendance_id": "BUSIN_EVE _FIFE_6",
+      "round": 6.0,
+      "course_book": "Business Result Pre-Intermediate 2nd Edition (ISBN-13 978-0194739542)",
       "start_date": "2026-08-17",
       "end_date": "2026-09-23",
       "time_range": "19:00-21:00",
@@ -4742,6 +5372,9 @@
     "course_offering": {
       "course_full_name": "C1 MORNING - FIFE - 18.08.2026 - R6",
       "course_key": "C1 MORNING",
+      "attendance_id": "C1_MORN_FIFE_6",
+      "round": 6.0,
+      "course_book": "English File Advanced 4th Edition (ISBN-13 978-0194031691)",
       "start_date": "2026-08-18",
       "end_date": "2026-09-25",
       "time_range": "9:30-12:00",
@@ -4764,6 +5397,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT EVE ONLINE - FIFE - 18.08.2026 - R6",
       "course_key": "A2 PRE-INT EVE ONLINE",
+      "attendance_id": "A2 PR_EVE _FIFE_6",
+      "round": 6.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-08-18",
       "end_date": "2026-09-24",
       "time_range": "19:00-21:00",
@@ -4786,6 +5422,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT MORNING - FIFE - 18.08.2026 - R6",
       "course_key": "A2 PRE-INT MORNING",
+      "attendance_id": "A2 PR_MORN_FIFE_6",
+      "round": 6.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-08-18",
       "end_date": "2026-09-24",
       "time_range": "9:30-12:00",
@@ -4808,6 +5447,9 @@
     "course_offering": {
       "course_full_name": "C1 EVE ONLINE - FIFE - 18.08.2026 - R6",
       "course_key": "C1 EVE ONLINE",
+      "attendance_id": "C1_EVE _FIFE_6",
+      "round": 6.0,
+      "course_book": "English File Advanced 4th Edition (ISBN-13 978-0194031691)",
       "start_date": "2026-08-18",
       "end_date": "2026-09-24",
       "time_range": "19:00-21:00",
@@ -4830,6 +5472,9 @@
     "course_offering": {
       "course_full_name": "B1 MORNING - FIFE - 19.08.2026 - R6",
       "course_key": "B1 MORNING",
+      "attendance_id": "B1_MORN_FIFE_6",
+      "round": 6.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-08-19",
       "end_date": "2026-09-25",
       "time_range": "9:30-12:00",
@@ -4852,6 +5497,9 @@
     "course_offering": {
       "course_full_name": "A2 INTENSIVE - AUCKLAND - 31.08.2026 - R9",
       "course_key": "A2 INTENSIVE",
+      "attendance_id": "A2_INTE_AUCKL_9",
+      "round": 9.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-08-31",
       "end_date": "2026-09-25",
       "time_range": "12:30-15:00",
@@ -4876,6 +5524,9 @@
     "course_offering": {
       "course_full_name": "B1 INTENSIVE - AUCKLAND - 31.08.2026 - R9",
       "course_key": "B1 INTENSIVE",
+      "attendance_id": "B1_INTE_AUCKL_9",
+      "round": 9.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-08-31",
       "end_date": "2026-09-25",
       "time_range": "12:30-15:00",
@@ -4900,6 +5551,9 @@
     "course_offering": {
       "course_full_name": "B2 INTENSIVE - AUCKLAND - 31.08.2026 - R9",
       "course_key": "B2 INTENSIVE",
+      "attendance_id": "B2_INTE_AUCKL_9",
+      "round": 9.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-08-31",
       "end_date": "2026-09-25",
       "time_range": "15:30-18:00",
@@ -4924,6 +5578,9 @@
     "course_offering": {
       "course_full_name": "A2 INTENSIVE - BOSTON - 28.09.2026 - R10",
       "course_key": "A2 INTENSIVE",
+      "attendance_id": "A2_INTE_BOSTO_10",
+      "round": 10.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-09-28",
       "end_date": "2026-10-23",
       "time_range": "15:30-18:00",
@@ -4948,6 +5605,9 @@
     "course_offering": {
       "course_full_name": "B1 INTENSIVE - BOSTON - 28.09.2026 - R10",
       "course_key": "B1 INTENSIVE",
+      "attendance_id": "B1_INTE_BOSTO_10",
+      "round": 10.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-09-28",
       "end_date": "2026-10-23",
       "time_range": "12:30-15:00",
@@ -4972,6 +5632,9 @@
     "course_offering": {
       "course_full_name": "B2 INTENSIVE - BOSTON - 28.09.2026 - R10",
       "course_key": "B2 INTENSIVE",
+      "attendance_id": "B2_INTE_BOSTO_10",
+      "round": 10.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-09-28",
       "end_date": "2026-10-23",
       "time_range": "12:30-15:00",
@@ -4996,6 +5659,9 @@
     "course_offering": {
       "course_full_name": "B2 MORNING - DUBLIN - 28.09.2026 - R7",
       "course_key": "B2 MORNING",
+      "attendance_id": "B2_MORN_DUBLI_7",
+      "round": 7.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-09-28",
       "end_date": "2026-11-05",
       "time_range": "9:30-12:00",
@@ -5018,6 +5684,9 @@
     "course_offering": {
       "course_full_name": "A1 BEGINNER - EDMONTON - 28.09.2026 - R7",
       "course_key": "A1 BEGINNER",
+      "attendance_id": "A1_BEGI_EDMON_7",
+      "round": 7.0,
+      "course_book": "English File Beginner 4th Edition (ISBN-13 978-0194031608)",
       "start_date": "2026-09-28",
       "end_date": "2026-11-04",
       "time_range": "15:30-17:30",
@@ -5040,6 +5709,9 @@
     "course_offering": {
       "course_full_name": "A2 ELEM MORNING - DUBLIN - 28.09.2026 - R7",
       "course_key": "A2 ELEM MORNING",
+      "attendance_id": "A2 EL_MORN_DUBLI_7",
+      "round": 7.0,
+      "course_book": "English File Elementary Plus 4th Edition (ISBN-13 978-0194032414)",
       "start_date": "2026-09-28",
       "end_date": "2026-11-04",
       "time_range": "9:30-12:00",
@@ -5062,6 +5734,9 @@
     "course_offering": {
       "course_full_name": "B1 EVE ONLINE - DUBLIN - 28.09.2026 - R7",
       "course_key": "B1 EVE ONLINE",
+      "attendance_id": "B1_EVE _DUBLI_7",
+      "round": 7.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-09-28",
       "end_date": "2026-11-04",
       "time_range": "19:00-21:00",
@@ -5084,6 +5759,9 @@
     "course_offering": {
       "course_full_name": "B2 EVE ONLINE - DUBLIN - 28.09.2026 - R7",
       "course_key": "B2 EVE ONLINE",
+      "attendance_id": "B2_EVE _DUBLI_7",
+      "round": 7.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-09-28",
       "end_date": "2026-11-04",
       "time_range": "19:00-21:00",
@@ -5106,6 +5784,9 @@
     "course_offering": {
       "course_full_name": "BUSINESS EVE ONLINE - DUBLIN - 28.09.2026 - R7",
       "course_key": "BUSINESS EVE ONLINE",
+      "attendance_id": "BUSIN_EVE _DUBLI_7",
+      "round": 7.0,
+      "course_book": "Business Result Pre-Intermediate 2nd Edition (ISBN-13 978-0194739542)",
       "start_date": "2026-09-28",
       "end_date": "2026-11-04",
       "time_range": "19:00-21:00",
@@ -5128,6 +5809,9 @@
     "course_offering": {
       "course_full_name": "C1 MORNING - DUBLIN - 29.09.2026 - R7",
       "course_key": "C1 MORNING",
+      "attendance_id": "C1_MORN_DUBLI_7",
+      "round": 7.0,
+      "course_book": "English File Advanced 4th Edition (ISBN-13 978-0194031691)",
       "start_date": "2026-09-29",
       "end_date": "2026-11-06",
       "time_range": "9:30-12:00",
@@ -5150,6 +5834,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT EVE ONLINE - DUBLIN - 29.09.2026 - R7",
       "course_key": "A2 PRE-INT EVE ONLINE",
+      "attendance_id": "A2 PR_EVE _DUBLI_7",
+      "round": 7.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-09-29",
       "end_date": "2026-11-05",
       "time_range": "19:00-21:00",
@@ -5172,6 +5859,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT MORNING - DUBLIN - 29.09.2026 - R7",
       "course_key": "A2 PRE-INT MORNING",
+      "attendance_id": "A2 PR_MORN_DUBLI_7",
+      "round": 7.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-09-29",
       "end_date": "2026-11-05",
       "time_range": "9:30-12:00",
@@ -5194,6 +5884,9 @@
     "course_offering": {
       "course_full_name": "C1 EVE ONLINE - DUBLIN - 29.09.2026 - R7",
       "course_key": "C1 EVE ONLINE",
+      "attendance_id": "C1_EVE _DUBLI_7",
+      "round": 7.0,
+      "course_book": "English File Advanced 4th Edition (ISBN-13 978-0194031691)",
       "start_date": "2026-09-29",
       "end_date": "2026-11-05",
       "time_range": "19:00-21:00",
@@ -5216,6 +5909,9 @@
     "course_offering": {
       "course_full_name": "B1 MORNING - DUBLIN - 30.09.2026 - R7",
       "course_key": "B1 MORNING",
+      "attendance_id": "B1_MORN_DUBLI_7",
+      "round": 7.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-09-30",
       "end_date": "2026-11-06",
       "time_range": "9:30-12:00",
@@ -5238,6 +5934,9 @@
     "course_offering": {
       "course_full_name": "A2 INTENSIVE - CAPE TOWN - 26.10.2026 - R11",
       "course_key": "A2 INTENSIVE",
+      "attendance_id": "A2_INTE_CAPE _11",
+      "round": 11.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-10-26",
       "end_date": "2026-11-20",
       "time_range": "12:30-15:00",
@@ -5262,6 +5961,9 @@
     "course_offering": {
       "course_full_name": "B1 INTENSIVE - CAPE TOWN - 26.10.2026 - R11",
       "course_key": "B1 INTENSIVE",
+      "attendance_id": "B1_INTE_CAPE _11",
+      "round": 11.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-10-26",
       "end_date": "2026-11-20",
       "time_range": "15:30-18:00",
@@ -5286,6 +5988,9 @@
     "course_offering": {
       "course_full_name": "B2 INTENSIVE - CAPE TOWN - 26.10.2026 - R11",
       "course_key": "B2 INTENSIVE",
+      "attendance_id": "B2_INTE_CAPE _11",
+      "round": 11.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-10-26",
       "end_date": "2026-11-20",
       "time_range": "12:30-15:00",
@@ -5310,6 +6015,9 @@
     "course_offering": {
       "course_full_name": "B1 MORNING - EDMONTON - 04.11.2026 - R8",
       "course_key": "B1 MORNING",
+      "attendance_id": "B1_MORN_EDMON_8",
+      "round": 8.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-11-04",
       "end_date": "2026-12-11",
       "time_range": "9:30-12:00",
@@ -5332,6 +6040,9 @@
     "course_offering": {
       "course_full_name": "B2 MORNING - EDMONTON - 09.11.2026 - R8",
       "course_key": "B2 MORNING",
+      "attendance_id": "B2_MORN_EDMON_8",
+      "round": 8.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-11-09",
       "end_date": "2026-12-17",
       "time_range": "9:30-12:00",
@@ -5354,6 +6065,9 @@
     "course_offering": {
       "course_full_name": "A1 BEGINNER - DUBLIN - 09.11.2026 - R8",
       "course_key": "A1 BEGINNER",
+      "attendance_id": "A1_BEGI_DUBLI_8",
+      "round": 8.0,
+      "course_book": "English File Beginner 4th Edition (ISBN-13 978-0194031608)",
       "start_date": "2026-11-09",
       "end_date": "2026-12-16",
       "time_range": "15:30-17:30",
@@ -5376,6 +6090,9 @@
     "course_offering": {
       "course_full_name": "A2 ELEM MORNING - EDMONTON - 09.11.2026 - R8",
       "course_key": "A2 ELEM MORNING",
+      "attendance_id": "A2 EL_MORN_EDMON_8",
+      "round": 8.0,
+      "course_book": "English File Elementary Plus 4th Edition (ISBN-13 978-0194032414)",
       "start_date": "2026-11-09",
       "end_date": "2026-12-16",
       "time_range": "9:30-12:00",
@@ -5398,6 +6115,9 @@
     "course_offering": {
       "course_full_name": "B1 EVE ONLINE - EDMONTON - 09.11.2026 - R8",
       "course_key": "B1 EVE ONLINE",
+      "attendance_id": "B1_EVE _EDMON_8",
+      "round": 8.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-11-09",
       "end_date": "2026-12-16",
       "time_range": "19:00-21:00",
@@ -5420,6 +6140,9 @@
     "course_offering": {
       "course_full_name": "B2 EVE ONLINE - EDMONTON - 09.11.2026 - R8",
       "course_key": "B2 EVE ONLINE",
+      "attendance_id": "B2_EVE _EDMON_8",
+      "round": 8.0,
+      "course_book": "English File Upper Intermediate 4th Edition (ISBN-978-0194039697)",
       "start_date": "2026-11-09",
       "end_date": "2026-12-16",
       "time_range": "19:00-21:00",
@@ -5442,6 +6165,9 @@
     "course_offering": {
       "course_full_name": "BUSINESS EVE ONLINE - EDMONTON - 09.11.2026 - R8",
       "course_key": "BUSINESS EVE ONLINE",
+      "attendance_id": "BUSIN_EVE _EDMON_8",
+      "round": 8.0,
+      "course_book": "Business Result Pre-Intermediate 2nd Edition (ISBN-13 978-0194739542)",
       "start_date": "2026-11-09",
       "end_date": "2026-12-16",
       "time_range": "19:00-21:00",
@@ -5464,6 +6190,9 @@
     "course_offering": {
       "course_full_name": "C1 MORNING - EDMONTON - 10.11.2026 - R8",
       "course_key": "C1 MORNING",
+      "attendance_id": "C1_MORN_EDMON_8",
+      "round": 8.0,
+      "course_book": "English File Advanced 4th Edition (ISBN-13 978-0194031691)",
       "start_date": "2026-11-10",
       "end_date": "2026-12-18",
       "time_range": "9:30-12:00",
@@ -5486,6 +6215,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT EVE ONLINE - EDMONTON - 10.11.2026 - R8",
       "course_key": "A2 PRE-INT EVE ONLINE",
+      "attendance_id": "A2 PR_EVE _EDMON_8",
+      "round": 8.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-11-10",
       "end_date": "2026-12-17",
       "time_range": "19:00-21:00",
@@ -5508,6 +6240,9 @@
     "course_offering": {
       "course_full_name": "A2 PRE-INT MORNING - EDMONTON - 10.11.2026 - R8",
       "course_key": "A2 PRE-INT MORNING",
+      "attendance_id": "A2 PR_MORN_EDMON_8",
+      "round": 8.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-11-10",
       "end_date": "2026-12-17",
       "time_range": "9:30-12:00",
@@ -5530,6 +6265,9 @@
     "course_offering": {
       "course_full_name": "C1 EVE ONLINE - EDMONTON - 10.11.2026 - R8",
       "course_key": "C1 EVE ONLINE",
+      "attendance_id": "C1_EVE _EDMON_8",
+      "round": 8.0,
+      "course_book": "English File Advanced 4th Edition (ISBN-13 978-0194031691)",
       "start_date": "2026-11-10",
       "end_date": "2026-12-17",
       "time_range": "19:00-21:00",
@@ -5552,6 +6290,9 @@
     "course_offering": {
       "course_full_name": "A2 INTENSIVE - AUCKLAND - 23.11.2026 - R12",
       "course_key": "A2 INTENSIVE",
+      "attendance_id": "A2_INTE_AUCKL_12",
+      "round": 12.0,
+      "course_book": "English File Pre-Intermediate 4th Edition (ISBN-13 978-0194037419)",
       "start_date": "2026-11-23",
       "end_date": "2026-12-18",
       "time_range": "12:30-15:00",
@@ -5576,6 +6317,9 @@
     "course_offering": {
       "course_full_name": "B1 INTENSIVE - AUCKLAND - 23.11.2026 - R12",
       "course_key": "B1 INTENSIVE",
+      "attendance_id": "B1_INTE_AUCKL_12",
+      "round": 12.0,
+      "course_book": "English File Intermediate 4th Edition (ISBN-13978-0194035910)",
       "start_date": "2026-11-23",
       "end_date": "2026-12-18",
       "time_range": "12:30-15:00",
