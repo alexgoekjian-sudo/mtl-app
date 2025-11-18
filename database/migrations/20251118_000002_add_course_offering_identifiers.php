@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddCourseOfferingIdentifiers extends Migration
+class AddAttendanceIdAndRoundToCourseOfferings extends Migration
 {
     /**
      * Add attendance_id, round, course_book to course_offerings
