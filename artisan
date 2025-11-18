@@ -2,4 +2,8 @@
 <?php
 require __DIR__.'/vendor/autoload.php';
 $app = require_once __DIR__.'/bootstrap/app.php';
-(new Laravel\Lumen\Console\Kernel($app))->handle($argv);
+// Run the console kernel using a proper Console Input object so
+// modern Symfony/Illuminate Console signatures are satisfied.
+$kernel = new Laravel\Lumen\Console\Kernel($app);
+$input = new Symfony\Component\Console\Input\ArgvInput();
+$kernel->handle($input);

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MTL App — Admin: Students</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:24px}
+    .card{max-width:720px;margin:0 auto;border:1px solid #eee;padding:18px;border-radius:8px}
+    label{display:block;margin-top:8px}
+    input,textarea,select{width:100%;padding:8px;margin-top:4px;border:1px solid #ccc;border-radius:4px}
+    button{margin-top:12px;padding:10px 14px;border:none;border-radius:6px;background:#007bff;color:#fff}
+    .muted{color:#666;font-size:0.9rem}
+    .hidden{display:none}
+    .row{display:flex;gap:12px}
+    .col{flex:1}
+    .msg{padding:8px;border-radius:6px;margin-top:12px}
+    .msg.ok{background:#e6ffed;color:#064e2c}
+    .msg.err{background:#ffe6e6;color:#5a1818}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>MTL — Admin Console (Students)</h2>
+    <p class="muted">Quick UI to login and add students. Data is sent to the API on this same domain.</p>
+
+    <div id="loginBox">
+      <h3>Login</h3>
+      <label>Email
+        <input id="loginEmail" type="email" value="admin@mixtreelang.nl" />
+      </label>
+      <label>Password
+        <input id="loginPassword" type="password" value="ChangeMe123!" />
+      </label>
+      <button id="btnLogin">Log in</button>
+      <div id="loginMsg" class="msg hidden"></div>
+    </div>
+
+    <div id="mainBox" class="hidden">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <h3>Add Student</h3>
+        <div>
+          <button id="btnLogout" style="background:#6c757d">Log out</button>
+        </div>
+      </div>
+
+      <label>First name
+        <input id="first_name" />
+      </label>
+      <label>Last name
+        <input id="last_name" />
+      </label>
+      <label>Email
+        <input id="email" />
+      </label>
+      <label>Phone
+        <input id="phone" />
+      </label>
+      <label>Initial level
+        <input id="initial_level" />
+      </label>
+      <label>Current level
+        <input id="current_level" />
+      </label>
+      <label>Profile notes
+        <textarea id="profile_notes" rows="4"></textarea>
+      </label>
+      <div class="row">
+        <div class="col"><button id="btnAdd">Add student</button></div>
+        <div class="col"><button id="btnList" style="background:#17a2b8">List recent</button></div>
+      </div>
+
+      <div id="resultMsg" class="msg hidden"></div>
+
+      <h4>Recent students</h4>
+      <div id="recent"></div>
+    </div>
+  </div>
+
+  <script>
+    const loginBox = document.getElementById('loginBox');
+    const mainBox = document.getElementById('mainBox');
+    const loginMsg = document.getElementById('loginMsg');
+    const resultMsg = document.getElementById('resultMsg');
+
+    function show(el){ el.classList.remove('hidden'); }
+    function hide(el){ el.classList.add('hidden'); }
+
+    function setMsg(el, text, ok){ el.textContent = text; el.className = 'msg ' + (ok? 'ok':'err'); show(el); setTimeout(()=>hide(el), 5000); }
+
+    function token(){ return localStorage.getItem('mtl_token'); }
+
+    async function doLogin(){
+      const email = document.getElementById('loginEmail').value;
+      const password = document.getElementById('loginPassword').value;
+      try{
+        const res = await fetch('/api/auth/login', {
+          method:'POST', headers:{'Content-Type':'application/json'},
+          body: JSON.stringify({email,password})
+        });
+        if (!res.ok){ const j = await res.json().catch(()=>({})); setMsg(loginMsg, 'Login failed: ' + (j.error||res.status), false); return; }
+        const j = await res.json();
+        localStorage.setItem('mtl_token', j.token);
+        setMsg(loginMsg, 'Logged in', true);
+        initFromToken();
+      }catch(e){ setMsg(loginMsg, 'Network error', false); }
+    }
+
+    async function addStudent(){
+      const t = token(); if(!t){ setMsg(resultMsg,'Not logged in',false); return; }
+      const payload = {
+        first_name: document.getElementById('first_name').value,
+        last_name: document.getElementById('last_name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        initial_level: document.getElementById('initial_level').value,
+        current_level: document.getElementById('current_level').value,
+        profile_notes: document.getElementById('profile_notes').value
+      };
+      try{
+        const res = await fetch('/api/students', {method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+t},body:JSON.stringify(payload)});
+        const j = await res.json().catch(()=>null);
+        if (!res.ok){ setMsg(resultMsg,'Create failed: ' + (j && j.error ? j.error : res.status), false); return; }
+        setMsg(resultMsg, 'Student created (id='+j.id+')', true);
+        listRecent();
+      }catch(e){ setMsg(resultMsg,'Network error', false); }
+    }
+
+    async function listRecent(){
+      const t = token(); if(!t){ setMsg(resultMsg,'Not logged in',false); return; }
+      try{
+        const res = await fetch('/api/students?per_page=10', {headers:{'Authorization':'Bearer '+t}});
+        if (!res.ok){ setMsg(resultMsg,'List failed: '+res.status,false); return; }
+        const j = await res.json();
+        const out = document.getElementById('recent');
+        out.innerHTML = '';
+        if (!j.data || !j.data.length) { out.textContent = 'No students'; return; }
+        j.data.forEach(s=>{
+          const el = document.createElement('div');
+          el.style.borderBottom='1px solid #eee'; el.style.padding='8px 0';
+          el.textContent = '#' + s.id + ' — ' + s.first_name + ' ' + s.last_name + ' (' + (s.email||'no-email') + ')';
+          out.appendChild(el);
+        });
+      }catch(e){ setMsg(resultMsg,'Network error', false); }
+    }
+
+    function logout(){ localStorage.removeItem('mtl_token'); initFromToken(); }
+
+    function initFromToken(){
+      if (token()){ hide(loginBox); show(mainBox); listRecent(); }
+      else { show(loginBox); hide(mainBox); }
+    }
+
+    document.getElementById('btnLogin').addEventListener('click', doLogin);
+    document.getElementById('btnAdd').addEventListener('click', addStudent);
+    document.getElementById('btnList').addEventListener('click', listRecent);
+    document.getElementById('btnLogout').addEventListener('click', logout);
+
+    initFromToken();
+  </script>
+</body>
+</html>

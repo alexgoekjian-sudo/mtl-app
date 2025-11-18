@@ -1,0 +1,61 @@
+FILES TO UPLOAD TO SERVER
+=========================
+Total: 28 files
+
+Upload to: /home/u5021d9810/domains/mixtreelangdb.nl/mtl_app/
+
+
+NEW MODEL FILES (12):
+--------------------
+app/Models/Lead.php
+app/Models/Enrollment.php
+app/Models/Invoice.php
+app/Models/Payment.php
+app/Models/Booking.php
+app/Models/WebhookEvent.php
+app/Models/EmailLog.php
+app/Models/AuditLog.php
+app/Models/Task.php
+app/Models/DiscountRule.php
+app/Models/CertificateExport.php
+app/Models/AttendanceRecord.php
+
+
+UPDATED MODEL FILES (2):
+-----------------------
+app/Models/Student.php
+app/Models/CourseOffering.php
+
+
+NEW CONTROLLER FILES (12):
+-------------------------
+app/Http/Controllers/LeadController.php
+app/Http/Controllers/EnrollmentController.php
+app/Http/Controllers/InvoiceController.php
+app/Http/Controllers/PaymentController.php
+app/Http/Controllers/BookingController.php
+app/Http/Controllers/TaskController.php
+app/Http/Controllers/DiscountRuleController.php
+app/Http/Controllers/CertificateExportController.php
+app/Http/Controllers/AttendanceRecordController.php
+app/Http/Controllers/WebhookEventController.php
+app/Http/Controllers/EmailLogController.php
+app/Http/Controllers/AuditLogController.php
+
+
+UPDATED CONTROLLER FILES (1):
+----------------------------
+app/Http/Controllers/RetoolController.php
+
+
+UPDATED ROUTE FILES (1):
+-----------------------
+routes/web.php
+
+
+AFTER UPLOADING:
+---------------
+1. SSH into server
+2. cd /home/u5021d9810/domains/mixtreelangdb.nl/mtl_app
+3. composer dump-autoload
+4. Test with: curl -H "Authorization: Bearer A317F31717358A2C316D9758857028526ABD0BC53D4399FA" https://mixtreelangdb.nl/api/leads

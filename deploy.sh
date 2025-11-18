@@ -13,6 +13,20 @@ cd "$REPO_ROOT"
 
 echo "Repository root: $REPO_ROOT"
 
+# Detect PHP binary (DirectAdmin examples include /opt/alt/php81/usr/bin/php)
+if command -v php >/dev/null 2>&1; then
+  PHPBIN=$(command -v php)
+elif [ -x /opt/alt/php81/usr/bin/php ]; then
+  PHPBIN=/opt/alt/php81/usr/bin/php
+elif [ -x /usr/local/bin/php ]; then
+  PHPBIN=/usr/local/bin/php
+elif [ -x /usr/bin/php ]; then
+  PHPBIN=/usr/bin/php
+else
+  PHPBIN=php
+fi
+echo "Using PHP binary: $PHPBIN"
+
 # Persistent deploy log: capture all output to a repo-local log for later inspection
 LOGFILE="$REPO_ROOT/.plesk/deploy.log"
 # Ensure the .plesk directory exists before writing the logfile. In some Plesk
@@ -33,9 +47,9 @@ chmod -R 775 storage bootstrap/cache || true
 if command -v composer >/dev/null 2>&1; then
   composer install --no-dev --optimize-autoloader --no-interaction || echo "composer install returned non-zero";
 elif [ -f "$REPO_ROOT/composer.phar" ]; then
-  php "$REPO_ROOT/composer.phar" install --no-dev --optimize-autoloader --no-interaction || echo "composer.phar install returned non-zero";
+  "$PHPBIN" "$REPO_ROOT/composer.phar" install --no-dev --optimize-autoloader --no-interaction || echo "composer.phar install returned non-zero";
 elif [ -f "$REPO_ROOT/.composer/composer.phar" ]; then
-  php "$REPO_ROOT/.composer/composer.phar" install --no-dev --optimize-autoloader --no-interaction || echo "composer.phar install returned non-zero";
+  "$PHPBIN" "$REPO_ROOT/.composer/composer.phar" install --no-dev --optimize-autoloader --no-interaction || echo "composer.phar install returned non-zero";
 else
   echo "composer not found inside chroot; skipping composer install. To enable dependency install add composer to PATH or upload vendor/ from local machine."
 fi
@@ -61,15 +75,15 @@ if [ -f artisan ]; then
 
   if [ -z "$APP_KEY_VAL" ]; then
     echo "APP_KEY not found in .env — generating a new key"
-    php artisan key:generate --force || true
+    "$PHPBIN" artisan key:generate --force || true
   else
     echo "APP_KEY present in .env — skipping key:generate"
   fi
 
   # Run migrations and cache steps (safe to keep as best-effort)
-  php artisan migrate --force || true
-  php artisan config:cache || true
-  php artisan route:cache || true
+  "$PHPBIN" artisan migrate --force || true
+  "$PHPBIN" artisan config:cache || true
+  "$PHPBIN" artisan route:cache || true
 fi
 
 # Permissions
