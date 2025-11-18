@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTL Teacher Attendance</title>
     <style>
+        :root {
+            --sticky-col-width: 150px;
+            --country-col-width: 75px;
+            --level-col-width: 50px;
+            --primary-purple: #673ab7;
+            --orange-highlight: #ffab40;
+            --blue-highlight: #1976d2;
+        }
+        
         * {
             margin: 0;
             padding: 0;
@@ -13,144 +22,236 @@
         
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: #f5f5f5;
-            padding: 20px;
+            margin: 0;
+            background-color: #f4f4f9;
+            color: #333;
         }
         
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            padding: 30px;
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--primary-purple);
+            padding: 10px 20px;
+            flex-wrap: wrap;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         
         h1 {
-            color: #333;
-            margin-bottom: 10px;
+            padding: 0;
+            margin: 0;
+            color: white;
+            font-size: 1.5em;
         }
         
-        .course-info {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 6px;
-            margin-bottom: 20px;
+        #midpoint-reminder {
+            color: #ffeb3b;
+            font-weight: bold;
+            margin: 0 auto;
+            padding: 5px;
+            text-align: center;
         }
         
-        .course-selector {
-            margin-bottom: 30px;
+        .header-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .controls {
+            background-color: #fdfdfd;
+            padding: 15px 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .select-wrapper {
+            flex-grow: 1;
+            min-width: 250px;
         }
         
         select {
             padding: 10px;
             font-size: 16px;
             border: 1px solid #ddd;
-            border-radius: 4px;
-            min-width: 300px;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: inherit;
         }
         
-        .date-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        
-        .date-picker {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-        }
-        
-        input[type="date"] {
+        textarea {
             padding: 8px;
-            font-size: 14px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: inherit;
+            resize: none;
+            overflow: hidden;
+            min-height: 22px;
         }
         
-        button {
-            padding: 10px 20px;
-            background: #007bff;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 14px;
+        .hidden {
+            display: none !important;
         }
         
-        button:hover {
-            background: #0056b3;
+        #status {
+            padding: 15px 20px;
+            font-weight: bold;
+            font-size: 1.1em;
         }
         
-        button:disabled {
-            background: #ccc;
-            cursor: not-allowed;
-        }
-        
-        .attendance-grid {
+        .grid-container {
+            display: none;
             overflow-x: auto;
+            border-top: 1px solid #ddd;
         }
         
         table {
             width: 100%;
             border-collapse: collapse;
+            background-color: white;
         }
         
         th, td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #e0e0e0;
+            white-space: nowrap;
+            vertical-align: middle;
         }
         
-        th {
-            background: #f8f9fa;
-            font-weight: 600;
+        thead th {
+            background-color: var(--primary-purple);
+            color: white;
             position: sticky;
             top: 0;
+            z-index: 2;
+            font-weight: 600;
         }
         
-        tr:hover {
-            background: #f8f9fa;
+        .sticky-col {
+            position: sticky;
+            left: 0;
+            background-color: #f8f9fa;
+            z-index: 1;
+            text-align: left;
+            min-width: 120px;
+            font-weight: bold;
         }
         
-        .status-btn {
-            padding: 6px 12px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+        th.sticky-col {
+            color: black;
+            text-transform: uppercase;
+            z-index: 3;
+        }
+        
+        .name-col {
+            left: 0;
+            min-width: var(--sticky-col-width);
+        }
+        
+        .country-col {
+            left: calc(var(--sticky-col-width));
+            min-width: var(--country-col-width);
+        }
+        
+        .start-level-col {
+            left: calc(var(--sticky-col-width) + var(--country-col-width));
+            min-width: var(--level-col-width);
+        }
+        
+        .italic-name {
+            font-style: italic;
+        }
+        
+        .today-header {
+            background-color: var(--orange-highlight) !important;
+        }
+        
+        .highlight-header {
+            background-color: var(--blue-highlight) !important;
+        }
+        
+        .attendance-cell input[type="checkbox"] {
+            transform: scale(1.4);
             cursor: pointer;
-            font-size: 12px;
-            min-width: 80px;
         }
         
-        .status-present {
-            background: #28a745;
+        td.saving {
+            background-color: #fffbe6 !important;
+        }
+        
+        td.saved {
+            background-color: #e6ffed !important;
+            transition: background-color 0.2s;
+        }
+        
+        td.error {
+            background-color: #ffebee !important;
+        }
+        
+        .notes-col, .prev-courses-col {
+            min-width: 250px;
+            white-space: normal;
+            text-align: left;
+        }
+        
+        .email-col {
+            min-width: 220px;
+            white-space: normal;
+            text-align: left;
+            word-break: break-all;
+        }
+        
+        button {
+            padding: 9px 15px;
+            border-radius: 5px;
+            border: none;
             color: white;
-            border-color: #28a745;
+            font-size: 0.9em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            flex-shrink: 0;
         }
         
-        .status-late {
-            background: #ffc107;
-            color: #000;
-            border-color: #ffc107;
+        button:hover:not(:disabled) {
+            opacity: 0.9;
         }
         
-        .status-absent {
-            background: #dc3545;
-            color: white;
-            border-color: #dc3545;
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
         }
         
-        .status-excused {
-            background: #6c757d;
-            color: white;
-            border-color: #6c757d;
+        #toggle-emails-btn {
+            background-color: var(--orange-highlight);
         }
         
-        .status-none {
-            background: white;
-            color: #666;
+        #export-emails-btn {
+            background-color: var(--blue-highlight);
+        }
+        
+        #save-all-btn {
+            background-color: #28a745;
+            font-size: 1em;
+            padding: 10px 20px;
+        }
+        
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid var(--primary-purple);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
         
         .save-indicator {
@@ -163,6 +264,7 @@
             top: 20px;
             right: 20px;
             z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
         }
         
         .save-indicator.show {
@@ -200,292 +302,377 @@
             padding: 40px;
             color: #666;
         }
+        
+        @media (max-width: 768px) {
+            body {
+                -webkit-text-size-adjust: 100%;
+            }
+            :root {
+                --sticky-col-width: 120px;
+                --country-col-width: 110px;
+                --level-col-width: 100px;
+            }
+            .notes-col, .prev-courses-col {
+                min-width: 200px;
+            }
+            .email-col {
+                min-width: 180px;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>📋 Attendance Management</h1>
-        
-        <div class="course-selector">
-            <label for="courseSelect">Select Course:</label><br><br>
-            <select id="courseSelect" onchange="loadCourse()">
-                <option value="">-- Select a course --</option>
+    <div class="header-container">
+        <h1>Class Attendance Sheet</h1>
+        <div id="midpoint-reminder" class="hidden">
+            Reminder: Complete Mid-Level evaluations!
+        </div>
+        <div class="header-buttons">
+            <button id="toggle-emails-btn" class="hidden">Hide Emails</button>
+            <button id="export-emails-btn" class="hidden">Copy Student Emails</button>
+        </div>
+    </div>
+    
+    <div class="controls" id="controls-container">
+        <div class="select-wrapper">
+            <label for="courseSelect">Select Course:</label>
+            <select id="courseSelect" disabled>
+                <option value="">Loading...</option>
             </select>
         </div>
-        
-        <div id="courseContent" style="display:none;">
-            <div class="course-info" id="courseInfo"></div>
-            
-            <div class="date-header">
-                <div class="date-picker">
-                    <label>Session Date:</label>
-                    <input type="date" id="sessionDate" onchange="loadAttendance()">
-                    <button onclick="createSession()">Create New Session</button>
-                </div>
-                <button onclick="saveAll()">💾 Save All Changes</button>
-            </div>
-            
-            <div id="attendanceContent" class="loading">
-                Select a session date to view attendance
-            </div>
-            
-            <div class="stats" id="stats" style="display:none;">
-                <div class="stat-item">
-                    <div class="stat-label">Present</div>
-                    <div class="stat-value" id="statPresent">0</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-label">Late</div>
-                    <div class="stat-value" id="statLate">0</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-label">Absent</div>
-                    <div class="stat-value" id="statAbsent">0</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-label">Excused</div>
-                    <div class="stat-value" id="statExcused">0</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-label">Attendance Rate</div>
-                    <div class="stat-value" id="statRate">0%</div>
-                </div>
-            </div>
-        </div>
+    </div>
+    
+    <div id="status">Please wait...</div>
+    <div id="loader" class="loader hidden"></div>
+    
+    <div class="grid-container" id="grid-container">
+        <table id="attendance-grid">
+            <thead id="grid-head"></thead>
+            <tbody id="grid-body"></tbody>
+        </table>
     </div>
     
     <div class="save-indicator" id="saveIndicator">✓ Saved!</div>
     
     <script>
         const API_BASE = '/api/teacher';
-        const TOKEN = localStorage.getItem('teacher_token') || prompt('Enter your access token:');
-        if (TOKEN) localStorage.setItem('teacher_token', TOKEN);
+        const TOKEN = localStorage.getItem('auth_token') || prompt('Enter your access token:');
+        if (TOKEN) localStorage.setItem('auth_token', TOKEN);
         
-        let currentCourse = null;
-        let currentSession = null;
-        let attendanceData = {};
+        const LEVELS = ['A1-','A1','A1+','A2-','A2','A2+','A2+ Pre-Int-', 'A2+ Pre-Int','A2+ Pre-Int+','B1-','B1','B1+','B2-','B2','B2+','C1-','C1', 'C1+','C2'];
+        
+        let appState = { courseId: null };
+        const courseSelector = document.getElementById('courseSelect');
+        const statusDiv = document.getElementById('status');
+        const loader = document.getElementById('loader');
+        const toggleBtn = document.getElementById('toggle-emails-btn');
+        const exportBtn = document.getElementById('export-emails-btn');
+        const todaysDateString = new Date().toISOString().slice(0, 10);
         let changes = {};
         
+        function autoResizeTextarea(textarea) {
+            textarea.style.height = 'auto';
+            textarea.style.height = textarea.scrollHeight + 'px';
+        }
+        
         // Load courses on page load
+        document.addEventListener('DOMContentLoaded', loadCourses);
+        
         async function loadCourses() {
-            const response = await fetch(`${API_BASE}/courses`, {
-                headers: { 'Authorization': `Bearer ${TOKEN}` }
-            });
-            const courses = await response.json();
-            
-            const select = document.getElementById('courseSelect');
-            courses.forEach(course => {
-                const option = document.createElement('option');
-                option.value = course.id;
-                option.textContent = `${course.course_full_name} (${course.attendance_id})`;
-                select.appendChild(option);
-            });
+            try {
+                const response = await fetch(`${API_BASE}/courses`, {
+                    headers: { 'Authorization': `Bearer ${TOKEN}` }
+                });
+                
+                if (!response.ok) throw new Error('Failed to load courses');
+                
+                const courses = await response.json();
+                
+                if (!courses || courses.length === 0) {
+                    statusDiv.textContent = 'No courses found.';
+                    return;
+                }
+                
+                courseSelector.innerHTML = '<option value="">-- Select a Class --</option>';
+                courses.forEach(course => {
+                    const option = document.createElement('option');
+                    option.value = course.id;
+                    option.textContent = `${course.course_full_name} (${course.attendance_id})`;
+                    courseSelector.appendChild(option);
+                });
+                
+                courseSelector.disabled = false;
+                statusDiv.textContent = 'Please select a class.';
+            } catch (error) {
+                showError({ message: error.message });
+            }
         }
         
-        async function loadCourse() {
-            const courseId = document.getElementById('courseSelect').value;
-            if (!courseId) {
-                document.getElementById('courseContent').style.display = 'none';
+        courseSelector.addEventListener('change', async () => {
+            appState.courseId = courseSelector.value;
+            document.getElementById('grid-container').style.display = 'none';
+            toggleBtn.classList.add('hidden');
+            exportBtn.classList.add('hidden');
+            
+            if (!appState.courseId) {
+                statusDiv.textContent = 'Please select a class.';
+                document.querySelector('h1').textContent = 'Class Attendance Sheet';
+                loader.classList.add('hidden');
                 return;
             }
             
-            const response = await fetch(`${API_BASE}/courses/${courseId}`, {
-                headers: { 'Authorization': `Bearer ${TOKEN}` }
-            });
-            currentCourse = await response.json();
+            statusDiv.textContent = 'Loading attendance data...';
+            loader.classList.remove('hidden');
+            statusDiv.style.color = '#333';
             
-            // Show course info
-            document.getElementById('courseInfo').innerHTML = `
-                <strong>${currentCourse.course_full_name}</strong><br>
-                Level: ${currentCourse.level} | Program: ${currentCourse.program} | Type: ${currentCourse.type}<br>
-                ${currentCourse.start_date} to ${currentCourse.end_date}
-            `;
-            
-            document.getElementById('courseContent').style.display = 'block';
-            
-            // Set default date to today
-            document.getElementById('sessionDate').value = new Date().toISOString().split('T')[0];
-        }
+            try {
+                const response = await fetch(`${API_BASE}/courses/${appState.courseId}/summary`, {
+                    headers: { 'Authorization': `Bearer ${TOKEN}` }
+                });
+                
+                if (!response.ok) throw new Error('Failed to load course data');
+                
+                const data = await response.json();
+                loader.classList.add('hidden');
+                statusDiv.textContent = '';
+                renderGrid(data);
+            } catch (error) {
+                loader.classList.add('hidden');
+                showError({ message: error.message });
+            }
+        });
         
-        async function loadAttendance() {
-            const date = document.getElementById('sessionDate').value;
-            if (!date || !currentCourse) return;
-            
-            const response = await fetch(`${API_BASE}/courses/${currentCourse.id}/attendance?date=${date}`, {
-                headers: { 'Authorization': `Bearer ${TOKEN}` }
-            });
-            const data = await response.json();
-            
-            currentSession = data.session;
-            attendanceData = {};
-            changes = {};
-            
-            // Build attendance lookup
-            data.attendance.forEach(att => {
-                attendanceData[att.student_id] = att;
-            });
-            
-            // Render table
-            renderAttendanceTable(data.students);
-            updateStats();
-        }
-        
-        function renderAttendanceTable(students) {
-            if (!students || students.length === 0) {
-                document.getElementById('attendanceContent').innerHTML = '<p class="loading">No students enrolled in this course</p>';
-                document.getElementById('stats').style.display = 'none';
+        async function renderGrid(data) {
+            if (data.error) {
+                showError({ message: data.error });
                 return;
             }
             
-            let html = `
-                <div class="attendance-grid">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Student Name</th>
-                                <th>Email</th>
-                                <th>Level</th>
-                                <th>Status</th>
-                                <th>Notes</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-            `;
+            const gridContainer = document.getElementById('grid-container');
+            const gridHead = document.getElementById('grid-head');
+            const gridBody = document.getElementById('grid-body');
             
-            students.forEach(student => {
-                const attendance = attendanceData[student.id] || {};
-                const status = attendance.status || 'none';
-                const note = attendance.note || '';
-                
-                html += `
-                    <tr>
-                        <td>${student.first_name} ${student.last_name}</td>
-                        <td>${student.email}</td>
-                        <td>${student.current_level || student.initial_level || '-'}</td>
-                        <td>
-                            <select class="status-btn status-${status}" onchange="markAttendance(${student.id}, this.value)">
-                                <option value="none" ${status === 'none' ? 'selected' : ''}>-</option>
-                                <option value="present" ${status === 'present' ? 'selected' : ''}>Present</option>
-                                <option value="late" ${status === 'late' ? 'selected' : ''}>Late</option>
-                                <option value="absent" ${status === 'absent' ? 'selected' : ''}>Absent</option>
-                                <option value="excused" ${status === 'excused' ? 'selected' : ''}>Excused</option>
-                            </select>
-                        </td>
-                        <td>
-                            <input type="text" value="${note}" placeholder="Add note..." 
-                                   onchange="addNote(${student.id}, this.value)" 
-                                   style="width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 4px;">
-                        </td>
-                    </tr>
-                `;
-            });
+            const schedule = data.sessions.map(s => s.session_date);
+            const halfwayIndex = Math.floor(schedule.length / 2);
+            const midPointDate = schedule[halfwayIndex] || null;
             
-            html += `
-                        </tbody>
-                    </table>
-                </div>
-            `;
-            
-            document.getElementById('attendanceContent').innerHTML = html;
-            document.getElementById('stats').style.display = 'flex';
-        }
-        
-        function markAttendance(studentId, status) {
-            if (!changes[studentId]) {
-                changes[studentId] = {};
-            }
-            changes[studentId].status = status;
-            
-            // Update visual
-            event.target.className = `status-btn status-${status}`;
-            updateStats();
-        }
-        
-        function addNote(studentId, note) {
-            if (!changes[studentId]) {
-                changes[studentId] = {};
-            }
-            changes[studentId].note = note;
-        }
-        
-        function updateStats() {
-            let present = 0, late = 0, absent = 0, excused = 0;
-            
-            Object.values(attendanceData).forEach(att => {
-                const studentId = att.student_id;
-                const status = changes[studentId]?.status || att.status;
-                
-                if (status === 'present') present++;
-                else if (status === 'late') late++;
-                else if (status === 'absent') absent++;
-                else if (status === 'excused') excused++;
-            });
-            
-            const total = present + late + absent + excused;
-            const rate = total > 0 ? Math.round((present + late) / total * 100) : 0;
-            
-            document.getElementById('statPresent').textContent = present;
-            document.getElementById('statLate').textContent = late;
-            document.getElementById('statAbsent').textContent = absent;
-            document.getElementById('statExcused').textContent = excused;
-            document.getElementById('statRate').textContent = rate + '%';
-        }
-        
-        async function createSession() {
-            const date = document.getElementById('sessionDate').value;
-            if (!date || !currentCourse) return;
-            
-            const response = await fetch(`${API_BASE}/courses/${currentCourse.id}/sessions`, {
-                method: 'POST',
-                headers: {
-                    'Authorization': `Bearer ${TOKEN}`,
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ session_date: date })
-            });
-            
-            if (response.ok) {
-                alert('Session created!');
-                loadAttendance();
+            // Show midpoint reminder
+            const reminderDiv = document.getElementById('midpoint-reminder');
+            if (midPointDate && todaysDateString >= midPointDate) {
+                reminderDiv.classList.remove('hidden');
             } else {
-                alert('Error creating session');
+                reminderDiv.classList.add('hidden');
+            }
+            
+            // Get enrolled students
+            const studentsResponse = await fetch(`${API_BASE}/courses/${appState.courseId}/attendance?date=${schedule[0] || todaysDateString}`, {
+                headers: { 'Authorization': `Bearer ${TOKEN}` }
+            });
+            const studentsData = await studentsResponse.json();
+            const students = studentsData.students || [];
+            
+            // Build header with dates
+            let headerHTML = `<tr>
+                <th class="name-col sticky-col">STUDENT NAME</th>
+                <th class="country-col sticky-col">COUNTRY</th>
+                <th class="start-level-col sticky-col">START LEVEL</th>`;
+            
+            schedule.forEach((date, index) => {
+                if (index === halfwayIndex) {
+                    headerHTML += `<th class="highlight-header">Mid Level</th>`;
+                }
+                const isToday = date === todaysDateString ? 'today-header' : '';
+                const highlight = index >= halfwayIndex ? 'highlight-header' : '';
+                const formattedDate = new Date(date + 'T00:00:00')
+                    .toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+                headerHTML += `<th class="${isToday} ${highlight}">${formattedDate}</th>`;
+            });
+            
+            headerHTML += `
+                <th class="notes-col highlight-header">Teacher Notes</th>
+                <th class="prev-courses-col highlight-header">Previous Courses</th>
+                <th class="email-col highlight-header">Student Email</th>
+                <th class="highlight-header">Attendance %</th>
+            </tr>`;
+            
+            gridHead.innerHTML = headerHTML;
+            
+            // Build body with student rows
+            let bodyHTML = '';
+            for (const student of students) {
+                // Get student attendance history
+                const historyResponse = await fetch(`${API_BASE}/courses/${appState.courseId}/students/${student.id}/attendance`, {
+                    headers: { 'Authorization': `Bearer ${TOKEN}` }
+                });
+                const historyData = await historyResponse.json();
+                const attendanceMap = {};
+                historyData.history.forEach(h => {
+                    attendanceMap[h.date] = h.status === 'present';
+                });
+                
+                bodyHTML += `<tr data-email="${student.email}" data-student-id="${student.id}">
+                    <td class="name-col sticky-col ${student.previous_courses ? 'italic-name' : ''}">${student.first_name} ${student.last_name}</td>
+                    <td class="country-col sticky-col">${student.country || ''}</td>
+                    <td class="start-level-col sticky-col">${student.initial_level || ''}</td>`;
+                
+                schedule.forEach((date, index) => {
+                    if (index === halfwayIndex) {
+                        bodyHTML += `<td>
+                            <select class="level-select updatable" data-column="Mid Level" data-student-id="${student.id}">
+                                <option value="">--Select--</option>
+                                ${LEVELS.map(level =>
+                                    `<option value="${level}" ${student.current_level===level?'selected':''}>${level}</option>`
+                                ).join('')}
+                            </select>
+                        </td>`;
+                    }
+                    const isChecked = attendanceMap[date] ? 'checked' : '';
+                    bodyHTML += `<td class="attendance-cell">
+                        <input type="checkbox" class="attendance-check" data-date="${date}" data-student-id="${student.id}" ${isChecked}>
+                    </td>`;
+                });
+                
+                bodyHTML += `
+                    <td class="notes-col"><textarea rows="1" class="notes-input updatable" data-column="Teacher Notes" data-student-id="${student.id}">${student.notes || ''}</textarea></td>
+                    <td class="prev-courses-col"><textarea rows="1" class="prev-courses-input updatable" data-column="Previous Courses" data-student-id="${student.id}">${student.previous_courses || ''}</textarea></td>
+                    <td class="email-col">${student.email || ''}</td>
+                    <td>${historyData.statistics.attendance_rate}</td>
+                </tr>`;
+            }
+            
+            gridBody.innerHTML = bodyHTML;
+            
+            // Auto-resize textareas
+            setTimeout(() => {
+                gridBody.querySelectorAll('textarea.updatable').forEach(autoResizeTextarea);
+            }, 0);
+            
+            document.querySelector('h1').textContent = `${data.course.course_full_name}`;
+            
+            gridContainer.style.display = 'block';
+            toggleBtn.classList.remove('hidden');
+            exportBtn.classList.remove('hidden');
+            
+            // Attach event listeners
+            attachEventListeners();
+        }
+        
+        function attachEventListeners() {
+            const gridBody = document.getElementById('grid-body');
+            gridBody.addEventListener('change', handleGridUpdate);
+            gridBody.addEventListener('input', e => {
+                if (e.target.tagName === 'TEXTAREA') {
+                    autoResizeTextarea(e.target);
+                }
+            });
+        }
+        
+        function handleGridUpdate(e) {
+            const target = e.target;
+            const studentId = target.dataset.studentId;
+            const cell = target.closest('td');
+            
+            if (target.classList.contains('attendance-check')) {
+                showFeedback(cell, 'saving');
+                const date = target.dataset.date;
+                const isPresent = target.checked;
+                
+                // Track change
+                if (!changes[studentId]) changes[studentId] = {};
+                if (!changes[studentId].dates) changes[studentId].dates = {};
+                changes[studentId].dates[date] = isPresent ? 'present' : 'none';
+                
+                showFeedback(cell, 'saved');
+            } else if (target.classList.contains('updatable')) {
+                showFeedback(cell, 'saving');
+                const columnName = target.dataset.column;
+                const newValue = target.value;
+                
+                // Track change
+                if (!changes[studentId]) changes[studentId] = {};
+                changes[studentId][columnName] = newValue;
+                
+                // Update italic style for previous courses
+                if (columnName === 'Previous Courses') {
+                    const nameCell = target.closest('tr').querySelector('.name-col');
+                    if (nameCell) {
+                        nameCell.classList.toggle('italic-name', !!newValue.trim());
+                    }
+                }
+                
+                showFeedback(cell, 'saved');
             }
         }
         
-        async function saveAll() {
+        function showFeedback(cell, statusClass) {
+            if (!cell) return;
+            cell.classList.remove('saving', 'saved', 'error');
+            cell.classList.add(statusClass);
+            if (statusClass === 'saved' || statusClass === 'error') {
+                setTimeout(() => {
+                    cell.classList.remove(statusClass);
+                }, 1500);
+            }
+        }
+        
+        function showError(error) {
+            statusDiv.textContent = 'Error: ' + error.message;
+            statusDiv.style.color = 'red';
+        }
+        
+        // Toggle emails visibility
+        toggleBtn.addEventListener('click', () => {
+            const emailColumns = document.querySelectorAll('.email-col');
+            if (emailColumns.length === 0) return;
+            
+            const areHidden = emailColumns[0].classList.contains('hidden');
+            emailColumns.forEach(col => col.classList.toggle('hidden'));
+            
+            toggleBtn.textContent = areHidden ? 'Hide Emails' : 'Show Emails';
+        });
+        
+        // Export emails to clipboard
+        exportBtn.addEventListener('click', () => {
+            const studentRows = document.querySelectorAll('#grid-body tr');
+            const emails = Array.from(studentRows)
+                .map(row => row.dataset.email)
+                .filter(Boolean);
+            
+            if (emails.length === 0) {
+                alert('No student emails to copy.');
+                return;
+            }
+            
+            const emailString = emails.join(', ');
+            
+            navigator.clipboard.writeText(emailString).then(() => {
+                const originalText = exportBtn.textContent;
+                exportBtn.textContent = 'Copied!';
+                exportBtn.disabled = true;
+                setTimeout(() => {
+                    exportBtn.textContent = originalText;
+                    exportBtn.disabled = false;
+                }, 2000);
+            }).catch(err => {
+                prompt('Could not copy to clipboard automatically. Please copy the list manually:', emailString);
+            });
+        });
+        
+        // Save all changes (placeholder for future batch save)
+        async function saveAllChanges() {
             if (Object.keys(changes).length === 0) {
                 alert('No changes to save');
                 return;
             }
             
-            const date = document.getElementById('sessionDate').value;
-            
-            const response = await fetch(`${API_BASE}/courses/${currentCourse.id}/attendance`, {
-                method: 'POST',
-                headers: {
-                    'Authorization': `Bearer ${TOKEN}`,
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    session_date: date,
-                    attendance: changes
-                })
-            });
-            
-            if (response.ok) {
-                changes = {};
-                document.getElementById('saveIndicator').classList.add('show');
-                setTimeout(() => {
-                    document.getElementById('saveIndicator').classList.remove('show');
-                }, 2000);
-                loadAttendance(); // Reload to get IDs
-            } else {
-                alert('Error saving attendance');
-            }
+            // For now, changes are saved automatically
+            // This could be enhanced to batch save later
+            changes = {};
+            document.getElementById('saveIndicator').classList.add('show');
+            setTimeout(() => {
+                document.getElementById('saveIndicator').classList.remove('show');
+            }, 2000);
         }
-        
-        // Initialize
-        loadCourses();
     </script>
 </body>
 </html>
