@@ -1,0 +1,3 @@
+# crontab entry for MTL_App health check (run as domain user)
+# Add with: (crontab -l 2>/dev/null; echo "*/5 * * * * /home/u5021d9810/domains/mixtreelangdb.nl/mtl_app/scripts/health-check.sh >/dev/null 2>&1") | crontab -
+*/5 * * * * /home/u5021d9810/domains/mixtreelangdb.nl/mtl_app/scripts/health-check.sh >/dev/null 2>&1

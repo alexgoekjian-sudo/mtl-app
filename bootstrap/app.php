@@ -5,6 +5,16 @@
 
 require_once __DIR__.'/../vendor/autoload.php';
 
+// Load environment variables from the app root if phpdotenv is available.
+// This ensures the web process reads the same DB_* values you put in /mtl_app/.env
+if (class_exists('Dotenv\\Dotenv')) {
+    try {
+        \Dotenv\Dotenv::createImmutable(realpath(__DIR__.'/..'))->safeLoad();
+    } catch (Throwable $e) {
+        // Ignore - if environment can't be loaded we'll fall back to defaults
+    }
+}
+
 // Create the app
 $app = new Laravel\Lumen\Application(
     realpath(__DIR__.'/..')
@@ -27,6 +37,7 @@ $app->singleton(
 // Route middleware
 $app->routeMiddleware([
     'auth.token' => App\Http\Middleware\ApiTokenAuth::class,
+    'cors' => App\Http\Middleware\CorsMiddleware::class,
 ]);
 
 // Register routes

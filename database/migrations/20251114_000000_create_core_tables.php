@@ -4,8 +4,9 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCoreTables extends Migration
-{
+if (! class_exists('CreateCoreTables')) {
+    class CreateCoreTables extends Migration
+    {
     /**
      * Run the migrations.
      *
@@ -154,5 +155,6 @@ class CreateCoreTables extends Migration
         Schema::dropIfExists('students');
         Schema::dropIfExists('leads');
         Schema::dropIfExists('users');
+    }
     }
 }
