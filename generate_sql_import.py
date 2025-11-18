@@ -92,11 +92,11 @@ def generate_course_inserts(json_file, output_file):
         attendance_id = escape_sql(course.get('attendance_id'))
         round_val = course.get('round')
         round_num = int(round_val) if round_val is not None else 1
-        course_key = escape_sql(course.get('course_key'))
+        course_key = escape_sql(course.get('attendance_id'))  # Use attendance_id as course_key (both unique)
         course_full_name = escape_sql(course.get('course_full_name'))
-        level = extract_level(course.get('course_key'))
-        program = infer_program(course.get('course_key'))
-        type_val = extract_type(course.get('schedule_type'))
+        level = escape_sql(course.get('level'))  # Direct from CSV
+        program = escape_sql(course.get('program'))  # Direct from CSV PROG column
+        type_val = escape_sql(course.get('type'))  # Direct from CSV TYPE column
         start_date = escape_sql(course.get('start_date'))
         end_date = escape_sql(course.get('end_date'))
         hours_total = extract_hours(course.get('hours_raw'))

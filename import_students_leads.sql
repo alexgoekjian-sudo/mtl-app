@@ -1,5 +1,5 @@
 -- Students and Leads Import
--- Generated: 2025-11-18T16:06:34.117633
+-- Generated: 2025-11-18T16:28:38.432938
 -- Source: C:\Users\alex\MTL_App\specs\001-title-english-language\imports\out\trello_normalized.json
 
 -- Note: Run this AFTER importing courses
@@ -12,7 +12,7 @@ INSERT INTO students (
     'A1-', 'A1-', NULL, 'Level Orque (her boyfriend): A1-', NOW(), NOW()
 );
 
--- Create enrollment for student (email: sanchezloor98@gmail.com) to course (attendance_id: A1 BEGINNER)
+-- Create enrollment for student (email: sanchezloor98@gmail.com) to course (attendance_id: A1 BEGINNER - EDMONTON - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -26,7 +26,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'sanchezloor98@gmail.com'
-  AND co.attendance_id = 'A1 BEGINNER'
+  AND co.attendance_id = 'A1 BEGINNER - EDMONTON - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -40,7 +40,7 @@ INSERT INTO students (
     'A1-', 'A1-', '["Japanese"]', '#', NOW(), NOW()
 );
 
--- Create enrollment for student (email: nami.733.sun@gmail.com) to course (attendance_id: A1 BEGINNER)
+-- Create enrollment for student (email: nami.733.sun@gmail.com) to course (attendance_id: A1 BEGINNER - EDMONTON - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -54,7 +54,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'nami.733.sun@gmail.com'
-  AND co.attendance_id = 'A1 BEGINNER'
+  AND co.attendance_id = 'A1 BEGINNER - EDMONTON - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -70,7 +70,7 @@ INSERT INTO students (
 1. A2 PRE-INT EVE ONLINE - EDMONTON - 21.10.2025 - R7 ( John & Tessa ) ? A2+ Pre-Int-', NOW(), NOW()
 );
 
--- Create enrollment for student (email: beibeizhou88@gmail.com) to course (attendance_id: A2 PRE-INT EVE ONLINE)
+-- Create enrollment for student (email: beibeizhou88@gmail.com) to course (attendance_id: A2 PRE-INT EVE ONLINE - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -84,7 +84,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'beibeizhou88@gmail.com'
-  AND co.attendance_id = 'A2 PRE-INT EVE ONLINE'
+  AND co.attendance_id = 'A2 PRE-INT EVE ONLINE - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -102,7 +102,7 @@ Completed:
 1. A2 PRE-INT EVE ONLINE - EDMONTON - 21.10.2025 - R7 ( John & Tessa ) ? A2+ Pre-Int-', NOW(), NOW()
 );
 
--- Create enrollment for student (email: selcansenoll@gmail.com) to course (attendance_id: A2 PRE-INT EVE ONLINE)
+-- Create enrollment for student (email: selcansenoll@gmail.com) to course (attendance_id: A2 PRE-INT EVE ONLINE - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -116,7 +116,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'selcansenoll@gmail.com'
-  AND co.attendance_id = 'A2 PRE-INT EVE ONLINE'
+  AND co.attendance_id = 'A2 PRE-INT EVE ONLINE - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -136,7 +136,7 @@ INSERT INTO students (
 5. A2 Morning (PRE-INT) 12.11.24 - DUBLIN - Anastasia - New Level ?A2 PreInt', NOW(), NOW()
 );
 
--- Create enrollment for student (email: gulsencbc@gmail.com) to course (attendance_id: A2 PRE-INT EVE ONLINE)
+-- Create enrollment for student (email: gulsencbc@gmail.com) to course (attendance_id: A2 PRE-INT EVE ONLINE - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -150,7 +150,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'gulsencbc@gmail.com'
-  AND co.attendance_id = 'A2 PRE-INT EVE ONLINE'
+  AND co.attendance_id = 'A2 PRE-INT EVE ONLINE - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -166,7 +166,7 @@ INSERT INTO students (
 1. A2 Int 28.07.25 -  CAPE TOWN - Kathleen/Magui - New Level ?A2 PreInt+', NOW(), NOW()
 );
 
--- Create enrollment for student (email: evarispolie@outlook.fr) to course (attendance_id: A2 PRE-INT EVE ONLINE)
+-- Create enrollment for student (email: evarispolie@outlook.fr) to course (attendance_id: A2 PRE-INT EVE ONLINE - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -180,7 +180,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'evarispolie@outlook.fr'
-  AND co.attendance_id = 'A2 PRE-INT EVE ONLINE'
+  AND co.attendance_id = 'A2 PRE-INT EVE ONLINE - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -194,7 +194,7 @@ INSERT INTO students (
     'A2 PreInt', 'A2 PreInt', '["Turkish"]', NULL, NOW(), NOW()
 );
 
--- Create enrollment for student (email: mustafakimyon@gmail.com) to course (attendance_id: A2 PRE-INT EVE ONLINE)
+-- Create enrollment for student (email: mustafakimyon@gmail.com) to course (attendance_id: A2 PRE-INT EVE ONLINE - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -208,7 +208,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'mustafakimyon@gmail.com'
-  AND co.attendance_id = 'A2 PRE-INT EVE ONLINE'
+  AND co.attendance_id = 'A2 PRE-INT EVE ONLINE - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -224,7 +224,7 @@ INSERT INTO students (
 1. A2 Morning (PRE-INT) 12.11.24 - DUBLIN - Anastasia - New Level ?A2 PreInt+', NOW(), NOW()
 );
 
--- Create enrollment for student (email: shelty.2508@gmail.com) to course (attendance_id: A2 PRE-INT EVE ONLINE)
+-- Create enrollment for student (email: shelty.2508@gmail.com) to course (attendance_id: A2 PRE-INT EVE ONLINE - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -238,7 +238,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'shelty.2508@gmail.com'
-  AND co.attendance_id = 'A2 PRE-INT EVE ONLINE'
+  AND co.attendance_id = 'A2 PRE-INT EVE ONLINE - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -252,7 +252,7 @@ INSERT INTO students (
     'A2', 'A2', '["Turkish"]', NULL, NOW(), NOW()
 );
 
--- Create enrollment for student (email: beydillidilek@gmail.com) to course (attendance_id: A2 PRE-INT EVE ONLINE)
+-- Create enrollment for student (email: beydillidilek@gmail.com) to course (attendance_id: A2 PRE-INT EVE ONLINE - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -266,7 +266,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'beydillidilek@gmail.com'
-  AND co.attendance_id = 'A2 PRE-INT EVE ONLINE'
+  AND co.attendance_id = 'A2 PRE-INT EVE ONLINE - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -280,7 +280,7 @@ INSERT INTO students (
     'A2', 'A2', '["Portuguese"]', '1. A2 ELEM - ED - 29.09.2025 - DEB ? A2', NOW(), NOW()
 );
 
--- Create enrollment for student (email: yurivladmir3@gmail.com) to course (attendance_id: A2 PRE-INT EVE ONLINE)
+-- Create enrollment for student (email: yurivladmir3@gmail.com) to course (attendance_id: A2 PRE-INT EVE ONLINE - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -294,7 +294,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'yurivladmir3@gmail.com'
-  AND co.attendance_id = 'A2 PRE-INT EVE ONLINE'
+  AND co.attendance_id = 'A2 PRE-INT EVE ONLINE - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -309,7 +309,7 @@ INSERT INTO students (
 2. A2 INTENSIVE - AUCKLAND - 01.09.2025 - R9 - A2+ Pre-Int - Deborah, Anastasia', NOW(), NOW()
 );
 
--- Create enrollment for student (email: miguel.rubio01@outlook.com) to course (attendance_id: A2 PRE-INT EVE ONLINE)
+-- Create enrollment for student (email: miguel.rubio01@outlook.com) to course (attendance_id: A2 PRE-INT EVE ONLINE - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -323,7 +323,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'miguel.rubio01@outlook.com'
-  AND co.attendance_id = 'A2 PRE-INT EVE ONLINE'
+  AND co.attendance_id = 'A2 PRE-INT EVE ONLINE - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -341,7 +341,7 @@ INSERT INTO students (
 3. A2 PRE-INT EVE ONLINE - EDMONTON - 21.10.2025 - R7 ( John & Tessa ) ? B1-', NOW(), NOW()
 );
 
--- Create enrollment for student (email: alissa_heba@yahoo.com) to course (attendance_id: B1 EVE ONLINE)
+-- Create enrollment for student (email: alissa_heba@yahoo.com) to course (attendance_id: B1 EVE ONLINE - DUBLIN - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -355,7 +355,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'alissa_heba@yahoo.com'
-  AND co.attendance_id = 'B1 EVE ONLINE'
+  AND co.attendance_id = 'B1 EVE ONLINE - DUBLIN - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -373,7 +373,7 @@ INSERT INTO students (
 3. A2 Pre-Int Online - Edmonton - 17.06.2025 - R4 - John/Carol - A2 PRE-INT+', NOW(), NOW()
 );
 
--- Create enrollment for student (email: nekomamireninaritai877@gmail.com) to course (attendance_id: B1 EVE ONLINE)
+-- Create enrollment for student (email: nekomamireninaritai877@gmail.com) to course (attendance_id: B1 EVE ONLINE - DUBLIN - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -387,7 +387,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'nekomamireninaritai877@gmail.com'
-  AND co.attendance_id = 'B1 EVE ONLINE'
+  AND co.attendance_id = 'B1 EVE ONLINE - DUBLIN - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -408,7 +408,7 @@ INSERT INTO students (
 6. B1 EVE ONLINE - DUBLIN 18.08.205 - B1', NOW(), NOW()
 );
 
--- Create enrollment for student (email: alice.olivier.doc@gmail.com) to course (attendance_id: B1 EVE ONLINE)
+-- Create enrollment for student (email: alice.olivier.doc@gmail.com) to course (attendance_id: B1 EVE ONLINE - DUBLIN - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -422,7 +422,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'alice.olivier.doc@gmail.com'
-  AND co.attendance_id = 'B1 EVE ONLINE'
+  AND co.attendance_id = 'B1 EVE ONLINE - DUBLIN - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -436,7 +436,7 @@ INSERT INTO students (
     'B1', 'B1', '["Spanish"]', '1. B1 Eve ONLINE - EDMONTON 02.06.25 - Tessa - New Level ?B1', NOW(), NOW()
 );
 
--- Create enrollment for student (email: lopezgomezd@hotmail.com) to course (attendance_id: B1 EVE ONLINE)
+-- Create enrollment for student (email: lopezgomezd@hotmail.com) to course (attendance_id: B1 EVE ONLINE - DUBLIN - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -450,7 +450,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'lopezgomezd@hotmail.com'
-  AND co.attendance_id = 'B1 EVE ONLINE'
+  AND co.attendance_id = 'B1 EVE ONLINE - DUBLIN - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -464,7 +464,7 @@ INSERT INTO students (
     'B1-', 'B1-', '["French", "Arabic", "Dutch"]', '1. A2 PRE-INT EVE ONLINE - DUBLIN - 26.08.2025 - R6 - B1-', NOW(), NOW()
 );
 
--- Create enrollment for student (email: hajark054@gmail.com) to course (attendance_id: B1 EVE ONLINE)
+-- Create enrollment for student (email: hajark054@gmail.com) to course (attendance_id: B1 EVE ONLINE - DUBLIN - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -478,7 +478,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'hajark054@gmail.com'
-  AND co.attendance_id = 'B1 EVE ONLINE'
+  AND co.attendance_id = 'B1 EVE ONLINE - DUBLIN - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -494,7 +494,7 @@ INSERT INTO students (
 1. A2+ INT 07.04.25 - BOSTON - Deborah/Anastasia - New Level ?A2 PreInt+', NOW(), NOW()
 );
 
--- Create enrollment for student (email: brasil@inkblu.net) to course (attendance_id: A2 INTENSIVE)
+-- Create enrollment for student (email: brasil@inkblu.net) to course (attendance_id: A2 INTENSIVE - BOSTON - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -508,7 +508,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'brasil@inkblu.net'
-  AND co.attendance_id = 'A2 INTENSIVE'
+  AND co.attendance_id = 'A2 INTENSIVE - BOSTON - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -522,7 +522,7 @@ INSERT INTO students (
     'A2 PreInt+', 'A2 PreInt+', '["Japanese"]', '[youliyaxiatian@gmail.com](mailto:youliyaxiatian@gmail.com "?")', NOW(), NOW()
 );
 
--- Create enrollment for student (email: flytonld@gmail.com) to course (attendance_id: A2 INTENSIVE)
+-- Create enrollment for student (email: flytonld@gmail.com) to course (attendance_id: A2 INTENSIVE - BOSTON - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -536,7 +536,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'flytonld@gmail.com'
-  AND co.attendance_id = 'A2 INTENSIVE'
+  AND co.attendance_id = 'A2 INTENSIVE - BOSTON - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -550,7 +550,7 @@ INSERT INTO students (
     'B1', 'B1', '["Portuguese"]', '1. B1 INTENSIVE - BOSTON - 29.09.25 - Magui/Kathleen ? B1-', NOW(), NOW()
 );
 
--- Create enrollment for student (email: jayanenascimento@hotmail.com) to course (attendance_id: B1 INTENSIVE)
+-- Create enrollment for student (email: jayanenascimento@hotmail.com) to course (attendance_id: B1 INTENSIVE - BOSTON - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -564,7 +564,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'jayanenascimento@hotmail.com'
-  AND co.attendance_id = 'B1 INTENSIVE'
+  AND co.attendance_id = 'B1 INTENSIVE - BOSTON - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -578,7 +578,7 @@ INSERT INTO students (
     'B1-', 'B1-', '["Japanese"]', NULL, NOW(), NOW()
 );
 
--- Create enrollment for student (email: rinkasekino@gmail.com) to course (attendance_id: B1 INTENSIVE)
+-- Create enrollment for student (email: rinkasekino@gmail.com) to course (attendance_id: B1 INTENSIVE - BOSTON - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -592,7 +592,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'rinkasekino@gmail.com'
-  AND co.attendance_id = 'B1 INTENSIVE'
+  AND co.attendance_id = 'B1 INTENSIVE - BOSTON - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -606,7 +606,7 @@ INSERT INTO students (
     'B1+', 'B1+', '["Japanese"]', '# student email: [sayuna.18129.ballet@gmail.com](mailto:sayuna.18129.ballet@gmail.com "?")', NOW(), NOW()
 );
 
--- Create enrollment for student (email: flytonld@gmail.com) to course (attendance_id: B2 INTENSIVE)
+-- Create enrollment for student (email: flytonld@gmail.com) to course (attendance_id: B2 INTENSIVE - BOSTON - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -620,7 +620,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'flytonld@gmail.com'
-  AND co.attendance_id = 'B2 INTENSIVE'
+  AND co.attendance_id = 'B2 INTENSIVE - BOSTON - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -636,7 +636,7 @@ INSERT INTO students (
 1. B2 Int 30.06.25 - BOSTON - Benjamin & Anastasia - New Level ?B2', NOW(), NOW()
 );
 
--- Create enrollment for student (email: cansukosucu@gmail.com) to course (attendance_id: B2 INTENSIVE)
+-- Create enrollment for student (email: cansukosucu@gmail.com) to course (attendance_id: B2 INTENSIVE - BOSTON - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -650,7 +650,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'cansukosucu@gmail.com'
-  AND co.attendance_id = 'B2 INTENSIVE'
+  AND co.attendance_id = 'B2 INTENSIVE - BOSTON - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -666,7 +666,7 @@ INSERT INTO students (
 1. B2 Int 28.07.25 -  CAPE TOWN - Deborah/Anastasia- New Level ?B2+', NOW(), NOW()
 );
 
--- Create enrollment for student (email: karinapanduwinata30@gmail.com) to course (attendance_id: B2 INTENSIVE)
+-- Create enrollment for student (email: karinapanduwinata30@gmail.com) to course (attendance_id: B2 INTENSIVE - BOSTON - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -680,7 +680,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'karinapanduwinata30@gmail.com'
-  AND co.attendance_id = 'B2 INTENSIVE'
+  AND co.attendance_id = 'B2 INTENSIVE - BOSTON - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -694,7 +694,7 @@ INSERT INTO students (
     'A2-', 'A2-', '["Portuguese", "Spanish"]', '1. A2 ELEM MORNING - DUBLIN - 18.08.25 - R6 - Deborah - New Level ?A2-', NOW(), NOW()
 );
 
--- Create enrollment for student (email: bianca.candelorio@gmail.com) to course (attendance_id: A2 ELEM MORNING)
+-- Create enrollment for student (email: bianca.candelorio@gmail.com) to course (attendance_id: A2 ELEM MORNING - DUBLIN - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -708,7 +708,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'bianca.candelorio@gmail.com'
-  AND co.attendance_id = 'A2 ELEM MORNING'
+  AND co.attendance_id = 'A2 ELEM MORNING - DUBLIN - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -722,7 +722,7 @@ INSERT INTO students (
     'A2 PreInt', 'A2 PreInt', '["French"]', NULL, NOW(), NOW()
 );
 
--- Create enrollment for student (email: biramemonamour@gmail.com) to course (attendance_id: A2 ELEM MORNING)
+-- Create enrollment for student (email: biramemonamour@gmail.com) to course (attendance_id: A2 ELEM MORNING - DUBLIN - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -736,7 +736,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'biramemonamour@gmail.com'
-  AND co.attendance_id = 'A2 ELEM MORNING'
+  AND co.attendance_id = 'A2 ELEM MORNING - DUBLIN - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -750,7 +750,7 @@ INSERT INTO students (
     'A2-', 'A2-', '["Turkish"]', '#', NOW(), NOW()
 );
 
--- Create enrollment for student (email: elifolekli@gmail.com) to course (attendance_id: A2 ELEM MORNING)
+-- Create enrollment for student (email: elifolekli@gmail.com) to course (attendance_id: A2 ELEM MORNING - DUBLIN - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -764,7 +764,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'elifolekli@gmail.com'
-  AND co.attendance_id = 'A2 ELEM MORNING'
+  AND co.attendance_id = 'A2 ELEM MORNING - DUBLIN - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -778,7 +778,7 @@ INSERT INTO students (
     'A1+', 'A1+', '["Ukrainian / Russian"]', '1. A2 ELEM - ED - 29.09.2025 - DEB ? A2+', NOW(), NOW()
 );
 
--- Create enrollment for student (email: sorokinajana@gmail.com) to course (attendance_id: A2 ELEM MORNING)
+-- Create enrollment for student (email: sorokinajana@gmail.com) to course (attendance_id: A2 ELEM MORNING - DUBLIN - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -792,7 +792,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'sorokinajana@gmail.com'
-  AND co.attendance_id = 'A2 ELEM MORNING'
+  AND co.attendance_id = 'A2 ELEM MORNING - DUBLIN - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -808,7 +808,7 @@ INSERT INTO students (
 1. A2 ELEM - ED - 29.09.2025 - DEB ? A2-', NOW(), NOW()
 );
 
--- Create enrollment for student (email: monstykeaki@gmail.com) to course (attendance_id: A2 ELEM MORNING)
+-- Create enrollment for student (email: monstykeaki@gmail.com) to course (attendance_id: A2 ELEM MORNING - DUBLIN - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -822,7 +822,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'monstykeaki@gmail.com'
-  AND co.attendance_id = 'A2 ELEM MORNING'
+  AND co.attendance_id = 'A2 ELEM MORNING - DUBLIN - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -836,7 +836,7 @@ INSERT INTO students (
     'A1+', 'A1+', '["Japanese"]', '1. A2 ELEM - ED - 29.09.2025 - DEB ? A2-', NOW(), NOW()
 );
 
--- Create enrollment for student (email: monstykeaki@gmail.com) to course (attendance_id: A2 ELEM MORNING)
+-- Create enrollment for student (email: monstykeaki@gmail.com) to course (attendance_id: A2 ELEM MORNING - DUBLIN - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -850,7 +850,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'monstykeaki@gmail.com'
-  AND co.attendance_id = 'A2 ELEM MORNING'
+  AND co.attendance_id = 'A2 ELEM MORNING - DUBLIN - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -864,7 +864,7 @@ INSERT INTO students (
     'A1+', 'A1+', '["Spanish"]', NULL, NOW(), NOW()
 );
 
--- Create enrollment for student (email: arom031646@gmail.com) to course (attendance_id: A2 ELEM MORNING)
+-- Create enrollment for student (email: arom031646@gmail.com) to course (attendance_id: A2 ELEM MORNING - DUBLIN - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -878,7 +878,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'arom031646@gmail.com'
-  AND co.attendance_id = 'A2 ELEM MORNING'
+  AND co.attendance_id = 'A2 ELEM MORNING - DUBLIN - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -902,7 +902,7 @@ INSERT INTO students (
 5. B2 EVE - FIFE - 30.06.25 - New Level ?B2', NOW(), NOW()
 );
 
--- Create enrollment for student (email: jesusnj2007@gmail.com) to course (attendance_id: B2 EVE ONLINE)
+-- Create enrollment for student (email: jesusnj2007@gmail.com) to course (attendance_id: B2 EVE ONLINE - DUBLIN - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -916,7 +916,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'jesusnj2007@gmail.com'
-  AND co.attendance_id = 'B2 EVE ONLINE'
+  AND co.attendance_id = 'B2 EVE ONLINE - DUBLIN - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -930,7 +930,7 @@ INSERT INTO students (
     'B2-', 'B2-', '["Spanish"]', '1. B2 Eve - ED - 06.10.2025 - Dale - B2', NOW(), NOW()
 );
 
--- Create enrollment for student (email: abarroyoc@gmail.com) to course (attendance_id: B2 EVE ONLINE)
+-- Create enrollment for student (email: abarroyoc@gmail.com) to course (attendance_id: B2 EVE ONLINE - DUBLIN - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -944,7 +944,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'abarroyoc@gmail.com'
-  AND co.attendance_id = 'B2 EVE ONLINE'
+  AND co.attendance_id = 'B2 EVE ONLINE - DUBLIN - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -960,7 +960,7 @@ INSERT INTO students (
 1. B2 Morning - Ed - 06.10.25 - Kathleen ? B1+', NOW(), NOW()
 );
 
--- Create enrollment for student (email: sedunkova@gmail.com) to course (attendance_id: B2 EVE ONLINE)
+-- Create enrollment for student (email: sedunkova@gmail.com) to course (attendance_id: B2 EVE ONLINE - DUBLIN - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -974,7 +974,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'sedunkova@gmail.com'
-  AND co.attendance_id = 'B2 EVE ONLINE'
+  AND co.attendance_id = 'B2 EVE ONLINE - DUBLIN - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -988,7 +988,7 @@ INSERT INTO students (
     'C1-', 'C1-', '["Portuguese"]', NULL, NOW(), NOW()
 );
 
--- Create enrollment for student (email: ricardo.f.f.santos99@gmail.com) to course (attendance_id: C1 EVE ONLINE)
+-- Create enrollment for student (email: ricardo.f.f.santos99@gmail.com) to course (attendance_id: C1 EVE ONLINE - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1002,7 +1002,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'ricardo.f.f.santos99@gmail.com'
-  AND co.attendance_id = 'C1 EVE ONLINE'
+  AND co.attendance_id = 'C1 EVE ONLINE - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1018,7 +1018,7 @@ INSERT INTO students (
 1. C1 EVE 15.07.25 - FIFE - Tessa - New Level ?C1+', NOW(), NOW()
 );
 
--- Create enrollment for student (email: beatrizraposo30@gmail.com) to course (attendance_id: C1 EVE ONLINE)
+-- Create enrollment for student (email: beatrizraposo30@gmail.com) to course (attendance_id: C1 EVE ONLINE - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1032,7 +1032,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'beatrizraposo30@gmail.com'
-  AND co.attendance_id = 'C1 EVE ONLINE'
+  AND co.attendance_id = 'C1 EVE ONLINE - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1054,7 +1054,7 @@ INSERT INTO students (
 7. C1 EVE - ED - 07.10.25 - DALE ? C1', NOW(), NOW()
 );
 
--- Create enrollment for student (email: viloandrina@gmail.com) to course (attendance_id: C1 EVE ONLINE)
+-- Create enrollment for student (email: viloandrina@gmail.com) to course (attendance_id: C1 EVE ONLINE - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1068,7 +1068,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'viloandrina@gmail.com'
-  AND co.attendance_id = 'C1 EVE ONLINE'
+  AND co.attendance_id = 'C1 EVE ONLINE - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1083,7 +1083,7 @@ INSERT INTO students (
 2. C1 Morn - FIFE - 01.07.25 - Magui/Kathleen - New level-  C1', NOW(), NOW()
 );
 
--- Create enrollment for student (email: celineyoon93@gmail.com) to course (attendance_id: C1 EVE ONLINE)
+-- Create enrollment for student (email: celineyoon93@gmail.com) to course (attendance_id: C1 EVE ONLINE - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1097,7 +1097,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'celineyoon93@gmail.com'
-  AND co.attendance_id = 'C1 EVE ONLINE'
+  AND co.attendance_id = 'C1 EVE ONLINE - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1117,7 +1117,7 @@ INSERT INTO students (
 5. C1 EVE ONLINE - DUBLIN - 26.08.2025 - R6 - B2+ - Dale', NOW(), NOW()
 );
 
--- Create enrollment for student (email: samisaeid1990@gmail.com) to course (attendance_id: C1 EVE ONLINE)
+-- Create enrollment for student (email: samisaeid1990@gmail.com) to course (attendance_id: C1 EVE ONLINE - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1131,7 +1131,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'samisaeid1990@gmail.com'
-  AND co.attendance_id = 'C1 EVE ONLINE'
+  AND co.attendance_id = 'C1 EVE ONLINE - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1153,7 +1153,7 @@ INSERT INTO students (
 7. A2 PRE-INT MORNING - DUBLIN - 19.08.2025 - R6 - A2+ Pre-Int+ - Anastasia', NOW(), NOW()
 );
 
--- Create enrollment for student (email: laianaferraripp@gmail.com) to course (attendance_id: A2 PRE-INT MORNING)
+-- Create enrollment for student (email: laianaferraripp@gmail.com) to course (attendance_id: A2 PRE-INT MORNING - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1167,7 +1167,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'laianaferraripp@gmail.com'
-  AND co.attendance_id = 'A2 PRE-INT MORNING'
+  AND co.attendance_id = 'A2 PRE-INT MORNING - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1181,7 +1181,7 @@ INSERT INTO students (
     'A2 PreInt', 'A2 PreInt', '["Italian"]', '1. A2 Pre-Int Morn - ED - 30.09.2025 - Anastasia ? A2+ Pre-Int', NOW(), NOW()
 );
 
--- Create enrollment for student (email: eletuci@hotmail.it) to course (attendance_id: A2 PRE-INT MORNING)
+-- Create enrollment for student (email: eletuci@hotmail.it) to course (attendance_id: A2 PRE-INT MORNING - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1195,7 +1195,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'eletuci@hotmail.it'
-  AND co.attendance_id = 'A2 PRE-INT MORNING'
+  AND co.attendance_id = 'A2 PRE-INT MORNING - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1209,7 +1209,7 @@ INSERT INTO students (
     'A2 PreInt', 'A2 PreInt', '["Turkish"]', '1. A2 Pre-Int Morn - ED - 30.09.2025 - Anastasia ? A2+ Pre-Int', NOW(), NOW()
 );
 
--- Create enrollment for student (email: aycasertkaya9@gmail.com) to course (attendance_id: A2 PRE-INT MORNING)
+-- Create enrollment for student (email: aycasertkaya9@gmail.com) to course (attendance_id: A2 PRE-INT MORNING - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1223,7 +1223,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'aycasertkaya9@gmail.com'
-  AND co.attendance_id = 'A2 PRE-INT MORNING'
+  AND co.attendance_id = 'A2 PRE-INT MORNING - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1237,7 +1237,7 @@ INSERT INTO students (
     'A2 PreInt-', 'A2 PreInt-', '["Portuguese", "English"]', '#', NOW(), NOW()
 );
 
--- Create enrollment for student (email: melmeregali@gmail.com) to course (attendance_id: A2 PRE-INT MORNING)
+-- Create enrollment for student (email: melmeregali@gmail.com) to course (attendance_id: A2 PRE-INT MORNING - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1251,7 +1251,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'melmeregali@gmail.com'
-  AND co.attendance_id = 'A2 PRE-INT MORNING'
+  AND co.attendance_id = 'A2 PRE-INT MORNING - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1265,7 +1265,7 @@ INSERT INTO students (
     'A2 PreInt+', 'A2 PreInt+', '["Dutch"]', '1. A2 Pre-Int Morn - ED - 30.09.2025 - Anastasia ? A2+ Pre-Int', NOW(), NOW()
 );
 
--- Create enrollment for student (email: xxselenayxx@gmail.com) to course (attendance_id: A2 PRE-INT MORNING)
+-- Create enrollment for student (email: xxselenayxx@gmail.com) to course (attendance_id: A2 PRE-INT MORNING - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1279,7 +1279,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'xxselenayxx@gmail.com'
-  AND co.attendance_id = 'A2 PRE-INT MORNING'
+  AND co.attendance_id = 'A2 PRE-INT MORNING - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1293,7 +1293,7 @@ INSERT INTO students (
     'A2 PreInt+', 'A2 PreInt+', '["Portuguese"]', '#', NOW(), NOW()
 );
 
--- Create enrollment for student (email: tati_menezes87@yahoo.com.br) to course (attendance_id: A2 PRE-INT MORNING)
+-- Create enrollment for student (email: tati_menezes87@yahoo.com.br) to course (attendance_id: A2 PRE-INT MORNING - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1307,7 +1307,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'tati_menezes87@yahoo.com.br'
-  AND co.attendance_id = 'A2 PRE-INT MORNING'
+  AND co.attendance_id = 'A2 PRE-INT MORNING - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1322,7 +1322,7 @@ INSERT INTO students (
 2. A2 Pre-Int Morn - ED - 30.09.2025 - Anastasia ? A2+ Pre-Int', NOW(), NOW()
 );
 
--- Create enrollment for student (email: gmzszgtrmz@gmail.com) to course (attendance_id: A2 PRE-INT MORNING)
+-- Create enrollment for student (email: gmzszgtrmz@gmail.com) to course (attendance_id: A2 PRE-INT MORNING - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1336,7 +1336,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'gmzszgtrmz@gmail.com'
-  AND co.attendance_id = 'A2 PRE-INT MORNING'
+  AND co.attendance_id = 'A2 PRE-INT MORNING - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1350,7 +1350,7 @@ INSERT INTO students (
     'B1', 'B1', '["Turkish", "English"]', '**email mum:** banuaktoz@icloud.com', NOW(), NOW()
 );
 
--- Create enrollment for student (email: yalinzerenn@gmail.com) to course (attendance_id: B1 MORNING)
+-- Create enrollment for student (email: yalinzerenn@gmail.com) to course (attendance_id: B1 MORNING - DUBLIN - 14.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1364,7 +1364,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'yalinzerenn@gmail.com'
-  AND co.attendance_id = 'B1 MORNING'
+  AND co.attendance_id = 'B1 MORNING - DUBLIN - 14.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1382,7 +1382,7 @@ INSERT INTO students (
 3. B1 Morning - Ed - 08.10.25 - Magui/Deb ? B1', NOW(), NOW()
 );
 
--- Create enrollment for student (email: neda.mohammadi88@gmail.com) to course (attendance_id: B1 MORNING)
+-- Create enrollment for student (email: neda.mohammadi88@gmail.com) to course (attendance_id: B1 MORNING - DUBLIN - 14.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1396,7 +1396,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'neda.mohammadi88@gmail.com'
-  AND co.attendance_id = 'B1 MORNING'
+  AND co.attendance_id = 'B1 MORNING - DUBLIN - 14.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1414,7 +1414,7 @@ INSERT INTO students (
 3. B1 Morning - FIFE - 16.07.25 - New level B1', NOW(), NOW()
 );
 
--- Create enrollment for student (email: dai.md@hotmail.com) to course (attendance_id: B1 MORNING)
+-- Create enrollment for student (email: dai.md@hotmail.com) to course (attendance_id: B1 MORNING - DUBLIN - 14.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1428,7 +1428,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'dai.md@hotmail.com'
-  AND co.attendance_id = 'B1 MORNING'
+  AND co.attendance_id = 'B1 MORNING - DUBLIN - 14.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1442,7 +1442,7 @@ INSERT INTO students (
     NULL, NULL, '["Italian"]', NULL, NOW(), NOW()
 );
 
--- Create enrollment for student (email: silvia.deleo57@gmail.com) to course (attendance_id: B1 MORNING)
+-- Create enrollment for student (email: silvia.deleo57@gmail.com) to course (attendance_id: B1 MORNING - DUBLIN - 14.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1456,7 +1456,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'silvia.deleo57@gmail.com'
-  AND co.attendance_id = 'B1 MORNING'
+  AND co.attendance_id = 'B1 MORNING - DUBLIN - 14.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1470,7 +1470,7 @@ INSERT INTO students (
     'B1+', 'B1+', '["Korean / Chinese"]', NULL, NOW(), NOW()
 );
 
--- Create enrollment for student (email: kate.kimhj80@gmail.com) to course (attendance_id: B1 MORNING)
+-- Create enrollment for student (email: kate.kimhj80@gmail.com) to course (attendance_id: B1 MORNING - DUBLIN - 14.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1484,7 +1484,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'kate.kimhj80@gmail.com'
-  AND co.attendance_id = 'B1 MORNING'
+  AND co.attendance_id = 'B1 MORNING - DUBLIN - 14.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1498,7 +1498,7 @@ INSERT INTO students (
     'B1+', 'B1+', '["Syrian"]', NULL, NOW(), NOW()
 );
 
--- Create enrollment for student (email: mr.hashem13@gmail.com) to course (attendance_id: B1 MORNING)
+-- Create enrollment for student (email: mr.hashem13@gmail.com) to course (attendance_id: B1 MORNING - DUBLIN - 14.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1512,7 +1512,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'mr.hashem13@gmail.com'
-  AND co.attendance_id = 'B1 MORNING'
+  AND co.attendance_id = 'B1 MORNING - DUBLIN - 14.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1526,7 +1526,7 @@ INSERT INTO students (
     'B2+', 'B2+', '["Portuguese"]', NULL, NOW(), NOW()
 );
 
--- Create enrollment for student (email: andressa.limpias@gmail.com) to course (attendance_id: B2 MORNING)
+-- Create enrollment for student (email: andressa.limpias@gmail.com) to course (attendance_id: B2 MORNING - DUBLIN - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1540,7 +1540,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'andressa.limpias@gmail.com'
-  AND co.attendance_id = 'B2 MORNING'
+  AND co.attendance_id = 'B2 MORNING - DUBLIN - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1557,7 +1557,7 @@ INSERT INTO students (
 2. B2 Morning - EDMONTON 02.06.25 - Kathleen - New Level ? B2', NOW(), NOW()
 );
 
--- Create enrollment for student (email: iskenderbay@gmail.com) to course (attendance_id: B2 MORNING)
+-- Create enrollment for student (email: iskenderbay@gmail.com) to course (attendance_id: B2 MORNING - DUBLIN - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1571,7 +1571,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'iskenderbay@gmail.com'
-  AND co.attendance_id = 'B2 MORNING'
+  AND co.attendance_id = 'B2 MORNING - DUBLIN - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1587,7 +1587,7 @@ INSERT INTO students (
 1. B2 MORNING - DUBLIN - 25.08.2025 - R6 - B2 - Kathleen', NOW(), NOW()
 );
 
--- Create enrollment for student (email: mariabellidomas105@gmail.com) to course (attendance_id: B2 MORNING)
+-- Create enrollment for student (email: mariabellidomas105@gmail.com) to course (attendance_id: B2 MORNING - DUBLIN - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1601,7 +1601,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'mariabellidomas105@gmail.com'
-  AND co.attendance_id = 'B2 MORNING'
+  AND co.attendance_id = 'B2 MORNING - DUBLIN - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1615,7 +1615,7 @@ INSERT INTO students (
     'B2', 'B2', '["Dutch"]', NULL, NOW(), NOW()
 );
 
--- Create enrollment for student (email: jacobamanon@hotmail.com) to course (attendance_id: B2 MORNING)
+-- Create enrollment for student (email: jacobamanon@hotmail.com) to course (attendance_id: B2 MORNING - DUBLIN - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1629,7 +1629,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'jacobamanon@hotmail.com'
-  AND co.attendance_id = 'B2 MORNING'
+  AND co.attendance_id = 'B2 MORNING - DUBLIN - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1645,7 +1645,7 @@ INSERT INTO students (
 1. B2 Morning - Ed - 06.10.25 - Kathleen ? B2', NOW(), NOW()
 );
 
--- Create enrollment for student (email: florancetessa77@gmail.com) to course (attendance_id: B2 MORNING)
+-- Create enrollment for student (email: florancetessa77@gmail.com) to course (attendance_id: B2 MORNING - DUBLIN - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1659,7 +1659,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'florancetessa77@gmail.com'
-  AND co.attendance_id = 'B2 MORNING'
+  AND co.attendance_id = 'B2 MORNING - DUBLIN - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1677,7 +1677,7 @@ INSERT INTO students (
 3. B1 Morning - Ed - 08.10.25 - Magui/Deb ? B1+', NOW(), NOW()
 );
 
--- Create enrollment for student (email: belmadani61@gmail.com) to course (attendance_id: B2 MORNING)
+-- Create enrollment for student (email: belmadani61@gmail.com) to course (attendance_id: B2 MORNING - DUBLIN - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1691,7 +1691,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'belmadani61@gmail.com'
-  AND co.attendance_id = 'B2 MORNING'
+  AND co.attendance_id = 'B2 MORNING - DUBLIN - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1707,7 +1707,7 @@ INSERT INTO students (
 1. B2 Morning - Ed - 06.10.25 - Kathleen ? B2', NOW(), NOW()
 );
 
--- Create enrollment for student (email: panic8846@naver.com) to course (attendance_id: B2 MORNING)
+-- Create enrollment for student (email: panic8846@naver.com) to course (attendance_id: B2 MORNING - DUBLIN - 12.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1721,7 +1721,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'panic8846@naver.com'
-  AND co.attendance_id = 'B2 MORNING'
+  AND co.attendance_id = 'B2 MORNING - DUBLIN - 12.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1743,7 +1743,7 @@ INSERT INTO students (
 7. C1 Morning FIFE - 01.07.25 - Kathleen/Magui - C1-', NOW(), NOW()
 );
 
--- Create enrollment for student (email: deniz8isik@gmail.com) to course (attendance_id: C1 MORNING)
+-- Create enrollment for student (email: deniz8isik@gmail.com) to course (attendance_id: C1 MORNING - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1757,7 +1757,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'deniz8isik@gmail.com'
-  AND co.attendance_id = 'C1 MORNING'
+  AND co.attendance_id = 'C1 MORNING - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1771,7 +1771,7 @@ INSERT INTO students (
     'B2', 'B2', '["Spanish"]', NULL, NOW(), NOW()
 );
 
--- Create enrollment for student (email: ibarrabelen95@gmail.com) to course (attendance_id: C1 MORNING)
+-- Create enrollment for student (email: ibarrabelen95@gmail.com) to course (attendance_id: C1 MORNING - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1785,7 +1785,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'ibarrabelen95@gmail.com'
-  AND co.attendance_id = 'C1 MORNING'
+  AND co.attendance_id = 'C1 MORNING - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1805,7 +1805,7 @@ INSERT INTO students (
 5. B2 Int 30.06.25 - BOSTON - Benjamin & Anastasia - New Level ?B2+', NOW(), NOW()
 );
 
--- Create enrollment for student (email: dmitriipankratov971@gmail.com) to course (attendance_id: C1 MORNING)
+-- Create enrollment for student (email: dmitriipankratov971@gmail.com) to course (attendance_id: C1 MORNING - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1819,7 +1819,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'dmitriipankratov971@gmail.com'
-  AND co.attendance_id = 'C1 MORNING'
+  AND co.attendance_id = 'C1 MORNING - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1833,7 +1833,7 @@ INSERT INTO students (
     'C1', 'C1', '["Russian", "English", "Dutch"]', '#', NOW(), NOW()
 );
 
--- Create enrollment for student (email: alewife.stat.9v@icloud.com) to course (attendance_id: C1 MORNING)
+-- Create enrollment for student (email: alewife.stat.9v@icloud.com) to course (attendance_id: C1 MORNING - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1847,7 +1847,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'alewife.stat.9v@icloud.com'
-  AND co.attendance_id = 'C1 MORNING'
+  AND co.attendance_id = 'C1 MORNING - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1863,7 +1863,7 @@ INSERT INTO students (
 1. B2 Morn - EDMONTON 02.06.25 - Kathleen - new level - B2+', NOW(), NOW()
 );
 
--- Create enrollment for student (email: nonono.non213@gmail.com) to course (attendance_id: C1 MORNING)
+-- Create enrollment for student (email: nonono.non213@gmail.com) to course (attendance_id: C1 MORNING - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1877,7 +1877,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'nonono.non213@gmail.com'
-  AND co.attendance_id = 'C1 MORNING'
+  AND co.attendance_id = 'C1 MORNING - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1902,7 +1902,7 @@ INSERT INTO students (
 6. B2 Morning - Ed - 06.10.25 - Kathleen ? C1-', NOW(), NOW()
 );
 
--- Create enrollment for student (email: mailvantati@gmail.com) to course (attendance_id: C1 MORNING)
+-- Create enrollment for student (email: mailvantati@gmail.com) to course (attendance_id: C1 MORNING - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1916,7 +1916,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'mailvantati@gmail.com'
-  AND co.attendance_id = 'C1 MORNING'
+  AND co.attendance_id = 'C1 MORNING - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1930,7 +1930,7 @@ INSERT INTO students (
     'C1-', 'C1-', '["NL", "Arabic"]', '1. C1 Morning - EDMONTON 30.09.25 - New Level: C1+', NOW(), NOW()
 );
 
--- Create enrollment for student (email: tamirsami2004@gmail.com) to course (attendance_id: C1 MORNING)
+-- Create enrollment for student (email: tamirsami2004@gmail.com) to course (attendance_id: C1 MORNING - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1944,7 +1944,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'tamirsami2004@gmail.com'
-  AND co.attendance_id = 'C1 MORNING'
+  AND co.attendance_id = 'C1 MORNING - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1970,7 +1970,7 @@ INSERT INTO students (
 11. C1 MORNING - DUBLIN - 19.08.25 - C1', NOW(), NOW()
 );
 
--- Create enrollment for student (email: mariacmmatias@gmail.com) to course (attendance_id: C1 MORNING)
+-- Create enrollment for student (email: mariacmmatias@gmail.com) to course (attendance_id: C1 MORNING - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -1984,7 +1984,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'mariacmmatias@gmail.com'
-  AND co.attendance_id = 'C1 MORNING'
+  AND co.attendance_id = 'C1 MORNING - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -1998,7 +1998,7 @@ INSERT INTO students (
     'C1-', 'C1-', '["Portuguese"]', '1. C1 MORNING - DUBLIN 19.08.25 - Kathleen/Magui > C1', NOW(), NOW()
 );
 
--- Create enrollment for student (email: hhelo.adam@gmail.com) to course (attendance_id: C1 MORNING)
+-- Create enrollment for student (email: hhelo.adam@gmail.com) to course (attendance_id: C1 MORNING - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -2012,7 +2012,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'hhelo.adam@gmail.com'
-  AND co.attendance_id = 'C1 MORNING'
+  AND co.attendance_id = 'C1 MORNING - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -2032,7 +2032,7 @@ INSERT INTO students (
 5. B2 MORNING - DUBLIN - 25.08.2025 - R6 - B2+ - Kathleen', NOW(), NOW()
 );
 
--- Create enrollment for student (email: lorianbathory@gmail.com) to course (attendance_id: C1 MORNING)
+-- Create enrollment for student (email: lorianbathory@gmail.com) to course (attendance_id: C1 MORNING - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -2046,7 +2046,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'lorianbathory@gmail.com'
-  AND co.attendance_id = 'C1 MORNING'
+  AND co.attendance_id = 'C1 MORNING - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -2070,7 +2070,7 @@ Yaroslav Sinitsov <[ysinitsov@gmail.com](mailto:ysinitsov@gmail.com "?")\\>
 5. C1 Morning 01.07.2025 - FIFE - Magui / Kathleen - C1', NOW(), NOW()
 );
 
--- Create enrollment for student (email: moqrush@gmail.com) to course (attendance_id: C1 MORNING)
+-- Create enrollment for student (email: moqrush@gmail.com) to course (attendance_id: C1 MORNING - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -2084,7 +2084,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'moqrush@gmail.com'
-  AND co.attendance_id = 'C1 MORNING'
+  AND co.attendance_id = 'C1 MORNING - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -2100,7 +2100,7 @@ INSERT INTO students (
 1. B2 Morning - FIFE - 14.07.25 - C1-', NOW(), NOW()
 );
 
--- Create enrollment for student (email: blanquiroth@gmail.com) to course (attendance_id: C1 MORNING)
+-- Create enrollment for student (email: blanquiroth@gmail.com) to course (attendance_id: C1 MORNING - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -2114,7 +2114,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'blanquiroth@gmail.com'
-  AND co.attendance_id = 'C1 MORNING'
+  AND co.attendance_id = 'C1 MORNING - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -2129,7 +2129,7 @@ INSERT INTO students (
 2. B2 Morning - Ed - 06.10.25 - Kathleen ? C1-', NOW(), NOW()
 );
 
--- Create enrollment for student (email: issamsaied@hotmail.com) to course (attendance_id: C1 MORNING)
+-- Create enrollment for student (email: issamsaied@hotmail.com) to course (attendance_id: C1 MORNING - DUBLIN - 13.01.2026 - R1)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -2143,7 +2143,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'issamsaied@hotmail.com'
-  AND co.attendance_id = 'C1 MORNING'
+  AND co.attendance_id = 'C1 MORNING - DUBLIN - 13.01.2026 - R1'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -2165,7 +2165,7 @@ INSERT INTO students (
 7. B2 INTENSIVE - AUCKLAND - 01.09.2025 - R9 - B2 - Benjamin, Anastasia', NOW(), NOW()
 );
 
--- Create enrollment for student (email: gunesgulerr@gmail.com) to course (attendance_id: B1 INTENSIVE)
+-- Create enrollment for student (email: gunesgulerr@gmail.com) to course (attendance_id: B1 INTENSIVE - CAPE TOWN - 09.02.2026 - R2)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -2179,7 +2179,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'gunesgulerr@gmail.com'
-  AND co.attendance_id = 'B1 INTENSIVE'
+  AND co.attendance_id = 'B1 INTENSIVE - CAPE TOWN - 09.02.2026 - R2'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -2193,7 +2193,7 @@ INSERT INTO students (
     'B1-', 'B1-', '["Farsi"]', NULL, NOW(), NOW()
 );
 
--- Create enrollment for student (email: sjamshidi099@gmail.com) to course (attendance_id: B1 INTENSIVE)
+-- Create enrollment for student (email: sjamshidi099@gmail.com) to course (attendance_id: B1 INTENSIVE - CAPE TOWN - 09.02.2026 - R2)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -2207,7 +2207,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'sjamshidi099@gmail.com'
-  AND co.attendance_id = 'B1 INTENSIVE'
+  AND co.attendance_id = 'B1 INTENSIVE - CAPE TOWN - 09.02.2026 - R2'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -2224,7 +2224,7 @@ INSERT INTO students (
 2. B2 INTENSIVE - BOSTON - 29.09.25 - Anastasia/Deborah ? B2-', NOW(), NOW()
 );
 
--- Create enrollment for student (email: smalongaleparquier@gmail.com) to course (attendance_id: B1 INTENSIVE)
+-- Create enrollment for student (email: smalongaleparquier@gmail.com) to course (attendance_id: B1 INTENSIVE - CAPE TOWN - 09.02.2026 - R2)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -2238,7 +2238,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'smalongaleparquier@gmail.com'
-  AND co.attendance_id = 'B1 INTENSIVE'
+  AND co.attendance_id = 'B1 INTENSIVE - CAPE TOWN - 09.02.2026 - R2'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -2252,7 +2252,7 @@ INSERT INTO students (
     'B1+', 'B1+', '["Spanish"]', NULL, NOW(), NOW()
 );
 
--- Create enrollment for student (email: miretracto@gmail.com) to course (attendance_id: B1 INTENSIVE)
+-- Create enrollment for student (email: miretracto@gmail.com) to course (attendance_id: B1 INTENSIVE - CAPE TOWN - 09.02.2026 - R2)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -2266,7 +2266,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'miretracto@gmail.com'
-  AND co.attendance_id = 'B1 INTENSIVE'
+  AND co.attendance_id = 'B1 INTENSIVE - CAPE TOWN - 09.02.2026 - R2'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -2280,7 +2280,7 @@ INSERT INTO students (
     'B1-', 'B1-', '["Arabic/ Dutch"]', '1. B1 INTENSIVE - BOSTON - 29.09.25 - Magui/Kathleen ? B1+', NOW(), NOW()
 );
 
--- Create enrollment for student (email: fahdnapil75@gmail.com) to course (attendance_id: B2 INTENSIVE)
+-- Create enrollment for student (email: fahdnapil75@gmail.com) to course (attendance_id: B2 INTENSIVE - CAPE TOWN - 09.02.2026 - R2)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -2294,7 +2294,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'fahdnapil75@gmail.com'
-  AND co.attendance_id = 'B2 INTENSIVE'
+  AND co.attendance_id = 'B2 INTENSIVE - CAPE TOWN - 09.02.2026 - R2'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -2308,7 +2308,7 @@ INSERT INTO students (
     'A1', 'A1', '["Portuguese"]', '1. A1 BEGINNER - DUBLIN - 18.08.2025 - R6 - Deborah - A1', NOW(), NOW()
 );
 
--- Create enrollment for student (email: ariadneraphaeta@gmail.com) to course (attendance_id: A1 BEGINNER)
+-- Create enrollment for student (email: ariadneraphaeta@gmail.com) to course (attendance_id: A1 BEGINNER - DUBLIN - 23.02.2026 - R2)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -2322,7 +2322,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'ariadneraphaeta@gmail.com'
-  AND co.attendance_id = 'A1 BEGINNER'
+  AND co.attendance_id = 'A1 BEGINNER - DUBLIN - 23.02.2026 - R2'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -2336,7 +2336,7 @@ INSERT INTO students (
     'A1-', 'A1-', '["French"]', '#', NOW(), NOW()
 );
 
--- Create enrollment for student (email: agoua1986@gmail.com) to course (attendance_id: A1 BEGINNER)
+-- Create enrollment for student (email: agoua1986@gmail.com) to course (attendance_id: A1 BEGINNER - DUBLIN - 23.02.2026 - R2)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -2350,7 +2350,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'agoua1986@gmail.com'
-  AND co.attendance_id = 'A1 BEGINNER'
+  AND co.attendance_id = 'A1 BEGINNER - DUBLIN - 23.02.2026 - R2'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -2369,7 +2369,7 @@ INSERT INTO students (
 4. B1 Morning - FIFE - 16.07.25 - Magui/Deborah - New Level ?B1', NOW(), NOW()
 );
 
--- Create enrollment for student (email: natalyrubiano396@gmail.com) to course (attendance_id: B1 MORNING)
+-- Create enrollment for student (email: natalyrubiano396@gmail.com) to course (attendance_id: B1 MORNING - EDMONTON - 25.02.2026 - R2)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -2383,7 +2383,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'natalyrubiano396@gmail.com'
-  AND co.attendance_id = 'B1 MORNING'
+  AND co.attendance_id = 'B1 MORNING - EDMONTON - 25.02.2026 - R2'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -2400,7 +2400,7 @@ INSERT INTO students (
 2. A2 INTENSIVE - BOSTON - 29.09.25 - Anastasia/James ? A2+ Pre-Int+', NOW(), NOW()
 );
 
--- Create enrollment for student (email: turchi.s@libero.it) to course (attendance_id: A2 INTENSIVE)
+-- Create enrollment for student (email: turchi.s@libero.it) to course (attendance_id: A2 INTENSIVE - AUCKLAND - 09.03.2026 - R3)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -2414,7 +2414,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'turchi.s@libero.it'
-  AND co.attendance_id = 'A2 INTENSIVE'
+  AND co.attendance_id = 'A2 INTENSIVE - AUCKLAND - 09.03.2026 - R3'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -2428,7 +2428,7 @@ INSERT INTO students (
     'B1', 'B1', '["Portuguese"]', '#', NOW(), NOW()
 );
 
--- Create enrollment for student (email: luizotaviofs2007@gmail.com) to course (attendance_id: B1 INTENSIVE)
+-- Create enrollment for student (email: luizotaviofs2007@gmail.com) to course (attendance_id: B1 INTENSIVE - AUCKLAND - 09.03.2026 - R3)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -2442,7 +2442,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'luizotaviofs2007@gmail.com'
-  AND co.attendance_id = 'B1 INTENSIVE'
+  AND co.attendance_id = 'B1 INTENSIVE - AUCKLAND - 09.03.2026 - R3'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -2456,7 +2456,7 @@ INSERT INTO students (
     'B2+', 'B2+', '["Portuguese"]', '#', NOW(), NOW()
 );
 
--- Create enrollment for student (email: babi.marmo@gmail.com) to course (attendance_id: B2 INTENSIVE)
+-- Create enrollment for student (email: babi.marmo@gmail.com) to course (attendance_id: B2 INTENSIVE - AUCKLAND - 09.03.2026 - R3)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -2470,7 +2470,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'babi.marmo@gmail.com'
-  AND co.attendance_id = 'B2 INTENSIVE'
+  AND co.attendance_id = 'B2 INTENSIVE - AUCKLAND - 09.03.2026 - R3'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -2484,7 +2484,7 @@ INSERT INTO students (
     'A1', 'A1', '["Italian"]', NULL, NOW(), NOW()
 );
 
--- Create enrollment for student (email: eleonora.fagiolini@hotmail.com) to course (attendance_id: A1 BEGINNER)
+-- Create enrollment for student (email: eleonora.fagiolini@hotmail.com) to course (attendance_id: A1 BEGINNER - EDMONTON - 06.04.2026 - R3)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -2498,7 +2498,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'eleonora.fagiolini@hotmail.com'
-  AND co.attendance_id = 'A1 BEGINNER'
+  AND co.attendance_id = 'A1 BEGINNER - EDMONTON - 06.04.2026 - R3'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -2516,7 +2516,7 @@ INSERT INTO students (
 3. A2 Pre-Int Morn - ED - 30.09.2025 - Anastasia ? A2+ Pre-Int+ (Can try B1)', NOW(), NOW()
 );
 
--- Create enrollment for student (email: june.milkyway.d@gmail.com) to course (attendance_id: B1 MORNING)
+-- Create enrollment for student (email: june.milkyway.d@gmail.com) to course (attendance_id: B1 MORNING - FIFE - 08.04.2026 - R3)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -2530,7 +2530,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'june.milkyway.d@gmail.com'
-  AND co.attendance_id = 'B1 MORNING'
+  AND co.attendance_id = 'B1 MORNING - FIFE - 08.04.2026 - R3'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -2546,7 +2546,7 @@ INSERT INTO students (
 1. A2 Int 28.07.25 -  CAPE TOWN - Kathleen/Magui - New Level ?A2 PreInt+', NOW(), NOW()
 );
 
--- Create enrollment for student (email: zeynepsimay2008@hotmail.com) to course (attendance_id: A2 INTENSIVE)
+-- Create enrollment for student (email: zeynepsimay2008@hotmail.com) to course (attendance_id: A2 INTENSIVE - AUCKLAND - 08.06.2026 - R6)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -2560,7 +2560,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'zeynepsimay2008@hotmail.com'
-  AND co.attendance_id = 'A2 INTENSIVE'
+  AND co.attendance_id = 'A2 INTENSIVE - AUCKLAND - 08.06.2026 - R6'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -2574,7 +2574,7 @@ INSERT INTO students (
     'A2 PreInt-', 'A2 PreInt-', '["Portuguese"]', NULL, NOW(), NOW()
 );
 
--- Create enrollment for student (email: biancalf@gmail.com) to course (attendance_id: A2 INTENSIVE)
+-- Create enrollment for student (email: biancalf@gmail.com) to course (attendance_id: A2 INTENSIVE - AUCKLAND - 08.06.2026 - R6)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -2588,7 +2588,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 'biancalf@gmail.com'
-  AND co.attendance_id = 'A2 INTENSIVE'
+  AND co.attendance_id = 'A2 INTENSIVE - AUCKLAND - 08.06.2026 - R6'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id
@@ -2605,7 +2605,7 @@ INSERT INTO students (
 2. A2 INT 02.06.25 - AUCKLAND - Magui/Kathleen ? B1-', NOW(), NOW()
 );
 
--- Create enrollment for student (email: s.szokody@gmail.com) to course (attendance_id: A2 INTENSIVE)
+-- Create enrollment for student (email: s.szokody@gmail.com) to course (attendance_id: A2 INTENSIVE - BOSTON - 06.07.2026 - R7)
 INSERT INTO enrollments (
     student_id, course_offering_id, status, enrolled_at, created_at, updated_at
 )
@@ -2619,7 +2619,7 @@ SELECT
 FROM students s
 CROSS JOIN course_offerings co
 WHERE s.email = 's.szokody@gmail.com'
-  AND co.attendance_id = 'A2 INTENSIVE'
+  AND co.attendance_id = 'A2 INTENSIVE - BOSTON - 06.07.2026 - R7'
   AND NOT EXISTS (
     SELECT 1 FROM enrollments e 
     WHERE e.student_id = s.id AND e.course_offering_id = co.id

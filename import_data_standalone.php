@@ -87,20 +87,14 @@ function importCourses($pdo, $filePath) {
             ]);
         }
         
-        // Extract level from course_key
-        $level = null;
-        if (preg_match('/^([ABC][12])\b/', $data['course_key'] ?? '', $matches)) {
-            $level = $matches[1];
-        }
+        // Use attendance_id as course_key (both unique)
+        $courseKey = $data['attendance_id'];
         
-        // Extract type from schedule_type
-        $type = null;
-        $scheduleType = strtolower($data['schedule_type'] ?? '');
-        if (strpos($scheduleType, 'morning') !== false) $type = 'morning';
-        elseif (strpos($scheduleType, 'evening') !== false) $type = 'evening';
-        elseif (strpos($scheduleType, 'afternoon') !== false) $type = 'afternoon';
-        elseif (strpos($scheduleType, 'online') !== false) $type = 'online';
-        elseif (strpos($scheduleType, 'intensive') !== false) $type = 'intensive';
+        // Get level from CSV (already in JSON)
+        $level = $data['level'] ?? null;
+        
+        // Get type from CSV (already in JSON)
+        $type = $data['type'] ?? null;
         
         // Parse hours_total
         $hoursTotal = null;
@@ -108,13 +102,8 @@ function importCourses($pdo, $filePath) {
             $hoursTotal = (int)$matches[1];
         }
         
-        // Infer program
-        $courseKey = strtolower($data['course_key'] ?? '');
-        if (strpos($courseKey, 'intensive') !== false) $program = 'intensive';
-        elseif (strpos($courseKey, 'conversation') !== false) $program = 'conversation';
-        elseif (strpos($courseKey, 'business') !== false) $program = 'business';
-        elseif (strpos($courseKey, '1-2-1') !== false) $program = 'private';
-        else $program = 'general';
+        // Get program from CSV (already in JSON)
+        $program = $data['program'] ?? null;
         
         $online = ($data['delivery_mode'] ?? '') === 'online' ? 1 : 0;
         
@@ -135,7 +124,7 @@ function importCourses($pdo, $filePath) {
         $stmt->execute([
             $data['attendance_id'],
             $round,
-            $data['course_key'],
+            $courseKey,
             $data['course_full_name'],
             $level,
             $program,

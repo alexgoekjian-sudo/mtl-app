@@ -68,8 +68,11 @@ class ImportDataSeeder extends Seeder
             $courseData = [
                 'attendance_id' => $data['attendance_id'] ?? null,
                 'round' => isset($data['round']) ? (int)$data['round'] : 1,
-                'course_key' => $data['course_key'] ?? null,
+                'course_key' => $data['attendance_id'] ?? null, // Use attendance_id as course_key (both unique)
                 'course_full_name' => $data['course_full_name'] ?? null,
+                'level' => $data['level'] ?? null, // Direct from CSV
+                'program' => $data['program'] ?? null, // Direct from CSV PROG column
+                'type' => $data['type'] ?? null, // Direct from CSV TYPE column
                 'start_date' => $data['start_date'] ?? null,
                 'end_date' => $data['end_date'] ?? null,
                 'price' => $data['price'] ?? null,
@@ -86,34 +89,12 @@ class ImportDataSeeder extends Seeder
                 ]);
             }
             
-            // Extract level from course_key (e.g., "A1 BEGINNER" -> "A1")
-            if (preg_match('/^([ABC][12])\b/', $data['course_key'] ?? '', $matches)) {
-                $courseData['level'] = $matches[1];
-            }
-            
-            // Extract type from schedule_type (EVENING ONLINE, MORNING, etc.)
-            $scheduleType = strtolower($data['schedule_type'] ?? '');
-            if (strpos($scheduleType, 'morning') !== false) {
-                $courseData['type'] = 'morning';
-            } elseif (strpos($scheduleType, 'evening') !== false) {
-                $courseData['type'] = 'evening';
-            } elseif (strpos($scheduleType, 'afternoon') !== false) {
-                $courseData['type'] = 'afternoon';
-            } elseif (strpos($scheduleType, 'online') !== false) {
-                $courseData['type'] = 'online';
-            } elseif (strpos($scheduleType, 'intensive') !== false) {
-                $courseData['type'] = 'intensive';
-            }
-            
             // Parse hours_total from hours_raw (e.g., "24 hours/6 weeks" -> 24)
             if (!empty($data['hours_raw'])) {
                 if (preg_match('/(\d+)\s*hours?/', $data['hours_raw'], $matches)) {
                     $courseData['hours_total'] = (int)$matches[1];
                 }
             }
-            
-            // Set program based on course type
-            $courseData['program'] = $this->inferProgram($data);
             
             try {
                 CourseOffering::create($courseData);
