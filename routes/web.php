@@ -135,6 +135,15 @@ $router->group(['middleware' => 'auth.token', 'prefix' => 'api'], function () us
     $router->get('/audit_logs', 'App\\Http\\Controllers\\AuditLogController@index');
     $router->get('/audit_logs/{id}', 'App\\Http\\Controllers\\AuditLogController@show');
 
+    // Teacher attendance endpoints (simplified, teacher-facing)
+    $router->get('/teacher/courses', 'App\\Http\\Controllers\\TeacherAttendanceController@getCourses');
+    $router->get('/teacher/courses/{id}', 'App\\Http\\Controllers\\TeacherAttendanceController@getCourse');
+    $router->get('/teacher/courses/{id}/attendance', 'App\\Http\\Controllers\\TeacherAttendanceController@getAttendance');
+    $router->post('/teacher/courses/{id}/sessions', 'App\\Http\\Controllers\\TeacherAttendanceController@createSession');
+    $router->post('/teacher/courses/{id}/attendance', 'App\\Http\\Controllers\\TeacherAttendanceController@saveAttendance');
+    $router->get('/teacher/courses/{id}/summary', 'App\\Http\\Controllers\\TeacherAttendanceController@getCourseSummary');
+    $router->get('/teacher/courses/{courseId}/students/{studentId}/attendance', 'App\\Http\\Controllers\\TeacherAttendanceController@getStudentAttendance');
+
     // Retool-specific endpoints (simplified arrays, no pagination wrapper)
     $router->get('/retool/students', 'App\\Http\\Controllers\\RetoolController@students');
     $router->get('/retool/course_offerings', 'App\\Http\\Controllers\\RetoolController@courseOfferings');

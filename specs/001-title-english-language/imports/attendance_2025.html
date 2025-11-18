@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+     :root {
+    --sticky-col-width: 150px;      /* STUDENT NAME */
+    --country-col-width: 75px;     /* COUNTRY */
+    --level-col-width: 50px;       /* START LEVEL */
+  }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; background-color: #f4f4f9; color: #333; }
+    /* --- CHANGE: New container for H1 and button --- */
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #673ab7;
+      padding: 10px 20px;
+      flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    }
+
+    /* --- CHANGE: Styles moved from H1 to the container above --- */
+    h1 { padding: 0; margin: 0; color: white; font-size: 1.5em; }
+
+     #midpoint-reminder {
+        color: #ffeb3b; /* Bright yellow */
+        font-weight: bold;
+        margin: 0 auto; /* Helps center it between title and buttons */
+        padding: 5px;
+        text-align: center;
+    }
+
+    .controls { background-color: #fdfdfd; padding: 15px 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .hidden { display: none !important; }
+    select, textarea { padding: 8px; border-radius: 5px; border: 1px solid #ccc; font-size: 1em; width: 100%; box-sizing: border-box; font-family: inherit; }
+     .select-wrapper { flex-grow: 1; min-width: 250px; }
+    #status { padding: 15px 20px; font-weight: bold; font-size: 1.1em; }
+    .grid-container { display: none; overflow-x: auto; border-top: 1px solid #ddd; }
+    table { width: 100%; border-collapse: collapse; background-color: white; }
+    th, td { padding: 10px; text-align: center; border: 1px solid #e0e0e0; white-space: nowrap; vertical-align: middle; }
+    thead th { background-color: #673ab7; color: white; position: sticky; top: 0; z-index: 2; }
+    
+    .name-col { position: sticky; left: 0; background-color: #f8f9fa; z-index: 1; text-align: left; min-width: var(--sticky-col-width); font-weight: bold; }
+    th.name-col { color: black; text-transform: uppercase; }
+
+    .italic-name {
+      font-style: italic;
+    }
+
+    .today-header { background-color: #ffab40 !important; }
+    .highlight-header { background-color: #1976d2 !important; }
+    .attendance-cell input[type="checkbox"] { transform: scale(1.4); cursor: pointer; }
+    td.saving { background-color: #fffbe6 !important; }
+    td.saved { background-color: #e6ffed !important; transition: background-color 0.2s; }
+    td.error { background-color: #ffebee !important; }
+    
+    .notes-col, .prev-courses-col { min-width: 250px; white-space: normal; text-align: left; }
+    textarea.updatable { resize: none; overflow: hidden; min-height: 22px; }
+
+    .email-col { 
+        min-width: 220px; 
+        white-space: normal; 
+        text-align: left; 
+        word-break: break-all;
+    }
+
+    /* --- NEW CSS for the hide/show button --- */
+    #toggle-emails-btn {
+      padding: 9px 15px;
+      border-radius: 5px;
+      border: none;
+      background-color: #ffab40; /* Using the orange highlight color */
+      color: white;
+      font-size: 0.9em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      flex-shrink: 0;
+      margin-right: 10px; /* Add space between buttons */
+    }
+    #toggle-emails-btn:hover {
+      background-color: #ffa020;
+    }
+
+    #export-emails-btn {
+      padding: 9px 15px;
+      border-radius: 5px;
+      border: none;
+      background-color: #1976d2;
+      color: white;
+      font-size: 0.9em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      flex-shrink: 0;
+    }
+    #export-emails-btn:hover {
+      background-color: #1565c0;
+    }
+    #export-emails-btn:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+
+    .loader {
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #673ab7;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 20px auto;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* shared look for sticky left columns */
+  .sticky-col {
+    position: sticky;
+    left: 0;               /* will be overridden per column */
+    background-color: #f8f9fa;
+    z-index: 1;
+    text-align: left;
+    min-width: 120px;
+    font-weight: bold;
+  }
+
+  /* header look to match STUDENT NAME */
+  th.sticky-col {
+    color: black;
+    text-transform: uppercase;
+  }
+
+  /* individual positions and widths */
+  .name-col        { left: 0;                                  min-width: var(--sticky-col-width); }
+  .country-col     { left: calc(var(--sticky-col-width));      min-width: var(--country-col-width); }
+  .start-level-col { left: calc(var(--sticky-col-width) + var(--country-col-width)); min-width: var(--level-col-width); }
+
+  /* make sure sticky headers sit above normal headers when overlapping */
+  thead th.sticky-col { z-index: 3; }
+  thead th { z-index: 2; }
+
+    @media (max-width: 768px) {
+      body { -webkit-text-size-adjust: 100%; }
+      :root {
+      --sticky-col-width: 120px;
+      --country-col-width: 110px;
+      --level-col-width: 100px;
+    }
+      .notes-col, .prev-courses-col { min-width: 200px;} 
+      .email-col { min-width: 180px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="header-container">
+  <h1>Class Attendance Sheet</h1>
+  <div id="midpoint-reminder" class="hidden">
+      Reminder: Complete Mid-Level evaluations!
+    </div>
+  <div> <!-- Add this opening div -->
+  <button id="toggle-emails-btn" class="hidden">Hide Emails</button>
+  <button id="export-emails-btn" class="hidden">Copy Student Emails</button>
+  </div>
+  </div> <!-- Add this closing div -->
+  
+  <div class="controls hidden" id="controls-container">
+    <div class="select-wrapper">
+    <label for="class-selector">Please wait..</label>
+    <select id="class-selector" disabled><option value="">Loading...</option></select>
+  </div>
+  </div>
+  <div id="status">Please wait..</div>
+  <div id="loader" class="loader hidden"></div>
+  <div class="grid-container" id="grid-container">
+    <table id="attendance-grid">
+      <thead id="grid-head"></thead>
+      <tbody id="grid-body"></tbody>
+    </table>
+  </div>
+
+  <script>
+    const initialClassSheetName = <?= JSON.stringify(initialClass) ?>;
+    let appState = { sheetName: null };
+    const classSelector = document.getElementById('class-selector');
+    const controlsContainer = document.getElementById('controls-container');
+    const statusDiv = document.getElementById('status');
+    const loader = document.getElementById('loader');
+    const toggleBtn = document.getElementById('toggle-emails-btn');
+    const exportBtn = document.getElementById('export-emails-btn');
+    const todaysDateString = new Date().toISOString().slice(0, 10);
+
+    function autoResizeTextarea(textarea) { textarea.style.height = 'auto'; textarea.style.height = textarea.scrollHeight + 'px'; }
+    document.addEventListener("DOMContentLoaded", () => { google.script.run.withSuccessHandler(populateClassSelector).withFailureHandler(showError).getClasses(); });
+    function populateClassSelector(classes) { if (!classes || classes.length === 0) {controlsContainer.innerHTML='<p>No classes found in Config sheet.</p>'; return;} classSelector.innerHTML = '<option value="">-- Select a Class --</option>'; classes.forEach(c => {const option = new Option(c.className, c.sheetName); classSelector.appendChild(option);}); classSelector.disabled = false; if (initialClassSheetName) {controlsContainer.classList.add('hidden'); const sanitizedInitialClass = initialClassSheetName.trim().replace(/^"|"$/g, ''); const optionToSelect = Array.from(classSelector.options).find(opt => opt.value.trim() === sanitizedInitialClass); if (optionToSelect) {optionToSelect.selected = true; classSelector.dispatchEvent(new Event('change'));} else {showError({ message: `Class '${sanitizedInitialClass}' not found.` });}}}
+    
+    function renderGrid(data) {
+      if (data.error) { showError({ message: data.error }); return; }
+      const gridContainer = document.getElementById('grid-container');
+      const gridHead = document.getElementById('grid-head');
+      const gridBody = document.getElementById('grid-body');
+      const halfwayIndex = Math.floor(data.schedule.length / 2);
+
+       // --- NEW: Logic to show or hide the midpoint reminder ---
+      const reminderDiv = document.getElementById('midpoint-reminder');
+      if (data.midPointDate && todaysDateString >= data.midPointDate) {
+        reminderDiv.classList.remove('hidden');
+      } else {
+        reminderDiv.classList.add('hidden');
+      }
+      // --- END NEW ---
+      
+      // --- TEXT CHANGES 1 & 3: In the header string ---
+
+      let headerHTML = `<tr>
+  <th class="name-col sticky-col">STUDENT NAME</th>
+  <th class="country-col sticky-col">COUNTRY</th>
+  <th class="start-level-col sticky-col">START LEVEL</th>`;
+
+// insert dates + “Mid Level” at halfway point
+data.schedule.forEach((date, index) => {
+  if (index === halfwayIndex) {
+    headerHTML += `<th class="highlight-header">Mid Level</th>`;
+  }
+  const isToday       = date === todaysDateString ? 'today-header'   : '';
+  const highlight     = index >= halfwayIndex   ? 'highlight-header' : '';
+  const formattedDate = new Date(date + 'T00:00:00')
+    .toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  headerHTML += `<th class="${isToday} ${highlight}">${formattedDate}</th>`;
+});
+
+// now append the trailing columns
+headerHTML += `
+  <th class="notes-col highlight-header">Teacher Notes</th>
+  <th class="prev-courses-col highlight-header">Previous Courses</th>
+  <th class="email-col highlight-header">Student Email</th>
+  <th class="highlight-header">Attendance %</th>
+</tr>`;
+
+      gridHead.innerHTML = headerHTML;
+
+      let bodyHTML = '';
+      data.students.forEach(student => {
+        const nameCellClass = student.previousCourses ? 'name-col italic-name' : 'name-col';
+
+        bodyHTML += `<tr data-email="${student.email}">
+  <td class="name-col sticky-col ${student.previousCourses ? 'italic-name' : ''}">${student.name}</td>
+  <td class="country-col sticky-col">${student.country || ''}</td>
+  <td class="start-level-col sticky-col">${student.initialLevel}</td>`;
+
+        data.schedule.forEach((date, index) => {
+  // insert Mid Level select at halfway point
+  if (index === halfwayIndex) {
+    bodyHTML += `<td>
+      <select class="level-select updatable" data-column="Mid Level">
+        <option value="">--Select--</option>
+        ${data.levels.map(level =>
+          `<option value="${level}" ${student.endLevel===level?'selected':''}>${level}</option>`
+        ).join('')}
+      </select>
+    </td>`;
+  }
+  const isChecked = student.attendance[date] ? 'checked' : '';
+  bodyHTML += `<td class="attendance-cell">
+    <input type="checkbox" class="attendance-check" data-date="${date}" ${isChecked}>
+  </td>`;
+});
+        
+        // --- DATA-COLUMN CHANGES 2 & 3: In the body string ---
+        bodyHTML += `
+        <td class="notes-col"><textarea rows="1" class="notes-input updatable" data-column="Teacher Notes">${student.notes || ''}</textarea></td>
+        <td class="prev-courses-col"><textarea rows="1" class="prev-courses-input updatable" data-column="Previous Courses">${student.previousCourses || ''}</textarea></td>
+        <td class="email-col">${student.email || ''}</td>
+        <td>${student.attendancePercentage}</td>
+      </tr>`;
+      });
+      gridBody.innerHTML = bodyHTML;
+
+      // --- CHANGE START ---
+      // This delays the resizing function just long enough for the browser to render
+      // the new table content, ensuring scrollHeight is calculated correctly.
+      setTimeout(() => {
+        gridBody.querySelectorAll('textarea.updatable').forEach(autoResizeTextarea);
+      }, 0);
+      // --- CHANGE END ---
+
+      let teacherText = ''; if (data.teacher1 && data.teacher2) {teacherText = ` ( ${data.teacher1} & ${data.teacher2} )`;} else if (data.teacher1) {teacherText = ` ( ${data.teacher1} )`;} 
+      
+      document.querySelector('h1').textContent = `${data.className}${teacherText}`;
+
+      statusDiv.textContent = ''; // Clear status text
+      gridContainer.style.display = 'block';
+      toggleBtn.classList.remove('hidden'); // NEW: Show the toggle button
+      exportBtn.classList.remove('hidden'); 
+    }
+
+    classSelector.addEventListener('change',() => {
+      appState.sheetName = classSelector.value;
+      document.getElementById('grid-container').style.display='none';
+      toggleBtn.classList.add('hidden');
+      exportBtn.classList.add('hidden');
+      if (!appState.sheetName) {
+        statusDiv.textContent='Please select a class.';
+         document.querySelector('h1').textContent = 'Class Attendance Sheet'; // Reset title
+        loader.classList.add('hidden');
+        return;}
+        
+        statusDiv.textContent='Loading grid data...';
+        loader.classList.remove('hidden'); // Show loader
+        statusDiv.style.color = '#333'; // Reset color from any previous error
+
+        const successCallback = (data) => {
+        loader.classList.add('hidden');
+        statusDiv.textContent = ''; // Clear status on success
+        renderGrid(data);
+      };
+      
+      const failureCallback = (error) => {
+        loader.classList.add('hidden');
+        showError(error);
+      };
+        
+        google.script.run.withSuccessHandler(successCallback).withFailureHandler(failureCallback).getClassDataGrid(appState.sheetName);
+        });
+
+         // --- NEW: Event listener and function for the hide/show emails button ---
+   
+    // --- NEW: Event listener and function for the hide/show emails button ---
+    toggleBtn.addEventListener('click', () => {
+      // Select all elements that are part of the email column
+      const emailColumns = document.querySelectorAll('.email-col');
+      if (emailColumns.length === 0) return; // Safety check
+
+      // Check the current state (are they hidden or not?)
+      const areHidden = emailColumns[0].classList.contains('hidden');
+
+      // Loop through all found elements and toggle the .hidden class
+      emailColumns.forEach(col => {
+        col.classList.toggle('hidden');
+      });
+
+      // Update the button text to reflect the new state
+      // If they WERE hidden, they are now visible, so the button should say "Hide Emails"
+      if (areHidden) {
+        toggleBtn.textContent = 'Hide Emails';
+      } else {
+        toggleBtn.textContent = 'Show Emails';
+      }
+    });
+
+// --- CHANGE: Added event listener and function for the new button ---
+    exportBtn.addEventListener('click', () => {
+      const studentRows = document.querySelectorAll('#grid-body tr');
+      const emails = Array.from(studentRows)
+                          .map(row => row.dataset.email)
+                          .filter(Boolean); // Filter out any empty/null emails
+
+      if (emails.length === 0) {
+        alert('No student emails to copy.');
+        return;
+      }
+
+      const emailString = emails.join(', ');
+      
+      navigator.clipboard.writeText(emailString).then(() => {
+        // Provide feedback to the user
+        const originalText = exportBtn.textContent;
+        exportBtn.textContent = 'Copied!';
+        exportBtn.disabled = true;
+        setTimeout(() => {
+          exportBtn.textContent = originalText;
+          exportBtn.disabled = false;
+        }, 2000);
+      }).catch(err => {
+        console.error('Failed to copy emails: ', err);
+        // Fallback for older browsers or if permission is denied
+        prompt('Could not copy to clipboard automatically. Please copy the list manually:', emailString);
+      });
+    });
+
+    const gridBody = document.getElementById('grid-body');
+    gridBody.addEventListener('change', handleGridUpdate);
+    gridBody.addEventListener('input', e => { if (e.target.tagName === 'TEXTAREA') { autoResizeTextarea(e.target); } });
+
+    function handleGridUpdate(e) { const target = e.target; const studentEmail = target.closest('tr').dataset.email; const cell = target.closest('td'); if (target.classList.contains('attendance-check')) { showFeedback(cell, 'saving'); google.script.run.withSuccessHandler(() => showFeedback(cell, 'saved')).withFailureHandler(() => showFeedback(cell, 'error')).recordAttendance(appState.sheetName, studentEmail, target.dataset.date, target.checked); } else if (target.classList.contains('updatable')) { showFeedback(cell, 'saving'); const columnName = target.dataset.column; const newValue = target.value; 
+    
+     // --- NEW: Dynamic update for italic style on name ---
+            if (columnName === 'Previous Courses') {
+                const nameCell = target.closest('tr').querySelector('.name-col');
+                if (nameCell) {
+                    // This adds the class if newValue has content, and removes it if it's empty.
+                    nameCell.classList.toggle('italic-name', !!newValue.trim());
+                }
+            }
+    
+    
+    google.script.run.withSuccessHandler(() => showFeedback(cell, 'saved')).withFailureHandler(() => showFeedback(cell, 'error')).updateStudentCell(appState.sheetName, studentEmail, columnName, newValue); } }
+    function showError(error) {statusDiv.textContent = 'Error: ' + error.message;statusDiv.style.color = 'red';}
+    function showFeedback(cell, statusClass) {if (!cell) return;cell.classList.remove('saving', 'saved', 'error');cell.classList.add(statusClass);if (statusClass === 'saved' || statusClass === 'error') {setTimeout(() => {cell.classList.remove(statusClass);}, 1500);}}
+  </script>
+</body>
+</html>
