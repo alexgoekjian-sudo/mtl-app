@@ -15,8 +15,22 @@ class Session extends Model
     ];
 
     protected $casts = [
-        'date' => 'date',
+        'date' => 'date:Y-m-d',
     ];
+    
+    /**
+     * Append date_only attribute for API responses
+     */
+    protected $appends = ['date_only'];
+    
+    /**
+     * Get the date in Y-m-d format
+     */
+    public function getDateOnlyAttribute()
+    {
+        if (!$this->date) return null;
+        return is_string($this->date) ? explode('T', $this->date)[0] : $this->date;
+    }
 
     public function courseOffering()
     {

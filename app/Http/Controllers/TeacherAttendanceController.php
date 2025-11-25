@@ -10,6 +10,7 @@ use App\Models\Student;
 use App\Models\Enrollment;
 use App\Models\AttendanceRecord;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Carbon;
 
 /**
  * Teacher-facing API for attendance management
@@ -23,7 +24,7 @@ class TeacherAttendanceController extends BaseController
     public function getCourses()
     {
         $courses = CourseOffering::select('id', 'attendance_id', 'course_full_name', 'level', 'program', 'type', 'start_date', 'end_date')
-            ->where('end_date', '>=', now())
+            ->where('end_date', '>=', Carbon::now())
             ->orderBy('start_date', 'desc')
             ->get();
         
@@ -43,23 +44,37 @@ class TeacherAttendanceController extends BaseController
      * Get attendance for a specific date
      * Returns: session, students enrolled, attendance records
      */
-    public function getAttendance($courseId, Request $request)
+    public function getAttendance($id, Request $request)
     {
-        $date = $request->get('date', now()->format('Y-m-d'));
+        $date = $request->get('date', Carbon::now()->format('Y-m-d'));
         
         // Find or get session for this date
-        $session = Session::where('course_offering_id', $courseId)
-            ->where('session_date', $date)
+        $session = Session::where('course_offering_id', $id)
+            ->where('date', $date)
             ->first();
         
-        // Get enrolled students
-        $students = Student::select('students.*')
+        // Get enrolled students with enrollment data
+        $students = Student::select(
+                'students.*',
+                'enrollments.mid_course_level',
+                'enrollments.mid_course_notes'
+            )
             ->join('enrollments', 'enrollments.student_id', '=', 'students.id')
-            ->where('enrollments.course_offering_id', $courseId)
+            ->where('enrollments.course_offering_id', $id)
             ->where('enrollments.status', 'active')
             ->orderBy('students.last_name')
             ->orderBy('students.first_name')
-            ->get();
+            ->get()
+            ->map(function($student) {
+                // Add aliases for backward compatibility with frontend
+                $student->country = $student->country_of_origin;
+                $student->notes = $student->mid_course_notes;
+                // If mid_course_level exists, use it as current_level, otherwise use student's current_level
+                if ($student->mid_course_level) {
+                    $student->current_level = $student->mid_course_level;
+                }
+                return $student;
+            });
         
         // Get attendance records if session exists
         $attendance = [];
@@ -79,15 +94,15 @@ class TeacherAttendanceController extends BaseController
     /**
      * Create a new session
      */
-    public function createSession($courseId, Request $request)
+    public function createSession($id, Request $request)
     {
         $this->validate($request, [
             'session_date' => 'required|date'
         ]);
         
         // Check if session already exists
-        $existing = Session::where('course_offering_id', $courseId)
-            ->where('session_date', $request->session_date)
+        $existing = Session::where('course_offering_id', $id)
+            ->where('date', $request->session_date)
             ->first();
         
         if ($existing) {
@@ -95,9 +110,8 @@ class TeacherAttendanceController extends BaseController
         }
         
         $session = Session::create([
-            'course_offering_id' => $courseId,
-            'session_date' => $request->session_date,
-            'status' => 'scheduled'
+            'course_offering_id' => $id,
+            'date' => $request->session_date
         ]);
         
         return response()->json($session, 201);
@@ -107,7 +121,7 @@ class TeacherAttendanceController extends BaseController
      * Save attendance for multiple students
      * Body: { session_date, attendance: { student_id: { status, note } } }
      */
-    public function saveAttendance($courseId, Request $request)
+    public function saveAttendance($id, Request $request)
     {
         $this->validate($request, [
             'session_date' => 'required|date',
@@ -117,11 +131,8 @@ class TeacherAttendanceController extends BaseController
         // Find or create session
         $session = Session::firstOrCreate(
             [
-                'course_offering_id' => $courseId,
-                'session_date' => $request->session_date
-            ],
-            [
-                'status' => 'completed'
+                'course_offering_id' => $id,
+                'date' => $request->session_date
             ]
         );
         
@@ -172,17 +183,17 @@ class TeacherAttendanceController extends BaseController
      * Get attendance summary for a course
      * Shows overall attendance statistics
      */
-    public function getCourseSummary($courseId)
+    public function getCourseSummary($id)
     {
-        $course = CourseOffering::findOrFail($courseId);
+        $course = CourseOffering::findOrFail($id);
         
         // Get all sessions
-        $sessions = Session::where('course_offering_id', $courseId)
-            ->orderBy('session_date')
+        $sessions = Session::where('course_offering_id', $id)
+            ->orderBy('date')
             ->get();
         
         // Get enrolled students
-        $studentCount = Enrollment::where('course_offering_id', $courseId)
+        $studentCount = Enrollment::where('course_offering_id', $id)
             ->where('status', 'active')
             ->count();
         
@@ -218,7 +229,7 @@ class TeacherAttendanceController extends BaseController
     public function getStudentAttendance($courseId, $studentId)
     {
         $sessions = Session::where('course_offering_id', $courseId)
-            ->orderBy('session_date')
+            ->orderBy('date')
             ->get();
         
         $attendance = AttendanceRecord::whereIn('session_id', $sessions->pluck('id'))
@@ -228,8 +239,10 @@ class TeacherAttendanceController extends BaseController
         
         $history = $sessions->map(function($session) use ($attendance) {
             $record = $attendance->get($session->id);
+            // Get raw date value from database (Y-m-d format)
+            $dateOnly = $session->getAttributes()['date'];
             return [
-                'date' => $session->session_date,
+                'date' => $dateOnly,
                 'status' => $record ? $record->status : 'not_recorded',
                 'note' => $record ? $record->note : null
             ];

@@ -19,6 +19,21 @@ $router->get('/status', function () use ($router) {
 // Authentication
 $router->post('/api/auth/login', 'App\Http\Controllers\AuthController@login');
 
+// Webhooks (unprotected - external services need to call these)
+$router->post('/webhooks/mollie', 'App\Http\Controllers\MollieWebhookController@handle');
+$router->post('/webhooks/calcom', 'App\Http\Controllers\CalComWebhookController@handle');
+$router->post('/webhooks/contact-form', 'App\Http\Controllers\ContactFormWebhookController@handle');
+
+// Debug endpoint for Cal.com webhook testing
+$router->get('/webhooks/calcom/test', function () {
+    return response()->json([
+        'status' => 'ok',
+        'message' => 'Cal.com webhook endpoint is reachable',
+        'secret_configured' => !empty(env('CALCOM_WEBHOOK_SECRET')),
+        'test_instructions' => 'Send POST request with Cal.com booking data'
+    ]);
+});
+
 // Handle OPTIONS preflight for CORS
 $router->options('/{any:.*}', function () {
     return response('', 200);
@@ -65,6 +80,13 @@ $router->group(['middleware' => 'auth.token', 'prefix' => 'api'], function () us
     $router->get('/enrollments/{id}', 'App\\Http\\Controllers\\EnrollmentController@show');
     $router->put('/enrollments/{id}', 'App\\Http\\Controllers\\EnrollmentController@update');
     $router->delete('/enrollments/{id}', 'App\\Http\\Controllers\\EnrollmentController@destroy');
+    $router->post('/enrollments/{id}/activate', 'App\\Http\\Controllers\\EnrollmentController@activate');
+
+    // Activity CRUD
+    $router->get('/activities', 'App\\Http\\Controllers\\ActivityController@index');
+    $router->post('/activities', 'App\\Http\\Controllers\\ActivityController@store');
+    $router->put('/activities/{id}', 'App\\Http\\Controllers\\ActivityController@update');
+    $router->delete('/activities/{id}', 'App\\Http\\Controllers\\ActivityController@destroy');
 
     // Invoice CRUD
     $router->get('/invoices', 'App\\Http\\Controllers\\InvoiceController@index');

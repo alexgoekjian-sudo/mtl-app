@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 
 class WebhookEvent extends Model
 {
@@ -21,7 +22,7 @@ class WebhookEvent extends Model
     {
         $this->update([
             'status' => 'processed',
-            'processed_at' => now()
+            'processed_at' => Carbon::now()
         ]);
     }
 
@@ -31,7 +32,7 @@ class WebhookEvent extends Model
             'status' => 'failed',
             'error_message' => $errorMessage,
             'retry_count' => $this->retry_count + 1,
-            'last_retry_at' => now()
+            'last_retry_at' => Carbon::now()
         ]);
     }
 }

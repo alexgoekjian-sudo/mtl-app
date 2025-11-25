@@ -102,6 +102,8 @@ These mapping notes will be encoded into `manifest.trello.json` and `manifest.co
 - FR-012: System MUST provide CSV/JSON export for students, enrollments, attendance, invoices and payments.  
 - FR-013: System MUST provide role-based access control for staff roles: Admin, Manager, Teacher, Receptionist/Finance, Marketing.  
 - FR-014: System MUST audit changes to critical resources (invoices, payments, enrollments, attendance) with user and timestamp.  
+- FR-015: System MUST support archiving/deactivating students (is_active flag) to hide inactive students from default views while preserving historical records and allowing restoration.
+- FR-016: System MUST support course lifecycle status management (draft, active, completed, cancelled) to track course state and filter course listings appropriately.
 
 ### Non-functional Requirements (minimal)
 - NFR-001: The system SHOULD allow backups and export of financial records for at least 7 years.  
@@ -164,6 +166,146 @@ These mapping notes will be encoded into `manifest.trello.json` and `manifest.co
 1. Finalise the import mapping manifests (`manifest.trello.json`, `manifest.courses.json`) and the import adapter.  
 2. Convert Key Entities into Speckit model/spec files and create initial acceptance tests for the primary user flows (create-student → enroll → invoice → payment → attendance).  
 3. After mapping is approved, run a dry-run import to produce normalized JSON output and a validation report.
+
+---
+
+## Historical Course Data Import (Added: November 19, 2025)
+
+### Overview
+Many existing students have participated in courses from 2022-2024. This historical data needs to be imported and associated with student records to:
+- Enable administrators to view complete student course history
+- Provide accurate "Previous Courses" data for attendance sheets and student profiles
+- Maintain historical records for older students who may return
+
+### Requirements
+
+**FR-016: Historical Course Import**
+- System MUST support import of historical course records (2022-2024) from Trello exports
+- System MUST link historical courses to existing student records via email matching
+- System MUST display historical courses on student profile (admin view)
+- System MUST populate "previous_courses" field with historical course data for use in attendance sheets
+- Historical attendance data is NOT required (only course participation records)
+
+### Data Source
+- **Source:** Trello board exports (cards representing historical courses and student enrollments)
+- **Format:** CSV/JSON export from Trello
+- **Time Period:** 2022, 2023, 2024 course offerings
+- **Key Data Points:**
+  - Student name and email (for matching existing students)
+  - Course name/identifier
+  - Course dates (start/end or year)
+  - Student level at course completion (if available)
+  - Any notes about student performance
+
+### Entity Changes
+
+**Student Entity Enhancement:**
+- `previous_courses` field already exists (TEXT, comma-separated)
+- Should be populated/updated with historical course list
+- Format: "Course Name (Date), Course Name (Date), ..."
+
+**CourseOffering Entity:**
+- Historical courses should be created as CourseOffering records with `is_historical=true` flag (or similar)
+- Minimal required fields: course_full_name, start_date (or year), end_date (or year)
+- Optional fields: level, location, program
+
+**Enrollment Entity:**
+- Create enrollment records for historical course participation
+- Status should be 'completed' for all historical enrollments
+- enrolled_at and completed_at timestamps should reflect historical dates
+
+### Import Workflow
+
+1. **Trello Export:**
+   - Export Trello board containing historical course/student data
+   - Format: CSV with columns mapping to student, course, dates
+
+2. **Data Preparation:**
+   - Clean and normalize Trello export
+   - Map student identifiers (email primary, name+DOB secondary)
+   - Map course identifiers to standardized naming
+
+3. **Import Script Execution:**
+   ```bash
+   php import_historical_courses.php path/to/trello_historical_export.csv
+   ```
+
+4. **Import Process:**
+   - Parse CSV rows
+   - For each historical course record:
+     a. Match/create student by email (primary), name (fallback)
+     b. Create CourseOffering record (if doesn't exist) with is_historical flag
+     c. Create Enrollment record with status='completed'
+     d. Update student.previous_courses field (append course name)
+   - Generate import report (matched students, created courses, created enrollments, unmatched records)
+
+5. **Validation:**
+   - Admin reviews import report
+   - Verify student profiles show historical courses
+   - Verify "previous_courses" field populated correctly
+   - Manual resolution of unmatched records
+
+### Acceptance Criteria
+
+**AC-016.1: Historical Course Import**
+- Given a Trello export with historical course data
+- When the import script is executed
+- Then:
+  - All matchable students are linked to their historical courses
+  - CourseOffering records are created for historical courses with is_historical=true
+  - Enrollment records are created with status='completed'
+  - Student previous_courses field is updated with course list
+  - Import report shows match statistics and any unmatched records
+
+**AC-016.2: Admin View Historical Data**
+- Given a student who participated in historical courses
+- When administrator views student profile
+- Then:
+  - All historical enrollments are visible in enrollment history
+  - previous_courses field shows formatted list of courses
+  - Each historical course shows: name, dates, level (if available)
+
+**AC-016.3: Previous Courses on Attendance Sheets**
+- Given a student with historical course data
+- When student is imported to new attendance sheet (Google Sheets export)
+- Then:
+  - previous_courses field is pre-populated with historical course list
+  - Student name displays in italic (indicating previous participation)
+
+### Technical Notes
+
+**Student Matching Strategy:**
+1. Primary: Match by email (exact match, case-insensitive)
+2. Secondary: Match by first_name + last_name (if email missing)
+3. Tertiary: Manual review queue for ambiguous matches
+4. Create new student record if no match (with note indicating historical import)
+
+**Course Naming Normalization:**
+- Historical course names may not match current naming conventions
+- Import script should map common variations (e.g., "A2 Morning" → "A2 PR_MORN")
+- Unmapped course names preserved as-is with note for manual review
+
+**Data Preservation:**
+- Original Trello card data should be preserved in JSON field on enrollment (metadata)
+- Enables future reference and debugging
+
+**Idempotency:**
+- Import script should be idempotent (safe to re-run)
+- Use ON DUPLICATE KEY UPDATE or similar for enrollments
+- Check for existing enrollment before creating
+
+### Implementation Priority
+- **Phase 1:** Create import script and test with sample historical data (10-20 records)
+- **Phase 2:** Import 2024 courses first (most recent, easier to validate)
+- **Phase 3:** Import 2023 courses
+- **Phase 4:** Import 2022 courses
+- **Phase 5:** Import any older courses if needed
+
+### Open Questions
+- [ ] Exact Trello export format (columns, date formats, etc.)
+- [ ] Should historical courses be visible in teacher course dropdown? (Likely NO)
+- [ ] Should historical courses support session/attendance retroactive entry? (Likely NO)
+- [ ] Should students see their historical courses in student portal? (Future feature)
 
 ``` 
 ```markdown
@@ -429,4 +571,271 @@ These items were handled with best-guess assumptions per the user's instruction;
 1. Confirm the external integration specifics: Mollie webhooks, booking provider, and email sending method.  
 2. Decide whether to import existing Trello/Sheets data for initial migration; if yes, provide a sample export.  
 3. Once clarifications are answered, convert Key Entities into concrete Speckit spec files and create initial acceptance tests for the primary user flows.
+
+---
+
+## Additional Requirements (Added: November 21, 2025)
+
+### Lead Source Tracking Enhancement (FR-015)
+**Requirement**: Track detailed lead origin and marketing attribution
+
+**Implementation**:
+- Add `reference` column to `leads` table: ENUM('online_form', 'level_check', 'phone_call', 'walk_in', 'referral', 'other')
+- Add `source_detail` column to `leads` table: ENUM('google', 'facebook', 'instagram', 'ai', 'linkedin', 'referral_name', 'website_direct', 'other')
+- UI: Two dropdown fields on lead capture form
+- Reporting: Lead source analytics by reference and source_detail
+
+**Rationale**: Marketing needs to track which channels generate leads and conversions
+
+---
+
+### Enrollment Workflow & Payment Status (FR-016, FR-017)
+**Requirement**: Support pending enrollments with payment tracking and automatic status progression
+
+**Enrollment Status Flow**:
+1. **pending**: Enrollment created, awaiting payment
+2. **registered**: Payment received OR manual override granted  
+3. **active**: Course started AND payment confirmed
+4. **cancelled**: Student withdrew
+5. **completed**: Course finished
+
+**Special Cases**:
+- **Payment Override**: Admin can manually approve enrollment before payment with required reason field
+  - Example: "Pay after course start - agreed with student on installment plan"
+  - Field: `payment_override_reason` TEXT
+  - Audit log records override action
+  
+- **Trial Enrollments**: Student attends first session to test level fit
+  - Field: `is_trial` BOOLEAN (default false)
+  - If satisfied → convert to full enrollment (is_trial=false, generate invoice)
+  - If not → cancel enrollment
+  
+- **Course Transfers**: Student moves to different course (level change, schedule change)
+  - Cancel current enrollment with reason: "Transferred to [course_name]"
+  - Create new enrollment in target course
+  - Activity log records transfer with both course references
+
+**Automatic Status Transitions**:
+- Mollie webhook receives payment confirmation → enrollment: pending → registered
+- Course start_date reached + payment confirmed → enrollment: registered → active
+- Manual override button → enrollment: pending → registered (requires reason)
+
+**Implementation**:
+```sql
+ALTER TABLE enrollments 
+  MODIFY status ENUM('pending', 'registered', 'active', 'cancelled', 'completed'),
+  ADD COLUMN payment_override_reason TEXT DEFAULT NULL,
+  ADD COLUMN transferred_from_enrollment_id BIGINT UNSIGNED DEFAULT NULL,
+  ADD COLUMN transferred_to_enrollment_id BIGINT UNSIGNED DEFAULT NULL;
+```
+
+---
+
+### Activity Timeline (FR-018)
+**Requirement**: Replace text-based `activity_notes` with structured timeline of interactions
+
+**Design**: New `activities` table with polymorphic relations
+
+**Schema**:
+```sql
+CREATE TABLE activities (
+  id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  related_entity_type VARCHAR(255) NOT NULL,  -- 'Lead', 'Student', 'Enrollment'
+  related_entity_id BIGINT UNSIGNED NOT NULL,
+  activity_type ENUM('note', 'call', 'email', 'meeting', 'level_check', 'payment', 'enrollment', 'other'),
+  subject VARCHAR(255) DEFAULT NULL,
+  body TEXT DEFAULT NULL,
+  created_by_user_id BIGINT UNSIGNED DEFAULT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  INDEX idx_entity (related_entity_type, related_entity_id),
+  INDEX idx_created_at (created_at),
+  FOREIGN KEY (created_by_user_id) REFERENCES users(id) ON DELETE SET NULL
+);
+```
+
+**Features**:
+- Filter by activity_type and date range
+- Display newest first (reverse chronological)
+- Show user avatar + name for each activity
+- Lead → Student conversion: UPDATE activities SET related_entity_type='Student', related_entity_id=<new_id> WHERE related_entity_type='Lead' AND related_entity_id=<old_id>
+
+**Migration**: 
+- Migrate existing `leads.activity_notes` → activities table (type='note', subject='Historical Notes')
+- Migrate existing `students.profile_notes` → activities table
+- Keep columns for backward compatibility initially
+
+---
+
+### Course History View (FR-019)
+**Requirement**: Display both current and historical courses on student profile
+
+**UI Layout**:
+```
+STUDENT PROFILE: John Doe
+
+[Current Courses]
+┌─────────────────────────────────────────────────┐
+│ B1 Intermediate Evening Online                  │
+│ Status: Active | Started: 2025-01-15            │
+│ Teacher: Jane Smith | Progress: 45%             │
+└─────────────────────────────────────────────────┘
+
+[Course History]
+┌─────────────────────────────────────────────────┐
+│ A2 Pre-Int Morning Enschede | 🏷️ Historical    │
+│ Status: Completed | 2022-01-15 to 2022-03-15    │
+│ (Imported from Trello on 2025-11-19)            │
+├─────────────────────────────────────────────────┤
+│ A1 Elementary Evening Online                    │
+│ Status: Completed | 2024-09-01 to 2024-11-30    │
+│ Teacher: Maria Lopez | Attendance: 92%          │
+└─────────────────────────────────────────────────┘
+```
+
+**Query Logic**:
+```sql
+-- Current courses
+SELECT * FROM enrollments e
+JOIN course_offerings co ON e.course_offering_id = co.id
+WHERE e.student_id = ? 
+  AND e.status IN ('pending', 'registered', 'active')
+ORDER BY co.start_date DESC;
+
+-- Course history
+SELECT * FROM enrollments e
+JOIN course_offerings co ON e.course_offering_id = co.id
+WHERE e.student_id = ?
+  AND (e.status IN ('completed', 'cancelled') OR e.is_historical = 1)
+ORDER BY co.start_date DESC;
+```
+
+**Historical Enrollments**:
+- Add `is_historical` BOOLEAN column to `enrollments` and `course_offerings`
+- Add `historical_metadata` JSON column to store import provenance:
+  ```json
+  {
+    "import_source": "Trello",
+    "import_date": "2025-11-19",
+    "original_course_name": "A2 PR_MORN_ENSCH",
+    "matched_by": "email",
+    "confidence": "high"
+  }
+  ```
+
+---
+
+### Payment Reminders & Enrollment Tracking (FR-020)
+**Requirement**: Automated reminders and dashboard warnings for pending payments
+
+**Features**:
+
+1. **Auto-Create Payment Reminder Tasks**
+   - Trigger: Enrollment status = 'pending' AND course start_date within 7 days
+   - Task assigned to course coordinator
+   - Task title: "Payment Pending: [Student Name] - [Course Name]"
+   - Task body: "Student: [Name]\nCourse: [Course]\nAmount Due: €[amount]\nStart Date: [date] (in [X] days)\nInvoice: #[invoice_number]"
+   - Due date: 2 days before course start
+   
+2. **Dashboard "Pending Payments" Widget**
+   - Shows all enrollments with status='pending' AND start_date within next 7 days
+   - Sortable by days until start (urgency)
+   - Click to view student profile + invoice
+   
+3. **"At Risk" Enrollment Flag**
+   - Condition: enrollment has payment_override_reason + no payment received + course has started
+   - Visual indicator: ⚠️ red badge on student profile and course roster
+   - Daily email digest to coordinator: "At Risk Students - Action Required"
+   
+4. **Trial Conversion Follow-up**
+   - Trigger: is_trial=1 AND first session completed AND 3 days passed AND still is_trial=1
+   - Auto-create task: "Follow-up: Trial Student [Name]"
+   - Task body: "Check if student wants to continue. If yes: convert enrollment (is_trial=false) and send invoice."
+
+**Implementation**:
+- Scheduled job runs daily: check enrollments and create tasks
+- Task creation is idempotent (don't duplicate tasks)
+- Tasks link to enrollment: `related_entity_type='Enrollment', related_entity_id=[enrollment_id]`
+
+---
+
+### Database Schema Changes Summary
+
+```sql
+-- 1. Leads table
+ALTER TABLE leads 
+  ADD COLUMN reference ENUM('online_form', 'level_check', 'phone_call', 'walk_in', 'referral', 'other') DEFAULT NULL,
+  ADD COLUMN source_detail ENUM('google', 'facebook', 'instagram', 'ai', 'linkedin', 'referral_name', 'website_direct', 'other') DEFAULT NULL,
+  ADD INDEX idx_reference (reference);
+
+-- 2. Enrollments table  
+ALTER TABLE enrollments
+  MODIFY status ENUM('pending', 'registered', 'active', 'cancelled', 'completed') NOT NULL DEFAULT 'pending',
+  ADD COLUMN is_historical BOOLEAN NOT NULL DEFAULT 0,
+  ADD COLUMN historical_metadata JSON DEFAULT NULL,
+  ADD COLUMN payment_override_reason TEXT DEFAULT NULL,
+  ADD COLUMN transferred_from_enrollment_id BIGINT UNSIGNED DEFAULT NULL,
+  ADD COLUMN transferred_to_enrollment_id BIGINT UNSIGNED DEFAULT NULL,
+  ADD INDEX idx_status (status),
+  ADD INDEX idx_is_historical (is_historical);
+
+-- 3. Course offerings table
+ALTER TABLE course_offerings
+  ADD COLUMN is_historical BOOLEAN NOT NULL DEFAULT 0,
+  ADD INDEX idx_is_historical (is_historical);
+
+-- 4. Activities table (NEW)
+CREATE TABLE activities (
+  id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  related_entity_type VARCHAR(255) NOT NULL,
+  related_entity_id BIGINT UNSIGNED NOT NULL,
+  activity_type ENUM('note', 'call', 'email', 'meeting', 'level_check', 'payment', 'enrollment', 'other') NOT NULL DEFAULT 'note',
+  subject VARCHAR(255) DEFAULT NULL,
+  body TEXT DEFAULT NULL,
+  created_by_user_id BIGINT UNSIGNED DEFAULT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  INDEX idx_entity (related_entity_type, related_entity_id),
+  INDEX idx_type (activity_type),
+  INDEX idx_created_at (created_at),
+  FOREIGN KEY (created_by_user_id) REFERENCES users(id) ON DELETE SET NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+```
+
+---
+
+### Updated Entity Definitions
+
+- **Lead**: {id, reference, source_detail, first_name, last_name, email, phone, country, languages, created_at}
+- **Student**: {id, lead_id, first_name, last_name, email, phone, country_of_origin, city_of_residence, dob, languages, previous_courses, initial_level, current_level, profile_notes, created_at}
+- **Activity**: {id, related_entity_type, related_entity_id, activity_type, subject, body, created_by_user_id, created_at} *[NEW]*
+- **Enrollment**: {id, student_id, course_offering_id, status, is_trial, is_historical, historical_metadata, payment_override_reason, transferred_from_enrollment_id, transferred_to_enrollment_id, mid_course_level, mid_course_notes, enrolled_at, dropped_at, created_at}
+- **CourseOffering**: {id, course_key, course_full_name, level, program, type, start_date, end_date, hours_total, schedule, price, teacher_hourly_rate, classroom_cost, capacity, location, online, is_historical, created_at}
+
+---
+
+### Lead-to-Student Data Model Decision
+
+**Approach**: Data duplication with foreign key reference
+
+**Rationale**:
+- Performance: Student queries are frequent (attendance, profiles, rosters) - avoiding JOINs is critical
+- Independence: Student contact info may legitimately change after initial lead capture (updated email, phone, address)
+- Historical integrity: Original lead data preserved as immutable snapshot of first contact
+- Simplicity: Intuitive model, easier to maintain than normalized shared contact table
+- Industry standard: Most CRMs (Salesforce, HubSpot) duplicate between Lead/Contact/Account
+
+**Implementation**:
+- `students.lead_id` FK maintains reference to original lead
+- Lead conversion copies: first_name, last_name, email, phone, country, languages
+- Activities table transfer: UPDATE related_entity to point to new student
+- UI: "View Original Lead" link on student profile
+
+**Best Practices**:
+- Email uniqueness enforced (prevent duplicates)
+- Audit log tracks all contact info changes
+- Deduplication workflow for manual merge when needed
+
+---
+
 

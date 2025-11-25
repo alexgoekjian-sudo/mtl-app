@@ -452,12 +452,7 @@
             const gridHead = document.getElementById('grid-head');
             const gridBody = document.getElementById('grid-body');
             
-            // Extract just the date part (YYYY-MM-DD) from timestamps
-            const schedule = data.sessions.map(s => {
-                if (!s.date) return null;
-                // Handle both "2025-10-22" and "2025-10-22T22:00:00.000000Z" formats
-                return s.date.split('T')[0];
-            }).filter(d => d); // Filter out null/undefined
+            const schedule = data.sessions.map(s => s.session_date);
             const halfwayIndex = Math.floor(schedule.length / 2);
             const midPointDate = schedule[halfwayIndex] || null;
             
@@ -488,20 +483,8 @@
                 }
                 const isToday = date === todaysDateString ? 'today-header' : '';
                 const highlight = index >= halfwayIndex ? 'highlight-header' : '';
-                
-                // Parse date safely
-                let formattedDate = 'Invalid Date';
-                if (date) {
-                    try {
-                        const dateObj = new Date(date + 'T00:00:00');
-                        if (!isNaN(dateObj.getTime())) {
-                            formattedDate = dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-                        }
-                    } catch (e) {
-                        console.error('Date parse error:', date, e);
-                    }
-                }
-                
+                const formattedDate = new Date(date + 'T00:00:00')
+                    .toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
                 headerHTML += `<th class="${isToday} ${highlight}">${formattedDate}</th>`;
             });
             
@@ -526,12 +509,6 @@
                 historyData.history.forEach(h => {
                     attendanceMap[h.date] = h.status === 'present';
                 });
-                
-                // Debug first student only
-                if (students.indexOf(student) === 0) {
-                    console.log('First student attendance map:', attendanceMap);
-                    console.log('Schedule dates:', schedule);
-                }
                 
                 bodyHTML += `<tr data-email="${student.email}" data-student-id="${student.id}">
                     <td class="name-col sticky-col ${student.previous_courses ? 'italic-name' : ''}">${student.first_name} ${student.last_name}</td>

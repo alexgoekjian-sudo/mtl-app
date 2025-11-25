@@ -131,14 +131,33 @@ Component: **Container** with buttons in a row:
 
 ### Page: "Students"
 
+#### Filter Controls (Top Bar)
+
+**Show Archived Toggle** (Checkbox or Switch)
+Component: **Switch** (`showArchivedStudents`)
+- Label: "Show Archived Students"
+- Default: false (unchecked)
+- Tooltip: "Toggle to view inactive/archived students"
+
 #### Main Table Component
 Component: **Table** (`studentsTable`)
 
-**Query**: `getStudents`
+**Query**: `getStudents` (Dynamic based on archive toggle)
+```
+Resource: SQL Database (direct connection)
+Query:
+{{ showArchivedStudents.value 
+   ? "SELECT * FROM archived_students ORDER BY last_course_date DESC" 
+   : "SELECT * FROM active_students ORDER BY last_name, first_name" 
+}}
+```
+
+**Alternative** (if using API endpoint):
 ```
 Resource: MTL_API
 Method: GET
 URL: /api/retool/students
+Then filter in Retool based on is_active field
 ```
 
 **Table Configuration**:
@@ -152,7 +171,13 @@ URL: /api/retool/students
   - `dob` (Date of Birth) - format as date
   - `country_of_origin` (Country)
   - `city_of_residence` (City)
-  - `languages` (Languages)
+  - `current_level` (Current Level)
+  - `total_enrollments` (Total Courses) - from view
+  - `active_enrollments` (Active Enrollments) - from view
+  - `completed_courses` (Completed) - from view
+  - `last_course_end_date` (Last Course) - from view, format as date
+  - **Conditional columns when showing archived:**
+    - `days_since_last_course` (Days Inactive) - only show when `showArchivedStudents.value === true`
   - `created_at` (Registered) - format as date
 
 **Action Buttons** (in action column):
@@ -166,7 +191,23 @@ URL: /api/retool/students
      editStudentModal.open();
      ```
 
-2. **View Details Button**
+2. **Archive/Restore Button** (conditional)
+   - Show "Archive" when student is active (`is_active === 1`)
+   - Show "Restore" when student is archived (`is_active === 0`)
+   - Icon: "Archive" or "RotateCcw"
+   - Query: `toggleStudentArchive`
+     ```
+     Resource: MTL_API
+     Method: PUT
+     URL: /api/students/{{ studentsTable.selectedRow.data.id }}
+     Body:
+     {
+       "is_active": {{ studentsTable.selectedRow.data.is_active === 1 ? 0 : 1 }}
+     }
+     ```
+   - Success event: Refresh `getStudents.trigger()`
+
+3. **View Details Button**
    - Icon: "Eye"
    - Action: Navigate to student detail page with `{{ studentsTable.selectedRow.data.id }}`
 
@@ -416,42 +457,103 @@ convertLeadModal.close();
 
 ### Page: "Courses"
 
+#### Filter Controls (Top Bar)
+
+**Course Status Filter** (Segmented Control or Dropdown)
+Component: **Select** (`courseStatusFilter`)
+- Label: "Filter by Status"
+- Options:
+  - Value: "active", Label: "Active Courses"
+  - Value: "upcoming", Label: "Upcoming"
+  - Value: "ongoing", Label: "Ongoing"
+  - Value: "completed", Label: "Completed"
+  - Value: "all", Label: "All Courses"
+- Default: "active"
+
 #### Courses Table
 Component: **Table** (`coursesTable`)
 
-**Query**: `getCourses`
+**Query**: `getCourses` (Dynamic based on status filter)
 ```
-Resource: MTL_API
-Method: GET
-URL: /api/retool/course_offerings
-```
-
-**Columns**:
-- `name` (Course Name)
-- `type` (Type) - tag: group=blue, private=purple, intensive=orange
-- `level` (Level)
-- `start_date` (Start Date)
-- `end_date` (End Date)
-- `price` (Price) - format as currency €
-- `max_students` (Capacity)
-- `book_included` (Book Included) - checkbox/badge
-- `teacher_hourly_rate` (Teacher Rate) - format as currency
-- `classroom_cost` (Room Cost) - format as currency
-
-**Computed Column**: `profit_per_student`
-```javascript
+Resource: SQL Database (direct connection)
+Query:
 {{ 
-  coursesTable.selectedRow.data.price - 
-  (coursesTable.selectedRow.data.teacher_hourly_rate * 40) - // Assume 40 hours
-  coursesTable.selectedRow.data.classroom_cost -
-  coursesTable.selectedRow.data.admin_overhead 
+  courseStatusFilter.value === 'upcoming' ? "SELECT * FROM upcoming_courses" :
+  courseStatusFilter.value === 'ongoing' ? "SELECT * FROM ongoing_courses" :
+  courseStatusFilter.value === 'completed' ? "SELECT * FROM completed_courses" :
+  courseStatusFilter.value === 'active' ? "SELECT * FROM active_course_offerings" :
+  "SELECT * FROM course_offerings"
 }}
 ```
+
+**Columns** (base columns):
+- `course_full_name` (Course Name)
+- `level` (Level)
+- `type` (Type) - tag colors
+- `program` (Program)
+- `start_date` (Start Date) - format as date
+- `end_date` (End Date) - format as date
+- `price` (Price) - format as currency €
+- `capacity` (Capacity)
+- `location` (Location)
+- `online` (Online) - boolean badge
+- `status` (Status) - tag with colors:
+  - draft = gray
+  - active = green
+  - completed = blue
+  - cancelled = red
+
+**Conditional Columns from Views**:
+
+When filter = "active" or "upcoming":
+- `total_enrolled` (Enrolled)
+- `active_enrolled` (Active Students)
+- `available_spots` (Available Spots)
+- `timing_status` (Timing) - from active_course_offerings view
+
+When filter = "upcoming":
+- `enrolled_count` (Enrolled)
+- `spots_available` (Spots Left)
+
+When filter = "ongoing":
+- `enrolled_count` (Enrolled)
+- `session_count` (Total Sessions)
+- `completed_sessions` (Sessions Done)
+- Computed column: Progress %
+  ```javascript
+  {{ Math.round((coursesTable.selectedRow.data.completed_sessions / coursesTable.selectedRow.data.session_count) * 100) }}%
+  ```
+
+When filter = "completed":
+- `total_enrolled` (Total Enrolled)
+- `students_completed` (Completed)
+- `students_dropped` (Dropped)
+- `total_sessions` (Sessions Held)
+- Computed column: Completion Rate
+  ```javascript
+  {{ Math.round((coursesTable.selectedRow.data.students_completed / coursesTable.selectedRow.data.total_enrolled) * 100) }}%
+  ```
 
 **Action Buttons**:
 1. **Edit Course**
 2. **View Sessions**
-3. **Delete** (with confirmation)
+3. **Mark as Completed** (only show when status = 'active' and end_date passed)
+   - Query: `markCourseCompleted`
+     ```
+     Resource: MTL_API
+     Method: PUT
+     URL: /api/course_offerings/{{ coursesTable.selectedRow.data.id }}
+     Body: { "status": "completed" }
+     ```
+4. **Cancel Course** (only show when status = 'active' or 'draft')
+   - Query: `cancelCourse`
+     ```
+     Resource: MTL_API
+     Method: PUT
+     URL: /api/course_offerings/{{ coursesTable.selectedRow.data.id }}
+     Body: { "status": "cancelled" }
+     ```
+5. **Delete** (with confirmation)
 
 #### New Course Modal
 Component: **Modal** (`newCourseModal`)
@@ -825,6 +927,7 @@ URL: /api/retool/bookings
 - `attendee_phone` (Phone)
 - `status` (Status) - tag: scheduled=blue, completed=green, cancelled=red, no_show=gray
 - `assigned_teacher` (Teacher)
+- `pt_opt_result` (PT/OPT Result) - displays test scores (e.g., "18 / 50  36  A2")
 - `notes` (Notes)
 
 **Filter Bar**:
@@ -854,8 +957,11 @@ Component: **Modal** (`newBookingModal`)
 9. **Select**: `bookingStatus_new` - "Status"
    - Options: ["scheduled", "completed", "cancelled", "no_show"]
    - Default: "scheduled"
-10. **JSON Editor**: `bookingMetadata_new` - "Additional Info (JSON)"
-11. **Text Area**: `bookingNotes_new` - "Notes"
+10. **Text Input**: `bookingPtOptResult_new` - "PT/OPT Result"
+    - Admin-input field for test results
+    - Example format: "18 / 50  36  A2"
+11. **JSON Editor**: `bookingMetadata_new` - "Additional Info (JSON)"
+12. **Text Area**: `bookingNotes_new` - "Notes"
 
 **Submit Query**: `createBooking`
 ```

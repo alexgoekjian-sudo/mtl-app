@@ -32,6 +32,8 @@ class LeadController extends BaseController
             'country' => 'nullable|string|max:255',
             'languages' => 'nullable|string',
             'activity_notes' => 'nullable|string',
+            'reference' => 'nullable|in:online_form,level_check,phone_call,walk_in,referral,other',
+            'source_detail' => 'nullable|in:google,facebook,instagram,ai,linkedin,referral_name,website_direct,other',
         ]);
 
         $lead = Lead::create($request->all());
@@ -51,6 +53,8 @@ class LeadController extends BaseController
             'country' => 'nullable|string|max:255',
             'languages' => 'nullable|string',
             'activity_notes' => 'nullable|string',
+            'reference' => 'nullable|in:online_form,level_check,phone_call,walk_in,referral,other',
+            'source_detail' => 'nullable|in:google,facebook,instagram,ai,linkedin,referral_name,website_direct,other',
         ]);
 
         $lead->update($request->all());

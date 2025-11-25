@@ -9,7 +9,7 @@ class Booking extends Model
     protected $fillable = [
         'lead_id', 'student_id', 'booking_provider', 'external_booking_id',
         'booking_type', 'scheduled_at', 'assigned_teacher_id', 'assigned_level',
-        'teacher_notes', 'status', 'webhook_payload'
+        'teacher_notes', 'pt_opt_result', 'status', 'webhook_payload'
     ];
 
     protected $casts = [

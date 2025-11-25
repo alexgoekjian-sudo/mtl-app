@@ -42,11 +42,72 @@ This will output:
 In Retool, bind to a Table component:
 - **Data**: `{{ listStudents.data }}`
 
+**Recommended: Use Archive Views for Filtering**
+
+Instead of showing all students, use the database views for cleaner data:
+
+#### Active Students Only (default view)
+- **Method**: GET
+- **URL**: `/api/retool/students` with custom SQL query in Retool SQL resource:
+  ```sql
+  SELECT * FROM active_students
+  ```
+- **Benefits**: Excludes archived students, includes enrollment summary (total_enrollments, active_enrollments, completed_courses, last_course_end_date)
+
+#### Archived Students (historical records)
+- **SQL Query**:
+  ```sql
+  SELECT * FROM archived_students
+  ```
+- **Use case**: View inactive students with days_since_last_course
+- **Toggle**: Add a checkbox in Retool to switch between active_students and archived_students views
+
 ### List Course Offerings (simple array)
 - **Resource**: MTL Backend
 - **Method**: GET
 - **URL**: `/api/retool/course_offerings`
 - **Response**: Array of course objects
+
+**Recommended: Use Status-Filtered Views**
+
+Use database views to show only relevant courses:
+
+#### Active Courses Only
+- **SQL Query**:
+  ```sql
+  SELECT * FROM active_course_offerings
+  ```
+- **Benefits**: Only active courses, includes enrollment counts, available spots, timing_status (upcoming/ongoing/past)
+
+#### Upcoming Courses (not yet started)
+- **SQL Query**:
+  ```sql
+  SELECT * FROM upcoming_courses ORDER BY start_date ASC
+  ```
+- **Use case**: Planning view, shows enrolled_count and spots_available
+
+#### Ongoing Courses (currently running)
+- **SQL Query**:
+  ```sql
+  SELECT * FROM ongoing_courses
+  ```
+- **Benefits**: Includes session_count and completed_sessions for progress tracking
+
+#### Completed Courses (finished)
+- **SQL Query**:
+  ```sql
+  SELECT * FROM completed_courses ORDER BY end_date DESC
+  ```
+- **Use case**: Historical view, shows students_completed and students_dropped
+
+#### All Courses with Status Filter (flexible)
+- Add a dropdown in Retool with options: All / Active / Upcoming / Ongoing / Completed / Cancelled
+- Use dynamic SQL based on selection:
+  ```sql
+  SELECT * FROM course_offerings 
+  WHERE status = '{{ dropdown.value }}'
+  -- or use the specific views above
+  ```
 
 ### List Sessions (simple array)
 - **Resource**: MTL Backend
@@ -189,6 +250,28 @@ curl -i -H "Authorization: Bearer $TOKEN" https://mixtreelangdb.nl/api/retool/co
 Expected: 200 OK with JSON array.
 
 ## Available Endpoints Summary
+
+### Database Views (Recommended for Retool Tables)
+
+These pre-built views provide filtered, aggregated data optimized for common use cases:
+
+**Student Views:**
+- `active_students` — Active students with enrollment summary
+- `archived_students` — Inactive students with last activity date
+
+**Course Views:**
+- `active_course_offerings` — Active courses with enrollment stats and timing
+- `upcoming_courses` — Courses not yet started (sorted by start_date)
+- `ongoing_courses` — Currently running courses with session progress
+- `completed_courses` — Finished courses with completion statistics
+
+**Usage in Retool:**
+Create a SQL query resource pointing to your database, then use:
+```sql
+SELECT * FROM active_students;
+SELECT * FROM upcoming_courses;
+-- etc.
+```
 
 ### Retool-Optimized (simple arrays):
 - `GET /api/retool/students` — returns array of students (limit param optional)

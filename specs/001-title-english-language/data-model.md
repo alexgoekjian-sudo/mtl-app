@@ -25,6 +25,7 @@ Entities (core):
   - initial_level varchar(32) NULL
   - current_level varchar(32) NULL
   - profile_notes text NULL
+  - is_active boolean DEFAULT 1 -- Archive functionality: 1=active, 0=archived
   - created_at, updated_at
 
 - Teacher (User)
@@ -45,6 +46,22 @@ Entities (core):
   - capacity int NULL
   - location varchar(128) NULL
   - online boolean DEFAULT false
+  - status ENUM('draft','active','completed','cancelled') DEFAULT 'active' -- Course lifecycle status
+  - created_at, updated_at
+
+- Booking (Level Checks)
+  - id, lead_id FK, student_id FK
+  - booking_provider varchar(64) -- 'cal.com'
+  - external_booking_id varchar(255) UNIQUE
+  - booking_type varchar(64) -- 'level_check'
+  - scheduled_at timestamp
+  - assigned_teacher_id FK -> users.id
+  - assigned_level varchar(32) -- Level assigned by teacher
+  - teacher_notes text
+  - pt_opt_result varchar(255) -- PT/OPT test result (e.g., "18 / 50  36  A2")
+  - status ENUM('scheduled','completed','cancelled','no_show')
+  - webhook_payload JSON
+  - created_at, updated_at
 
 - Session
   - id, course_offering_id FK
@@ -82,6 +99,8 @@ Entities (core):
 Indices & constraints (recommendations):
 - UNIQUE(email) for students/leads when present; when email missing rely on phone and manual merge workflows.
 - Index course_offering.start_date, course_offering.course_key
+- Index students.is_active for filtering active vs archived students
+- Index course_offerings.status for filtering by course lifecycle state
 - Index attendance by session_id for fast roster queries
 
 Dedupe rules (engineered into import / API):

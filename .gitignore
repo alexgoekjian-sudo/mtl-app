@@ -8,3 +8,11 @@
 /.tmp_setup_plan.json
 __pycache__/
 *.pyc
+
+# Large export files
+mixtree_*/
+*.sql
+!database/migrations/*.sql
+!database/views/*.sql
+!database/sql/*.sql
+MTL_Attendance_Export/

@@ -41,14 +41,19 @@ class EnrollmentController extends BaseController
         $this->validate($request, [
             'student_id' => 'required|exists:students,id',
             'course_offering_id' => 'required|exists:course_offerings,id',
-            'status' => 'sometimes|in:registered,active,cancelled,completed',
+            'status' => 'sometimes|in:pending,registered,active,cancelled,completed',
             'enrolled_at' => 'nullable|date',
             'is_trial' => 'sometimes|boolean',
+            'payment_override_reason' => 'nullable|string',
         ]);
 
         $data = $request->all();
         if (!isset($data['enrolled_at'])) {
-            $data['enrolled_at'] = now();
+            $data['enrolled_at'] = date('Y-m-d H:i:s');
+        }
+        // Default to pending status if not specified
+        if (!isset($data['status'])) {
+            $data['status'] = 'pending';
         }
 
         $enrollment = Enrollment::create($data);
@@ -60,15 +65,35 @@ class EnrollmentController extends BaseController
         $enrollment = Enrollment::findOrFail($id);
 
         $this->validate($request, [
-            'status' => 'sometimes|in:registered,active,cancelled,completed',
+            'status' => 'sometimes|in:pending,registered,active,cancelled,completed',
             'dropped_at' => 'nullable|date',
             'mid_course_level' => 'nullable|string|max:255',
             'mid_course_notes' => 'nullable|string',
             'is_trial' => 'sometimes|boolean',
+            'payment_override_reason' => 'nullable|string',
         ]);
 
         $enrollment->update($request->all());
         return response()->json($enrollment->load(['student', 'courseOffering']));
+    }
+
+    /**
+     * Activate enrollment manually (with override reason)
+     */
+    public function activate(Request $request, $id)
+    {
+        $enrollment = Enrollment::findOrFail($id);
+
+        $this->validate($request, [
+            'reason' => 'required|string|max:500'
+        ]);
+
+        $enrollment->activate($request->input('reason'));
+        
+        return response()->json([
+            'message' => 'Enrollment activated successfully',
+            'enrollment' => $enrollment->load(['student', 'courseOffering'])
+        ]);
     }
 
     public function destroy($id)
